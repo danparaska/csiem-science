@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>6 Hydrodynamics | The Cockburn Sound Integrated Ecosystem Model</title>
+<meta name="author" content="AED">
+<meta name="description" content="6.1 Overview The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wind regimes, relatively weak tidal forcing, episodic periods of stratification, and the regional drivers...">
+<meta name="generator" content="bookdown 0.34 with bs4_book()">
+<meta property="og:title" content="6 Hydrodynamics | The Cockburn Sound Integrated Ecosystem Model">
+<meta property="og:type" content="book">
+<meta property="og:description" content="6.1 Overview The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wind regimes, relatively weak tidal forcing, episodic periods of stratification, and the regional drivers...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="6 Hydrodynamics | The Cockburn Sound Integrated Ecosystem Model">
+<meta name="twitter:description" content="6.1 Overview The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wind regimes, relatively weak tidal forcing, episodic periods of stratification, and the regional drivers...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.0/transition.js"></script><script src="libs/bs3compat-0.5.0/tabs.js"></script><script src="libs/bs3compat-0.5.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet">
+<script src="libs/panelset-0.2.6/panelset.js"></script><script src="libs/kePrint-0.0.1/kePrint.js"></script><link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">The Cockburn Sound Integrated Ecosystem Model</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Welcome</a></li>
+<li><a class="" href="introduction.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="csiem-model-overview.html"><span class="header-section-number">2</span> CSIEM Model Overview</a></li>
+<li><a class="" href="cockburn-environmental-data.html"><span class="header-section-number">3</span> Cockburn Environmental Data</a></li>
+<li><a class="" href="model-data-organisation.html"><span class="header-section-number">4</span> Model-Data Organisation</a></li>
+<li><a class="" href="ocean-climatology.html"><span class="header-section-number">5</span> Resolving Perth Waters Ocean Climatology</a></li>
+<li><a class="active" href="hydrodynamics.html"><span class="header-section-number">6</span> Hydrodynamics</a></li>
+<li><a class="" href="integrated-assessment.html"><span class="header-section-number">7</span> Integrated Assessment</a></li>
+<li><a class="" href="references.html">References</a></li>
+<li><a class="" href="appendix-a-data-catalogue.html">Appendix A : Data Catalogue</a></li>
+<li><a class="" href="appendix-b-results-archive.html">Appendix B : Results Archive</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="hydrodynamics" class="section level1" number="6">
+<h1>
+<span class="header-section-number">6</span> Hydrodynamics<a class="anchor" aria-label="anchor" href="#hydrodynamics"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-1" class="section level2" number="6.1">
+<h2>
+<span class="header-section-number">6.1</span> Overview<a class="anchor" aria-label="anchor" href="#overview-1"><i class="fas fa-link"></i></a>
+</h2>
+<p>The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wind regimes, relatively weak tidal forcing, episodic periods of stratification, and the regional drivers of currents along Perth’s coast. The system is also influenced by human-induced changes to the physical environment which have occured over time, including both changes to the Sound’s bathymetry, and discharges to the system that impact local water temperature and salinity patterns. This chapter describes the approach to simulation of hydrodynamics within the CSIEM platform, and outlines efforts to validate the model. The changes in weather, wave, and hydrodynamic conditions are highly dynamic and variabe in space snd time (Figure 5.1), and serve as the foundation for ecosystem predictions presented in subsequent chapters.</p>
+<center>
+<video width="80%" height="80%" controls><source src="./media/hydro/1_4panel_animation.avi" type="video/avi"></source></video>
+</center>
+<div class="inline-figure"><img src="media/image22.png" style="width:5.45972in;height:3.09749in"></div>
+<p><strong>Figure 5.1.</strong> Snapshot output (July 2013) from CSIEM showing wind, wave, salinity and temperature variation across the Perth coast.</p>
+</div>
+<div id="hydrodynamic-setting" class="section level2" number="6.2">
+<h2>
+<span class="header-section-number">6.2</span> Hydrodynamic setting<a class="anchor" aria-label="anchor" href="#hydrodynamic-setting"><i class="fas fa-link"></i></a>
+</h2>
+<p>In brief, and for the purposes of contextualising the model approach, the primary driver of circulation in Cockburn Sound is wind, particularly the prevailing south-westerly sea breeze during the summer months. This consistent wind pattern induces a two-layer circulation with surface waters are driven northward by the wind, while a compensatory return flow develops at depth, moving southward. This mechanism is critical in transporting heat, nutrients, and other properties throughout the water column and across the basin. The horizontal shear established during these flows is generally effective at promoting vertical mixing, however, during periods of sustained solar heating and calm weather, thermal stratification intensifies, and vertical mixing becomes inhibited.</p>
+<p>This pattern of stratification typically develops in late spring and can persist into summer and early autumn. Solar heating at the surface, combined with weak tidal mixing and reduced wind-driven turbulence, results in the formation of a pycnocline separating the bottom waters, and this is most notable in the southern region of the Sound, where the residence time of bottom water is longest and flushing is most restricted. In contrast, during the winter months, increased storm activity and a shift to more variable northerly winds enhance vertical mixing, eroding stratification and replenishing oxygen levels throughout the water column. Freshwater inputs from surface runoff and groundwater are limited in Cockburn Sound, and thus salinity-driven stratification is generally weak. However, under certain conditions, especially following large rainfall events or in proximity to anthropogenic discharges, salinity gradients can form and contribute to stratification, albeit to a lesser extent than thermal effects. In addition to the natural dynamics, hypersaline discharges from the Perth Seawater Desalination Plant have the potential to intensify near-bottom density stratification (BMT 2019). These discharges tend to move along the seabed due to their higher salinity, which can exacerbate hypoxic conditions when overlaid by a stable, warmer water column. Warm waters discharged after cooling industrial facilities can also contributed to vertical buoyancy gradients along the Kwinana Shelf.</p>
+<p>Tidal forcing plays a relatively minor role in the overall circulation of Cockburn Sound. The microtidal regime, with tidal ranges averaging around 0.5 metres, results in weak tidal currents that are generally insufficient to drive substantial mixing or water exchange on their own. Nonetheless, tides do contribute to localized nearshore and residual circulation features and can influence sediment resuspension and mixing near coastal infrastructure, particularly in combination with wind forcing.</p>
+<p>The embayment’s capacity for flushing and water renewal varies both spatially and seasonally. In the northern part of Cockburn Sound, where connections to offshore waters are more direct and wind-induced circulation is stronger, flushing times are relatively short—on the order of several days under favourable wind conditions. In contrast, the southern basin experiences significantly longer residence times, often exceeding 30 to 50 days during summer. The most notable modification to the natural hydrodynamic regime was the construction of the Garden Island Causeway in the 1970s, which connects the mainland to Garden Island. This solid structure substantially impedes the natural exchange of water between the central basin and offshore waters, particularly in the vicinity of the causeway. As a result, regions to the south of Cockburn Sound exhibit extended residence times and greater susceptibility to water quality deterioration.</p>
+<p>Ability to resolve these flushing times, the key circulation features and the effect stratification, are important to resolve due to their role in shaping the accumulation patterns of nutrients, reduced oxygen concentrations, and other water quality processes like algal bloom development. Early three-dimensional models (e.g. Mills and D’Adamo, 1995) provided key insights into seasonal circulation patterns and the effects of infrastructure like the Garden Island Causeway. More recently, a range of high-resolution models (e.g., FVCOM, TUFLOW-FV, SCHISM, ROMS, ELCOM) have been applied for various applications and demonstrate good performance in simulate the hydrodynamics of the Sound, including the two-layer wind-driven circulation, residual currents and temperature structure (e.g., Xiao et al., 2022).</p>
+<p>An additional requirement for integrated prediction and EIA in the sound is flexibility in capturing the role of coastal infrastructure and associated. Desalination operations, port development, and dredging activities all impact hydrodynamic and sediment movement. In particular, dredging and port operations also modify local bathymetry over time, modifying currents and remobilising sediments.</p>
+<p>In this section, the model setup as described in the previous chapters is tested against available data on waves, currents, water level, temperature and salinity.</p>
+</div>
+<div id="model-description" class="section level2" number="6.3">
+<h2>
+<span class="header-section-number">6.3</span> Model description<a class="anchor" aria-label="anchor" href="#model-description"><i class="fas fa-link"></i></a>
+</h2>
+<p>CSIEM consists of a set of linked one-way coupled models to capture the hydrodynamics of Cockburn Sound and the surrounding waters. The core engine capturing local hydrodynamics is the 3-D unstructured model TUFLOW-FV, which simulates local water levels and currents, turbulent mixing, and water density, temperature and salinity. This model is forced by weather, wave and regional ocean model outputs, each of which has several options within the CSIEM software ecosystem, and which are described in Chapter X.</p>
+<p>The model adopts a flexible mesh (users can select one of 4 options are available; see Figure 2.3) and is based on a ﬁnite-volume numerical scheme, which solves the conservative integral form of the non-linear shallow water equations. The model resolves the advection and transport of scalar constituents including both salinity and temperature. The equations are solved in 3D with baroclinic coupling from both salinity and temperature and adopts the UNESCO equation of state for density (Fofonoff and Millard, 1983). The vertical scheme in the model adopts a hybrid z-σ approach, with variable z-spacing (by default ranging from 0.2 - 1m thickness) to the tidal minimum elevation, and then 6 σ layers spannign the tidal range.</p>
+<p>Surface momentum exchange and heat dynamics are solved in each water column, and in the current application, turbulent mixing of momentum and scalars has been calculated using the Smagorinsky scheme in the horizontal plane and through application of the coupled General Ocean Turbulence Model (GOTM) for vertical mixing. The calculation of horizontal turbulent mixing adopts a 1st or 2nd order approximation of the spatial gradients. In the vertical, the XX option within GOTM is adopted by default, however other GOTM options are selectable as desired for more specific applications.</p>
+<p>The bottom shear stress configuration within CSIEM adopts the roughness–length relationship approach, assuming a rough-turbulent logarithmic velocity proﬁle in the lowest model layer. The roughness length, <em>z<sub>0</sub></em>, settings were based on the area type (e.g., soft substrate, hard substrate, reef, seagrass coverage, etc.) and when coupled with the ecosystem model, the bottom drag is influenced by the biomass of aquatic vegetation within the cell. For this purpose, the bottom was categorized into 20 zones (Figure <mark>2.2</mark>) where the benthic characteristics and associated <em>z<sub>0</sub></em> in each zone were speciﬁed (Table 6.2).</p>
+<p>The hydrodynamics are driven by boundary conditions as summarised in Section 2.4, with spatially variable inputs at the ocean boundary, surface meteorological forcing and river inputs on the landward side creating the necessary forcing to resolve the key circulation features.</p>
+<ul>
+<li><p>Weather conditions: CSIEM relies on one of two gridded weather data products - either the Bureau of Meterology’s 1.5km BARRA-PH re-analysis product, or output from a locally developed WRF model. The main WRF simulation is the 1.75km horizontal-resolution application, that adopts 2 levels of regional down-scaling from the global GFS product, and resolves X atmospheric levels. The model is configured based on a one-way coupling, and thus uses estimates for local water and land temperature as the lower boundary condition. BARRA is a interpolated reanalysis product described in XX.</p></li>
+<li><p>Wave conditions: CSIEM relies on one of two gridded wave model outputs - either the SWAN or WWM models. The wave model output is read in to TUFLOW-FV as a boundary condition.</p></li>
+<li><p>Ocean conditions: The 2km ROMS model output is processed into a netcdf file and water levels and depth-resolved profiles of currents, temperature and salinity are specified at each model edge cell, and updated at an hourly resolution. Where needed, the coarser scale HYCOM model can instead be used in place of ROMS. An assessment of the performance of ROMS in caputring the seasonal and inter-annual variability in regional ocean dynamics, refer to Chapter X.</p></li>
+<li><p>Estuarine inputs:</p></li>
+<li><p>Stormwater inputs:</p></li>
+<li><p>Local discharges:</p></li>
+</ul>
+</div>
+<div id="field-validation-data" class="section level2" number="6.4">
+<h2>
+<span class="header-section-number">6.4</span> Field validation data<a class="anchor" aria-label="anchor" href="#field-validation-data"><i class="fas fa-link"></i></a>
+</h2>
+<p>A range of data has been compiled and is used in the below assessment of model performance. These data are from varied sources and available via the CSIEM data catalogue (Figure 5.12) as described in Hipsey et al. (2025). Further data sets are being added and are able to be used in ongoing model assessment and refinement.</p>
+<div id="section" class="section level3 panelset unnumbered">
+<h3 class="panelset unnumbered"><a class="anchor" aria-label="anchor" href="#section"><i class="fas fa-link"></i></a></h3>
+<div id="hydrodynamics-dataset-summary" class="section level4 unnumbered">
+<h4>Hydrodynamics Dataset Summary<a class="anchor" aria-label="anchor" href="#hydrodynamics-dataset-summary"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure"><img src="media/image44.png" style="width:6.30139in;height:4.45764in"></div>
+<p><strong>Figure 5.12a.</strong> Hydrodynamics data-set: Summary of CSIEM data catalogue showing identified hydrodynamics data. Visit the csiem-data catalogue for further information. Click to enlarge.</p>
+</div>
+<div id="tempsal-dataset-summary" class="section level4 unnumbered">
+<h4>Temp/Sal Dataset Summary<a class="anchor" aria-label="anchor" href="#tempsal-dataset-summary"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure"><img src="media/image45.png" style="width:6.30139in;height:4.45833in"></div>
+<p><strong>Figure 5.12b.</strong> Hydrodynamics data-set: Summary of CSIEM data catalogue showing identified temperature and salinity data (bottom). Visit the csiem-data catalogue for further information. Click to enlarge.</p>
+</div>
+</div>
+</div>
+<div id="weather-dynamics" class="section level2" number="6.5">
+<h2>
+<span class="header-section-number">6.5</span> Weather dynamics<a class="anchor" aria-label="anchor" href="#weather-dynamics"><i class="fas fa-link"></i></a>
+</h2>
+</div>
+<div id="wave-climate" class="section level2" number="6.6">
+<h2>
+<span class="header-section-number">6.6</span> Wave climate<a class="anchor" aria-label="anchor" href="#wave-climate"><i class="fas fa-link"></i></a>
+</h2>
+<p>The CSIEM model platform includes two main wave modelling products, and a range of wave related data-sets from DOT, FPA, JPPL, and UWA. The main continuous (13 year) wave modelling product is from the WWM model developed as part of the WWMSP program and reported in Pattiaratchi and Janekovic (2024). The platform additionally includes an option for using SWAN model outputs, which have been developed by BMT during the different phases of CSIEM platform development (Gunaratne et al., 2022); this has been used in related applications in Cockburn Sound.</p>
+<p>Readers are referred to these reports for the specifics of these model applications and their setup justifications. Given the various domains and approaches (Figure 5.2) an assessment of the models in the context of the CSIEM platform is provided here for reference.</p>
+<div class="float">
+<img src="media/image23.png" style="width:5.5in;height:3.8912in" alt="A screenshot of a map Description automatically generated with low confidence"><div class="figcaption">A screenshot of a map Description automatically generated with low confidence</div>
+</div>
+<p><strong>Figure 5.2.</strong> Outline of different wave model domain extents available in CSIEM. In TUFLOW-FV, the application of these is hierarchical so the highest resolution option is used where available.</p>
+<p><u>2013 model inter-comparison :</u></p>
+<p>As the model system developed spans multiple years and has several options for wave data able to be used as boundary conditions to the main CSIEM hydrodynamic model, an initial screening and comparison of models indicates the differences between the various model setup options, model resolutions and the (JPPL) field data (Figure 5.1). When comparing data for a focus period in September 2013 at the JPPL site S02, the initial assessment showed the BMT SWAN model (both the B and C resolution domains) were relatively accurate in capturing the magnitude of the significant wave height and changes over time, and the direction and wave period. The WWM model in our analyses displayed an over-prediction bias in the wave height, but was comparable in capturing wave direction and magnitude. The validation presented of the WWM calibration reported in Pattiaratchi and Janekovic (2024), showed accurate and non-biased results against the nearby Stirling Channel data collected by FPA in the year 2022, and other data collected by WWMSP Project 5.2. In that analysis seasonal and event changes in significant wave height are notably lower than in presented in these plots suggesting potential differences in methodology or versions.</p>
+<div class="float">
+<img src="media/image24.png" style="width:5.67202in;height:4.25556in" alt="A picture containing text, line, font, diagram Description automatically generated"><div class="figcaption">A picture containing text, line, font, diagram Description automatically generated</div>
+</div>
+<p><strong>Figure 5.2.</strong> Comparison of (a) significant wave height, (b) wave direction, and (c) wave period comparing models and data in the CSIEM platform (SWAN-B, SWAN-C, WWM, TUFLOW-FV) and AWAC data at site S01 in for a period in 2013.</p>
+<p>As the raw wave model data is internally interpolated into the selected hydrodynamic model mesh used by TUFLOW-FV, tests were also undertaken to ensure the raw model boundary conditions values were being applied correctly. This is also shown Figure 5.2, showing the TUFLOW-FV (TFV) wave model predictions at the same location for the “B” grid.</p>
+<p><u>2013 and 2023 wave climate validation :</u></p>
+<p>Further comparison of the WWM wave model outputs was undertaken against the available JPPL AWAC data at S01 and S02, and against data from Parmelia Bank (A and B) ADV collected as part of WWMSP Project 9.1 measuring coastal processes.</p>
+<p>Performance against the JPPL S01 &amp; S02 AWAC data suggested the WWM wave model generally over-predicted the significant wave height by a factor of upto 2 (Figure 8.6 and 8.7). Within the TUFLOW-FV modelling, a bias-correction options was therefore applied to the significant wave height from WWM, and when doing using a factor of 0.5, the CSIEM output generally agreed well with the field data, with a regression coefficient &gt; 0.47 and MAE &lt; 0.052 m at both sites.</p>
+<p>Similar comparisons were made between the model outputs to the ADV data collected at sites of Parmelia Bank A (115.7128°E, 32.1200°S) and Parmelia Bank B (115.7201°E, 32.1333°S) (Figure 8.8 &amp; 8.9). The results suggested that with bias correction to the significant wave height from WWM, the CSIEM output generally agreed well with the field data, with a regression coefficient &gt; 0.76 and MAE &lt; 0.22 m for these two sites.</p>
+<p>The observed wave direction showed more variability with periods where the model diverges from the observations, particularly during some high-variability phases. The model's performance for wave period is mixed. While the general trend is captured, there is significant scatter in the observed data, particularly in shorter wave periods.</p>
+<div class="inline-figure"><img src="media/image25.png" style="width:6.12625in;height:4.36991in"></div>
+<p><strong>Figure 5.2a.</strong> Comparison of (a) significant wave height, (b) wave direction, and (c) wave period of WWM, CSIEM, and AWAC data at site S01 in year 2013.</p>
+<div class="inline-figure"><img src="media/image26.png" style="width:6.12639in;height:4.40791in"></div>
+<p><strong>Figure 5.2b.</strong> Comparison of (a) significant wave height, (b) wave direction, and (c) wave period of WWM, CSIEM, and AWAC data at site S02 in year 2013.</p>
+<div class="inline-figure"><img src="media/image27.png" style="width:6.28756in;height:4.39506in"></div>
+<p><strong>Figure 5.3a.</strong> Comparison of (a) significant wave height, (b) wave direction, and (c) wave period of WWM, CSIEM, and ADV measurements at Parmelia Bank A in year 2023/24.</p>
+<div class="inline-figure"><img src="media/image28.png" style="width:6.28819in;height:4.46465in"></div>
+<p><strong>Figure 5.3b.</strong> Comparison of (a) significant wave height, (b) wave direction, and (c) wave period of WWM, CSIEM, and ADV measurements at Parmelia Bank B in year 2023/24.</p>
+</div>
+<div id="water-surface-elevation" class="section level2" number="6.7">
+<h2>
+<span class="header-section-number">6.7</span> Water surface elevation<a class="anchor" aria-label="anchor" href="#water-surface-elevation"><i class="fas fa-link"></i></a>
+</h2>
+<p>Simulated surface water elevations at site of Fremantle tidal gauge station were compared against data collected during 2023 (Figure 5.4). The model confidently captures the temporal variation in the tidal elevations over the simulation period with a correlation coefficient of 0.9310 and MAE of 0.0034 m.</p>
+<p><img src="media/image29.png" style="width:6.30139in;height:2.54792in"><strong>Figure 5.4.</strong> Comparison of surface water elevations against Fremantle gauge data in year 2022.</p>
+</div>
+<div id="currents" class="section level2" number="6.8">
+<h2>
+<span class="header-section-number">6.8</span> Currents<a class="anchor" aria-label="anchor" href="#currents"><i class="fas fa-link"></i></a>
+</h2>
+<p>Modelled eastern and northern currents were compared to the ADV data collected at sites of Parmelia Bank A (115.7128°E, 32.1200°S) and Parmelia Bank B (115.7201°E, 32.1333°S) from WWMSP Project 9.1 (Figure 8.2 &amp; 8.3). The model reasonably captures the temporal variation in the currents over the simulation period with a correlation coefficient &gt;0.45 and MAE&lt; 0.0187 m/s.</p>
+<div class="inline-figure"><img src="media/image30.png" style="width:6.1314in;height:4.42593in"></div>
+<p><strong>Figure 5.5a.</strong> Comparison of (a) eastern and (b) northern currents between CSIEM outputs and ADV measurements at Parmelia Bank A in year 2023/24.</p>
+<div class="inline-figure"><img src="media/image31.png" style="width:6.13125in;height:4.40543in"></div>
+<p><strong>Figure 5.5b.</strong> Comparison of (a) eastern and (b) northern currents between CSIEM outputs and ADV measurements at Parmelia Bank B in year 2023/24.</p>
+<p>Further comparison of current profiles was made between the CSIEM outputs and historical AWAC data collected at site S01 (115.7627°E, 32.2009°S, on east shelf of Cockburn Sound) from JPPL (Figure 5.6). The model was able to well capture the phase (switch of current directions) and the magnitudes of currents in comparison to the data.</p>
+<div class="inline-figure"><img src="media/image32.png" style="width:6.30139in;height:3.96353in"></div>
+<p><strong>Figure 5.6a.</strong> Comparison of (a) eastern and (b) northern currents between CSIEM outputs and JPPL AWAC measurements at site S01 in year 2013.</p>
+<div class="inline-figure"><img src="media/image33.png" style="width:6.41176in;height:4.08731in"></div>
+<p><strong>Figure 5.6b.</strong> Comparison of (a) eastern and (b) northern currents between CSIEM outputs and JPPL AWAC measurements at site S02 in year 2013.</p>
+</div>
+<div id="temperature-and-salinity" class="section level2" number="6.9">
+<h2>
+<span class="header-section-number">6.9</span> Temperature and salinity<a class="anchor" aria-label="anchor" href="#temperature-and-salinity"><i class="fas fa-link"></i></a>
+</h2>
+<p>Water temperature and salinity patterns were subject to an iterative calibration process, comparing the grab data and continuous data available for these variables against the model at several assessment zones. Initial experience with earlier versions of CSIEM had highlighted issues associated with incorrect seasonal trends in salinity and biases in temperature to be considered when refining the performance of CSIEM1.5. In addition, for CSIEM 1.5 a wider range of years were considered in the model assessment process. Adjustments in this version included refining the ocean boundary inputs (see Chapter 3) and parameters in the heat balance model.</p>
+<p>Both the water temperature and salinity seasonal variations within the Sound, with the higher temperature and salinity in summertime and lower in wintertime explored for the year 2022 (Figure 5.7). The modelled data closely aligns with the field observations, capturing both the seasonal trends and variations throughout the year. The high correlation coefficient (r=0.9975 for temperature and r=0.9871 for salinity) and low mean absolute error (MAE=0.1944°C for temperature and MAE=0.1844 psu for salinity) indicates an excellent agreement between the model and observations. Episodes of short-term stratification are resolved, as indicated between the difference between surface and bottom.</p>
+<p>The model's robustness in capturing temporal and spatial variations in temperature and salinity was further tested in the year 2011, when the SWA coastal region experienced a significant marine heat wave event (e.g., see Figure 3.5). The comparison between the model output and observations (Figure 5.8) indicated that the model captured the heat wave event during the summer, with temperature reaching 27.8 degrees and salinity reached 37.4 psu in February of that year.</p>
+<div class="inline-figure"><img src="media/image34.png" style="width:6.30139in;height:2.52083in"></div>
+<div class="inline-figure"><img src="media/image35.png" style="width:6.30139in;height:2.46078in"></div>
+<p><strong>Figure 5.7.</strong> Comparison of water temperature and salinity between CSIEM and field observations at the region of middle east basin of Cockburn Sound (BasinMEast) in year 2022.</p>
+<div class="inline-figure"><img src="media/image36.png" style="width:6.30139in;height:2.51736in"></div>
+<div class="inline-figure"><img src="media/image37.png" style="width:6.30139in;height:2.51736in"></div>
+<p><strong>Figure 5.8.</strong> Comparison of water temperature and salinity between CSIEM and field observations at the region of middle Kwinana Shelf of Cockburn Sound (KSMid) in year 2011 experiencing a heat wave event in summer.</p>
+<p>Additional comparisons of the model against data from the Cockburn Sound moorings, and from satellite images has also been undertaken. For example, a multi-data set comparison is presented in Figure 5.9 comparing a rage of data for Henderson and Mangles Bay. This includes in situ sensors, profile, and data from the GHRSST satellite product. The demonstrate the strong model performance in resolving the seasonal changes and shorter-term changes associated with weather events. At the shallow sites the GHRSST product shows accuracy issues, but more accurate is at the deeper water site.</p>
+<p>Images of the system, take a various times are able to show the effect of surface cooling waters released to the Sound (Figure 5.10), and the brine discharge (Figure 5.11).</p>
+<p>These examples are just a limited set selected to demonstrate general aspects of the model performance, and a detailed catalogue of the model validation of these parameters for all the CSIEM assessment polygons and all the available datasets is included in the csiem_model_1.5 repository. Furter validation plots exploring dynamics of these system and the response during specific events are able to be made using the MARVL scripts included in the csiem-marvl repository.</p>
+<p><img src="media/image38.png" style="width:5.51458in;height:2.99066in"><img src="media/image39.png" style="width:5.51458in;height:2.97425in"></p>
+<div class="inline-figure"><img src="media/image40.png" style="width:5.51484in;height:2.9902in"></div>
+<p><strong>Figure 5.9.</strong> Comparison of water temperature in three regions of the model between Jan 2022 and Apr 2024, comparing the model simulations against various data-sets in the csiem-data catalogue.</p>
+<p><img src="media/image41.png" style="width:2.90804in;height:3.86274in"><img src="media/image42.png" style="width:3.0098in;height:3.93656in"></p>
+<p><strong>Figure 5.10.</strong> Comparison of water temperature in three regions of the model between Jan 2022 and Apr 2024, comparing the model simulations against various data-sets in the csiem-data catalogue.</p>
+<div class="inline-figure"><img src="media/image43.png" style="width:6.30139in;height:3.06736in"></div>
+<p><strong>Figure 5.11.</strong> Output of the CSIEM model demonstrating the plume from the PSDP brine discharge, as both a salinity anomaly and tracer.</p>
+</div>
+<div id="limitations-and-further-work" class="section level2" number="6.10">
+<h2>
+<span class="header-section-number">6.10</span> Limitations and further work<a class="anchor" aria-label="anchor" href="#limitations-and-further-work"><i class="fas fa-link"></i></a>
+</h2>
+<p>Development of the CSIEM model during the WWMSP project 1.2, and reported herein, was undertaken in parallel to other applications of the model focusing on hydrodynamics, flushing and sediment transport as part of Westport’s assessment of port options. As a result, this is therefore not an exhaustive assessment of the model’s performance in resolving waves, currents and circulation features in Cockburn Sound. This assessment has been made in the context of development of an integrated approach to ecosystem prediction, linking met-ocean conditions, biogeochemistry and ecology in a coordinated way over the scales relevant to prediction challenges for cumulative EIA. Beyond this scope, there are a range of areas for further investigation and refinement to be considered during applications with this version and for consideration during further developments of the platform.</p>
+<ul>
+<li><p>The Project 5.2 analysis of the wave model show seasonal and event changes in significant wave height are notably lower than in presented in this assessment suggesting potential differences in methodology, or model versions. The wave prediction methodology described in Pattiaratchi and Janekovic (2024) describes two-way hydrodynamic-wave coupling with the model SCHISM-WWM, whereas the 13-year data-set archived to the CSIEM platform was run without two-way coupling. Further analysis is required to resolve the difference.</p></li>
+<li><p>Sensitivity to different mesh configurations in resolving the currents and stratification under different forcing conditions will enable more informed selection of the appropriate mesh for different applications.</p></li>
+<li><p>Further assessment of the model in resolving plume dynamics, both associated with the low-discharge desalination and industrial discharge plumes, and also the occasional high-discharge flow pulses from the Swan and Peel systems is suggested.</p></li>
+<li><p>A further dedicated comparison of the model in resolving stratification phenology over a wider range of met-ocean conditions by comparing against the DWER mooring data would allow further refinement of model surface heating and vertical mixing dynamics.</p></li>
+</ul>
+</div>
+</div>
+<script>
+var img = document.body.getElementsByTagName("img");
+var i = 0;
+while (i < img.length) {
+    img[i].setAttribute("data-action", "zoom");
+    i++;
+}
+</script><script src="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js"></script><link href="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css" rel="stylesheet">
+<div class="chapter-nav">
+<div class="prev"><a href="ocean-climatology.html"><span class="header-section-number">5</span> Resolving Perth Waters Ocean Climatology</a></div>
+<div class="next"><a href="integrated-assessment.html"><span class="header-section-number">7</span> Integrated Assessment</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#hydrodynamics"><span class="header-section-number">6</span> Hydrodynamics</a></li>
+<li><a class="nav-link" href="#overview-1"><span class="header-section-number">6.1</span> Overview</a></li>
+<li><a class="nav-link" href="#hydrodynamic-setting"><span class="header-section-number">6.2</span> Hydrodynamic setting</a></li>
+<li><a class="nav-link" href="#model-description"><span class="header-section-number">6.3</span> Model description</a></li>
+<li>
+<a class="nav-link" href="#field-validation-data"><span class="header-section-number">6.4</span> Field validation data</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#section"></a></li></ul>
+</li>
+<li><a class="nav-link" href="#weather-dynamics"><span class="header-section-number">6.5</span> Weather dynamics</a></li>
+<li><a class="nav-link" href="#wave-climate"><span class="header-section-number">6.6</span> Wave climate</a></li>
+<li><a class="nav-link" href="#water-surface-elevation"><span class="header-section-number">6.7</span> Water surface elevation</a></li>
+<li><a class="nav-link" href="#currents"><span class="header-section-number">6.8</span> Currents</a></li>
+<li><a class="nav-link" href="#temperature-and-salinity"><span class="header-section-number">6.9</span> Temperature and salinity</a></li>
+<li><a class="nav-link" href="#limitations-and-further-work"><span class="header-section-number">6.10</span> Limitations and further work</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>The Cockburn Sound Integrated Ecosystem Model</strong>" was written by AED. It was last built on 07-November-2025.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>
