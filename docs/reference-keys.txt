@@ -85,6 +85,7 @@ wave-climate
 water-surface-elevation
 currents-and-residual-circulation
 assessment-of-exchange-through-cockburn-sound
+dadamo-regimes
 river-inflow-events-influencing-cockburn-sound
 thermal-stratification
 synoptic-scale-validation-of-variation-of-temperature-and-salinity
