@@ -2,19 +2,16 @@
 
 ## Overview
 
-The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wind regimes, relatively weak tidal forcing, episodic periods of stratification, and the regional drivers of currents along Perth's coast. The system is also influenced by human-induced changes to the physical environment which have occured over time, including both changes to the Sound's bathymetry, and discharges to the system that impact local water temperature and salinity patterns. This chapter describes the approach to simulation of hydrodynamics within the CSIEM platform, and outlines efforts to validate the model. The changes in weather, wave, and hydrodynamic conditions are highly dynamic and variabe in space snd time (Figure 5.1), and serve as the foundation for ecosystem predictions presented in subsequent chapters.
+The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wind regimes, relatively weak tidal forcing, episodic periods of stratification, and the regional drivers of currents along Perth's coast. The system is also influenced by human-induced changes to the physical environment which have occured over time, including both changes to the Sound's bathymetry, and discharges to the system that impact local water temperature and salinity patterns. This chapter describes the approach to simulation of hydrodynamics within the CSIEM platform, and outlines efforts to validate the model. The changes in weather, wave, and hydrodynamic conditions are highly dynamic and variabe in space snd time (Figure 6.1), and serve as the foundation for ecosystem predictions presented in subsequent chapters.
 
 
 <center>
-<video width="80%" height="80%" controls>
-<source src="./media/hydro/1_4panel_animation.avi" type="video/avi">
+<video width="90%" height="90%" controls>
+<source src="./media/hydro/1_4panel_animation.mp4" type="video/mp4">
 </video>
 </center>
 
-
-![](./media/image22.png){width="5.459722222222222in" height="3.09749343832021in"}
-
-**Figure 5.1.** Snapshot output (July 2013) from CSIEM showing wind, wave, salinity and temperature variation across the Perth coast.
+**Figure 6.1.** Example hydrodynamic output from CSIEM showing wind, wave, salinity and temperature variation across the Perth coast in July 2013.
 
 ## Hydrodynamic setting
 
@@ -57,15 +54,9 @@ The hydrodynamics are driven by boundary conditions as summarised in Section 2.4
  - Local discharges:
  
 
-## Field validation data
+## Field data and approach to validation
 
 A range of data has been compiled and is used in the below assessment of model performance. These data are from varied sources and available via the CSIEM data catalogue (Figure 5.12) as described in Hipsey et al. (2025). Further data sets are being added and are able to be used in ongoing model assessment and refinement.
-
-
-
-
-
-
 
 ### {.panelset .unnumbered}
 
@@ -73,17 +64,17 @@ A range of data has been compiled and is used in the below assessment of model p
 
 ![](./media/image44.png){width="6.301388888888889in" height="4.457638888888889in"}
 
-**Figure 5.12a.** Hydrodynamics data-set: Summary of CSIEM data catalogue showing identified hydrodynamics data. Visit the csiem-data catalogue for further information. Click to enlarge.
+**Figure 6.2a.** Hydrodynamics data-set: Summary of CSIEM data catalogue showing identified hydrodynamics data. Visit the csiem-data catalogue for further information. Click to enlarge.
 
 #### Temp/Sal Dataset Summary {.unnumbered}
 
 ![](./media/image45.png){width="6.301388888888889in" height="4.458333333333333in"}
 
-**Figure 5.12b.** Hydrodynamics data-set: Summary of CSIEM data catalogue showing identified temperature and salinity data (bottom). Visit the csiem-data catalogue for further information. Click to enlarge.
+**Figure 6.2b.** Hydrodynamics data-set: Summary of CSIEM data catalogue showing identified temperature and salinity data (bottom). Visit the csiem-data catalogue for further information. Click to enlarge.
 
 ## Weather dynamics
 
-
+TBC
 
 
 ## Wave climate
@@ -139,7 +130,7 @@ Simulated surface water elevations at site of Fremantle tidal gauge station were
 
 ![](./media/image29.png){width="6.301388888888889in" height="2.5479166666666666in"}**Figure 5.4.** Comparison of surface water elevations against Fremantle gauge data in year 2022.
 
-## Currents
+## Currents and residual circulation
 
 Modelled eastern and northern currents were compared to the ADV data collected at sites of Parmelia Bank A (115.7128°E, 32.1200°S) and Parmelia Bank B (115.7201°E, 32.1333°S) from WWMSP Project 9.1 (Figure 8.2 & 8.3). The model reasonably captures the temporal variation in the currents over the simulation period with a correlation coefficient \>0.45 and MAE\< 0.0187 m/s.
 
@@ -161,7 +152,18 @@ Further comparison of current profiles was made between the CSIEM outputs and hi
 
 **Figure 5.6b.** Comparison of (a) eastern and (b) northern currents between CSIEM outputs and JPPL AWAC measurements at site S02 in year 2013.
 
-## Temperature and salinity
+
+## Assessment of exchange through Cockburn Sound
+
+
+## River inflow events influencing Cockburn Sound
+
+
+## Thermal stratification
+
+
+
+## Synoptic-scale validation of variation of temperature and salinity
 
 Water temperature and salinity patterns were subject to an iterative calibration process, comparing the grab data and continuous data available for these variables against the model at several assessment zones. Initial experience with earlier versions of CSIEM had highlighted issues associated with incorrect seasonal trends in salinity and biases in temperature to be considered when refining the performance of CSIEM1.5. In addition, for CSIEM 1.5 a wider range of years were considered in the model assessment process. Adjustments in this version included refining the ocean boundary inputs (see Chapter 3) and parameters in the heat balance model.
 
@@ -173,37 +175,42 @@ The model\'s robustness in capturing temporal and spatial variations in temperat
 
 ![](./media/image35.png){width="6.301388888888889in" height="2.460784120734908in"}
 
-**Figure 5.7.** Comparison of water temperature and salinity between CSIEM and field observations at the region of middle east basin of Cockburn Sound (BasinMEast) in year 2022.
+**Figure 6.7.** Comparison of water temperature and salinity between CSIEM and field observations at the region of middle east basin of Cockburn Sound (BasinMEast) in year 2022.
 
 ![](./media/image36.png){width="6.301388888888889in" height="2.517361111111111in"}
 
 ![](./media/image37.png){width="6.301388888888889in" height="2.517361111111111in"}
 
-**Figure 5.8.** Comparison of water temperature and salinity between CSIEM and field observations at the region of middle Kwinana Shelf of Cockburn Sound (KSMid) in year 2011 experiencing a heat wave event in summer.
+**Figure 6.8.** Comparison of water temperature and salinity between CSIEM and field observations at the region of middle Kwinana Shelf of Cockburn Sound (KSMid) in year 2011 experiencing a heat wave event in summer.
 
 Additional comparisons of the model against data from the Cockburn Sound moorings, and from satellite images has also been undertaken. For example, a multi-data set comparison is presented in Figure 5.9 comparing a rage of data for Henderson and Mangles Bay. This includes in situ sensors, profile, and data from the GHRSST satellite product. The demonstrate the strong model performance in resolving the seasonal changes and shorter-term changes associated with weather events. At the shallow sites the GHRSST product shows accuracy issues, but more accurate is at the deeper water site.
 
+## Influence of industry discharges on temperature and salinity
+
 Images of the system, take a various times are able to show the effect of surface cooling waters released to the Sound (Figure 5.10), and the brine discharge (Figure 5.11).
 
-These examples are just a limited set selected to demonstrate general aspects of the model performance, and a detailed catalogue of the model validation of these parameters for all the CSIEM assessment polygons and all the available datasets is included in the csiem_model_1.5 repository. Furter validation plots exploring dynamics of these system and the response during specific events are able to be made using the MARVL scripts included in the csiem-marvl repository.
 
 ![](./media/image38.png){width="5.514583333333333in" height="2.9906616360454943in"}![](./media/image39.png){width="5.514583333333333in" height="2.9742530621172354in"}
 
 ![](./media/image40.png){width="5.514844706911636in" height="2.9901957567804023in"}
 
-**Figure 5.9.** Comparison of water temperature in three regions of the model between Jan 2022 and Apr 2024, comparing the model simulations against various data-sets in the csiem-data catalogue.
+**Figure 6.9.** Comparison of water temperature in three regions of the model between Jan 2022 and Apr 2024, comparing the model simulations against various data-sets in the csiem-data catalogue.
 
 ![](./media/image41.png){width="2.9080358705161853in" height="3.8627449693788276in"}![](./media/image42.png){width="3.0098042432195977in" height="3.9365583989501314in"}
 
-**Figure 5.10.** Comparison of water temperature in three regions of the model between Jan 2022 and Apr 2024, comparing the model simulations against various data-sets in the csiem-data catalogue.
+**Figure 6.10.** Comparison of water temperature in three regions of the model between Jan 2022 and Apr 2024, comparing the model simulations against various data-sets in the csiem-data catalogue.
 
 ![](./media/image43.png){width="6.301388888888889in" height="3.067361111111111in"}
 
-**Figure 5.11.** Output of the CSIEM model demonstrating the plume from the PSDP brine discharge, as both a salinity anomaly and tracer.
+**Figure 6.11.** Output of the CSIEM model demonstrating the plume from the PSDP brine discharge, as both a salinity anomaly and tracer.
 
-## Limitations and further work
+## Summary
 
-Development of the CSIEM model during the WWMSP project 1.2, and reported herein, was undertaken in parallel to other applications of the model focusing on hydrodynamics, flushing and sediment transport as part of Westport's assessment of port options. As a result, this is therefore not an exhaustive assessment of the model's performance in resolving waves, currents and circulation features in Cockburn Sound. This assessment has been made in the context of development of an integrated approach to ecosystem prediction, linking met-ocean conditions, biogeochemistry and ecology in a coordinated way over the scales relevant to prediction challenges for cumulative EIA. Beyond this scope, there are a range of areas for further investigation and refinement to be considered during applications with this version and for consideration during further developments of the platform.
+Development of the CSIEM model during the WWMSP project 1.2, and reported herein, was undertaken in parallel to other applications of the model focusing on hydrodynamics, flushing and sediment transport as part of Westport's assessment of port options. As a result, this is therefore not an exhaustive assessment of the model's performance in resolving waves, currents and circulation features in Cockburn Sound. This assessment has been made in the context of development of an integrated approach to ecosystem prediction, linking met-ocean conditions, biogeochemistry and ecology in a coordinated way over the scales relevant to prediction challenges for cumulative EIA. 
+
+These examples are just a limited set selected to demonstrate general aspects of the model performance, and a detailed catalogue of the model validation of these parameters for all the CSIEM assessment polygons and all the available datasets is included in the csiem_model_1.5 repository. Furter validation plots exploring dynamics of these system and the response during specific events are able to be made using the MARVL scripts included in the csiem-marvl repository.
+
+Beyond this scope, there are a range of areas for further investigation and refinement to be considered during applications with this version and for consideration during further developments of the platform.
 
 - The Project 5.2 analysis of the wave model show seasonal and event changes in significant wave height are notably lower than in presented in this assessment suggesting potential differences in methodology, or model versions. The wave prediction methodology described in Pattiaratchi and Janekovic (2024) describes two-way hydrodynamic-wave coupling with the model SCHISM-WWM, whereas the 13-year data-set archived to the CSIEM platform was run without two-way coupling. Further analysis is required to resolve the difference.
 
