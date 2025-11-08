@@ -182,26 +182,60 @@ Simulated surface water elevations at the Fremantle tidal gauge station (FFBH) w
 
 ## Currents and residual circulation
 
+### Water velocity validation
+
 Modelled eastern and northern currents were compared to the ADV data collected at sites of Parmelia Bank A (115.7128°E, 32.1200°S) and Parmelia Bank B (115.7201°E, 32.1333°S) from WWMSP Project 9.1 (Figure 8.2 & 8.3). The model reasonably captures the temporal variation in the currents over the simulation period with a correlation coefficient \>0.45 and MAE\< 0.0187 m/s.
+
+
+#### {.panelset .unnumbered}
+
+##### WWMSP9-AWAC : PB-A {.unnumbered}
 
 ![](./media/image30.png){width="6.131402012248469in" height="4.425925196850394in"}
 
 **Figure 5.5a.** Comparison of (a) eastern and (b) northern currents between CSIEM outputs and ADV measurements at Parmelia Bank A in year 2023/24.
 
+##### WWMSP9-AWAC : PB-B {.unnumbered}
+
 ![](./media/image31.png){width="6.13125in" height="4.405433070866142in"}
 
 **Figure 5.5b.** Comparison of (a) eastern and (b) northern currents between CSIEM outputs and ADV measurements at Parmelia Bank B in year 2023/24.
 
+
 Further comparison of current profiles was made between the CSIEM outputs and historical AWAC data collected at site S01 (115.7627°E, 32.2009°S, on east shelf of Cockburn Sound) from JPPL (Figure 5.6). The model was able to well capture the phase (switch of current directions) and the magnitudes of currents in comparison to the data.
 
-![](./media/image32.png){width="6.301388888888889in" height="3.9635323709536308in"}
 
-**Figure 5.6a.** Comparison of (a) eastern and (b) northern currents between CSIEM outputs and JPPL AWAC measurements at site S01 in year 2013.
+#### {.panelset .unnumbered}
 
-![](./media/image33.png){width="6.411763998250219in" height="4.087307524059493in"}
+##### JPPL-AWAC : S01 {.unnumbered}
 
-**Figure 5.6b.** Comparison of (a) eastern and (b) northern currents between CSIEM outputs and JPPL AWAC measurements at site S02 in year 2013.
 
+![](./media/hydro/currents/image32.png){width="6.131402012248469in" height="4.425925196850394in"}
+
+**Figure 5.5a.** Comparison of (a) eastern and (b) northern currents between CSIEM outputs and JPPL AWAC measurements at site S01 in year 2013.
+
+
+
+##### JPPL-AWAC : S02 {.unnumbered}
+
+
+![](./media/hydro/currents/image33.png){width="6.13125in" height="4.405433070866142in"}
+
+**Figure 5.5b.** Comparison of (a) eastern and (b) northern currents between CSIEM outputs and JPPL AWAC measurements at site S02 in year 2013.
+
+
+
+### Residual flow patterns
+
+The residual circulation has previously been described by Xiao et al. (2024) under summer conditions, and .... The anti-clockwise eddy has been highlighted, due to its relevance during periods when Pink Snapper form spawning aggregations, since larvae are thought to be retained in the Sound due to the nature of this particular circulation feature.
+
+To demonstrate the residual flow circulation we compute the residual velocities in each cell and compute net streamlines based on this velocity field. The residual velocities were computed using a Godin-filter to remove the tidal dynamics. A monthly summary of residual currents for 2023 are shown in Figure X. The results show a southward tendency in the winter months, and a weak clockwise gyre, and a northerly flow tendancy and anti-clockwise feature in other months. 
+
+![](./media/hydro/currents/residual_image.png){width="97%"}
+
+**Figure 5.X.** Streamlines showing the residual flow circulation features, based on the monthly average of surface residual currents. 
+
+Additionally, as the system experiences two-layer flow dynamics, we additionally summarise the surface and bottom differences in  flow patterns. 
 
 
 ## Synoptic-scale validation of variation of temperature and salinity
