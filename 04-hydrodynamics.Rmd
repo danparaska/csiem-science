@@ -240,25 +240,13 @@ Additionally, as the system experiences two-layer flow dynamics, we additionally
 
 ## Synoptic-scale validation of variation of temperature and salinity
 
-Water temperature and salinity patterns were subject to an iterative calibration process, comparing the grab data and continuous data available for these variables against the model at several assessment zones. Initial experience with earlier versions of CSIEM had highlighted issues associated with incorrect seasonal trends in salinity and biases in temperature to be considered when refining the performance of CSIEM. In addition, for CSIEM 1.5 a wider range of years were considered in the model assessment process. Adjustments in this version included refining the ocean boundary inputs (see Chapter 3) and parameters in the heat balance model.
+Water temperature and salinity patterns were subject to an iterative calibration process, comparing the grab data and continuous data available for these variables against the model at several assessment zones. Initial experience with earlier versions of CSIEM had highlighted issues associated with incorrect seasonal trends in salinity and biases in temperature to be considered when refining simulation performance. In addition, a wider range of years have since been considered in the model assessment process. Refinements included adjustments to the ocean boundary inputs (see salinity bias-correction in Chapter 4) and parameter calibration in the heat balance model.
 
-Both the water temperature and salinity seasonal variations within the Sound, with the higher temperature and salinity in summertime and lower in wintertime explored for the year 2022 (Figure 5.7). The modelled data closely aligns with the field observations, capturing both the seasonal trends and variations throughout the year. The high correlation coefficient (r=0.9975 for temperature and r=0.9871 for salinity) and low mean absolute error (MAE=0.1944°C for temperature and MAE=0.1844 psu for salinity) indicates an excellent agreement between the model and observations. Episodes of short-term stratification are resolved, as indicated between the difference between surface and bottom.
+A interaction tool for exploring model validation plots is available via the [**MARVL-VIEWER**](https://csiem-mv.seaf.org.au) web-app; select the year of interest and navigate to the water temperature and salinity variables. In these plots, any data within the CSIEM "data-warehouse" from the various compiled data-sets will show in that polygon, and is used in the model error assessment.
 
-The model\'s robustness in capturing temporal and spatial variations in temperature and salinity was further tested in the year 2011, when the SWA coastal region experienced a significant marine heat wave event (e.g., see Figure 3.5). The comparison between the model output and observations (Figure 5.8) indicated that the model captured the heat wave event during the summer, with temperature reaching 27.8 degrees and salinity reached 37.4 psu in February of that year.
+In general, over the available simulated years (6 years) the modelled data closely aligns with the field observations for temperature and salinity, capturing both the seasonal trends and variations throughout the year, and between assessment polygons. The high correlation coefficient (r=0.9975 for temperature and r=0.9871 for salinity) and low mean absolute error (MAE=0.1944°C for temperature and MAE=0.1844 psu for salinity) indicates an excellent agreement between the model and observations. Episodes of short-term stratification are resolved, as indicated between the difference between surface and bottom (explored further in Section X).
 
-![](./media/image34.png){width="6.301388888888889in" height="2.5208333333333335in"}
 
-![](./media/image35.png){width="6.301388888888889in" height="2.460784120734908in"}
-
-**Figure 6.7.** Comparison of water temperature and salinity between CSIEM and field observations at the region of middle east basin of Cockburn Sound (BasinMEast) in year 2022.
-
-![](./media/image36.png){width="6.301388888888889in" height="2.517361111111111in"}
-
-![](./media/image37.png){width="6.301388888888889in" height="2.517361111111111in"}
-
-**Figure 6.8.** Comparison of water temperature and salinity between CSIEM and field observations at the region of middle Kwinana Shelf of Cockburn Sound (KSMid) in year 2011 experiencing a heat wave event in summer.
-
-Additional comparisons of the model against data from the Cockburn Sound moorings, and from satellite images has also been undertaken. For example, a multi-data set comparison is presented in Figure 5.9 comparing a rage of data for Henderson and Mangles Bay. This includes in situ sensors, profile, and data from the GHRSST satellite product. The demonstrate the strong model performance in resolving the seasonal changes and shorter-term changes associated with weather events. At the shallow sites the GHRSST product shows accuracy issues, but more accurate is at the deeper water site.
 
 ## Assessment of exchange through Cockburn Sound
 
