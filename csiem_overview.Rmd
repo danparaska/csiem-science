@@ -1,6 +1,10 @@
-# CSIEM Model Overview
+# (PART)  ORGANISATION {-} 
+
+# Overview
 
 <br>
+
+## What is CSIEM?
 
 CSIEM is a spatially resolved 3-dimensional (3D) model able to simulate the environmental conditions within Cockburn Sound and adjacent areas within Perth Waters, spanning between Quinns Rocks and Mandurah. The depth gradient spans from the shallow littoral waters to approximately 20 meters at the centre of the Sound, and in the context of the interactions with ocean dynamics, catchment inputs, and variable climate forcing, this creates a spectrum of water quality conditions and habitat distributions. To capture the spatio-temporal dynamics of the system, CSIEM has been designed to bring together a system of environmental models able to sequentially “downscale” from global to regional to local, and “vertically integrate” between physical, chemical and biological processes (Figure 2.1). 
 
@@ -9,3 +13,63 @@ At its core, the model platform consists of the hydrodynamic model [TUFLOW-FV](h
 The model platform has been setup to allow for a variety of stakeholder needs and use-cases by providing a allows a common approach to setup, configuration and visualisation; for example, a long-term low-resolution habitat restoration simulation can be run alongside a high-resolution dredging scenario, with simulations sharing common model settings, parameters, and parameterisations. The intent is to provide decision-makers a single trusted tool that can be used to answer a diversity of questions that span from day-to-day management to long-term policy settings (e.g, restoration and climate change adaptation strategies).
 
 In general, the models are configured to resolve hydrodynamics and flushing, water temperature and salinity, and numerous water quality attributes including oxygen, nutrients (organic and inorganic), planktonic organisms, seagrass and benthic communities, and suspended sediment. CSIEM also links a large volume of data from historical surveys, real-time data streams and recent experimental work. Complex integration workflows are implemented to process data for model inputs (e.g., boundary conditions) or model assessment (e.g., calibration or validation).
+
+## Approach to model-data organisation
+
+<br>
+
+The data requirements for the modelling are diverse and varied, spanning hydrological, meteorological, water and sediment quality (long-term monitoring, data from intensive campaings and in situ sondes), plus ecological survey data. This creates an integration challenge for model setup, parameterisation and assessment (calibration and validation) (Figure \@ref(fig:csiem-pic5)).
+
+```{r csiem-pic5, echo = FALSE, out.width='100%', class = "text-image",fig.align='center', fig.cap = "The model-data ecosystem and conceptual approach to model-data integration, accomodating data diversity and varied model requirements."}
+
+knitr::include_graphics("images/cdm/2_picture2.png")
+```
+
+As the model and data is always evolving we aim to support a process of Continuous Integration - Continuous Deployment (CI/CD), a set of software practices used to ensure practicies to deliver code (model files and data products) changes frequently and safely. To enable the ongoing use and development of the CSIEM in this context, we have developed a **model-data integration framework** able to be used by stakeholders to co-ordinate the reference datasets needed for model development, and standardise the data integration and modelling workflows. The below sections describe how the CSIEM is organised, the tools and approaches used for model provenance and managing data streams, and model versioning.
+<br>
+
+## CSIEM repository structure and organisation
+
+The CSIEM repository ecosystem has been designed is such a way to both facilitate the sharing of data and models across various agencies and researchers, as well as providing a formalised structure to store, catalogue and process complex and unique datasets. Comparmentalised data structures have been implemented to allow for tracking and version control of data and models as they are utilised and upgraded throughout the project. Given the complexitites and scope of the requirements, four interconnected repositories have been created to house and share the accumulated project outputs:
+
+- **csiem-science:** a repository for documenting the CSIEM workflows, model-data structure and integration, and results (the current CSIEM bookdown online manual);
+- **csiem-data:** a platform for storing and sharing environmental data for this project (see Chapter 3);
+- **csiem-model:** a platform for storing and sharing model files and configurations;
+- **csiem-marvl:** a collection of scripts for visualising, assessing and reporting the data and model performance.
+
+Github has been chosen to house the repository based on it's mature version control systems and cross platform program support to aid all stakeholders accessing the data and models (https://github.com/). In addition, there is a [wide variety of documentation online](https://guides.github.com/activities/hello-world/) to assist users new to GitHub. Information on how to clone a publicly available GitHub repository can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
+
+Data cataloguing via the "CSIEM Data Catalogue" (described in Section 3.3) has been designed with cross-agency usage in mind. Integration with the WAMSI Theme 10 Data Catalogue is essential to allow for the tracking of data changes and upgrades throughout the project, and to be used for modelling purposes. The "Point of Truth", "WAMSI Catalogue Classification" and "Status Notes" categories have been included in the CSIEM Data Catalogue to track a dataset's evolution throughout the project.
+
+### **Online repository access**
+
+The data and model files are stored in the Github [CSIEM REPOSITORY](https://github.com/SEAF-CS). Core model files and data-sets are distributed publicly, and other aspects of model setup or data-sets that are commercial-in-confidence modules are restricted and shared with end-users on a case-by-case basis.
+
+### **High level model-data integration workflows**
+
+The raw data collected from previous works and current WAMSI research project outcomes are stored in the `csiem-data` folder and classified by their sources. These raw data are then post-processed using standard scripts to convert the raw data into ‘standardised’ data formatd (stored in the `data-warehouse` folder) that can be used for model configuration and boundary/initial conditions (stored in the `csiem-model` folder), and for model/data visualization, model calibration/validation, and reporting using the `csiem-marvl` analysis library. The data-model workflow is shown in Figure \@ref(fig:csiem-pic8).
+
+```{r csiem-pic8, echo = FALSE, out.width='100%', class = "text-image",fig.align='center', fig.cap = "CSIEM conceptual diagram showing the flow of data through the system"}
+
+knitr::include_graphics("images/cdm/Workflow.png")
+
+```
+
+<br>
+
+
+## Cockburn SEAF - cloud-based integrated modelling platform
+
+The **S**hared **E**nvironmental **A**nalytics **F**acility is a cloud-based, multi-zonal analytics prototype being developed to support the Cockburn Sound environmental impact assessment process by WAMSI, in partnership with Microsoft, PwC Australia, Sentient Hubs and the Pawsey Supercomputer Research Centre. At the core of the prototype is the development of an open, standardised platform to support modelling and data services between diverse agencies and companies, on a secure robust platform. Built on Microsoft's Azure platform, and utilising the modelling expertise of Sentient Hub's, the SEAF prototype is being designed to facilitate complex modelling projects whilst maintainig a high degree of data security, transparancy and repeatability.
+
+Based around Microsoft's **Analytics Landing Zone**, which can be described as a _Analytics Platform in a Box_, a single zone allows for an agency to carry out highly complex workflows, whilst maintaining an very high degree of security and tranparency. Metadata logging at each phase of a project allows for the reproducability of results, and the standardisation inherent in each ALZ means results can be repoduced outside of a single agencies ALZ. Data is shared between zones via automated processes currently under development by Microsoft, which will facilitate the creation of dynamic assessments between different agencies without comprimising data security.
+
+```{r csiem-seaf, echo = FALSE, out.width='100%', class = "text-image",fig.align='center', fig.cap = "Data flow through a single Analytics Landing Zone"}
+
+knitr::include_graphics("images/cdm/seaf.jpg")
+
+```
+
+The CSIEM Environmental Information Management system has been design to integrate seamlessly with the SEAF prototype once it has become operational. The data governance documentation has been designed to be easily transformed to work with Microsoft Purvue, and the base format of the data inside the data-warehouse also allows for quick ingestion into Azure Synapse and the header information into MS Purvue.
+
+Both the SEAF Prototype and CSIEM EIM use GitHub as their main repository for configuration information and data in the case of CSIEM, and the user credentials used in one system will be available for use in the other.

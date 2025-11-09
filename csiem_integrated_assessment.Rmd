@@ -1,38 +1,86 @@
-# Integrated Assessment
+# CSIEM : marvl
 
 <br>
 
 ## Overview
 
-The previous chapters have detailed the nature of the model setup, additions and areas of development. In this section, the model is assessed in its entirety, using the fully coupled model, against the complete dataset. The approach to assess the model loosely follows the CSPS framework of Hipsey et al. (2020). The framework considers:
+The subsequent chapters detail the nature of the model setup, and also focus on specific areas of model assessment. In general,  the approach to assess the model loosely follows the CSPS framework of Hipsey et al. (2020). The framework considers:
 
-- _Level 0_: conceptual evaluation; the conceptual diagrams for each of the water quality variables, biogeochemical reactions, and habitat modelling are based on the scientific review and data inspection as detailed in the previous chapters;
-- _Level 1_: simulated state variables; a range of metrics is used for a large number of predicted variable and different sites.
-- _Level 2_: process rates; and
-- _Level 3_: system-level patterns and emergent properties; this is evaluated by the overall nutrient budget analysis, nutrient cycling pathway analysis, and assessment of the relationship between the areas of habitat for seagrass.
+- _Level 0_: conceptual evaluation; the conceptual basis for each of the hydrodynamic regimes, water quality variables, biogeochemical reactions, and habitat models as based on  scientific review and data inspection;
+- _Level 1_: traditional assessment of simulated state variables; a range of metrics is used for a large number of predicted variable and different sites.
+- _Level 2_: evaluation of process rates; and
+- _Level 3_: benchmarking system-level patterns and emergent properties; this is evaluated by assessments related to hydrodynamic regimes, nutrient budget analysis, nutrient cycling pathway analysis, and assessment of the relationship between the areas of habitat and water conditions.
 
-The specific data available for validation and the assessment metrics used are described next. The level of model uncertainty is discussed in terms of how much confidence is in the current generation of model outputs for the purposes of defining model reliability.
+The above assessments are supported by an analytics toolbox that co-orindates that above scripts and necessary data and workflows. In particular, `csiem-marvl` refers to the Cockburn Sound Integrated Ecosystem Model - **Model Assessment, Reporting and Visualisation Library**, which is a collection of scripts and tools for assisting users visualise model outputs and observational datasets, and for evaluating the model's performance. `csiem-marvl` uses the more generic `aed-marvl` package for core functions for plotting and evaluating model output, in addition to a suite of custom python and matlab scripts developed for specific types of analyses. The MARVL "toolkit" can be operted locally, or via the SEAF-CS cloud-based "**databricks**" platform.
 
-In addition to the model performance assessment, the model is also routinely used to support management decision-making. Detail is provided on how the diverse model outputs can be processed and analysed for informing the decision making and other applications.
+The specific data available for validation and the assessment metrics are extensive and summarised below. The level of model uncertainty is discussed in terms of how much confidence is in the current generation of model outputs for the purposes of defining model reliability.
 
 <br>
-<!---
-```## Integrated simulations
-A summary of the different simulations used through the model life cycle of model development:
+
+## The Model Assessment, Reporting and Visualisation Library (MARVL)
+
+The publicly available GitHub repository called [`csiem-marvl`](https://github.com/AquaticEcoDynamics/csiem-marvl) contains a wide variety of scripts and functions that are used to post-process and visualise model output. Scripts that have been specifically developed for this project are contained within the `csiem-marvl` repository. Plotting and model processing types include:
+
+- Time-series plotting;
+- Transect plotting;
+- Model animation creation;
+- Error assessment;
+- Wave model plotting;
+- Habitat mapping (e.g., Seagrass & Fish HSI processing and mapping)
+- Scenario comparison and "DelMap" plotting;
+- Nutrient budget assessments.
+
+In particular, `AEDmarvl_plot_timeseries` and `AEDmarvl_plot_transect` are the main functions that are frequently used. The `AEDmarvl_plot_timeseries` function uses data and gis files stored in the csiem-marvl repository, in addition to model output to create timeseries plots of the model (averaged within a polygon region) compared against field data. The plotting function will also automatically calculate a range of error statistics based on model output and field measured data.
+
+```{r csiem-plottfvpolygon, echo = FALSE, out.width='100%', class = "text-image",fig.align='center', fig.cap = "Example output from plottfv_polygon with error matrix"}
+
+knitr::include_graphics("images/cdm/0005_CS_South.png")
+
 ```
---->
-## Model assessment approach
+
+`AEDmarvl_plot_transect` can also be found in the `csiem-marvl` repository. This plots model data extracted along a transect line during a specified plotting period, and compares against the range of field data found within that period.
+
+```{r csiem-plottfvtransect, echo = FALSE, out.width='100%', class = "text-image",fig.align='center', fig.cap = "Example output from plottfv_transect with distance from Goolwa Barrage (km) along the x-axis"}
+
+knitr::include_graphics("images/cdm/2021-09-01_2022-01-01_Surface.png")
+
+```
+
+The `csiem-marvl` analysis library also houses scripts and functions for:
+
+- Nutrient Budgeting;
+- Stacked Area Transect;
+- Curtain plotting;
+- Mesh manipulation tools;
+- Data exports;
+- Sheet plotting and animation tools;
+
+Some of the example plots from previous research projects using the marvl-similar scripts are shown below illustrating their capability and presentations. The `csiem-marvl` analysis library is currently under development to meet the needs with more data collection and modelling progress, such as sediment profiling and habitat index.
+
+```{r csiem-stackedarea, echo = FALSE, out.width='100%', class = "text-image",fig.align='center', fig.cap = "Example output from plottfv_transect_StackedArea with distance along the x-axis"}
+
+knitr::include_graphics("images/cdm/stackedarea.png")
+
+```
+
+```{r csiem-nutrientbudget, echo = FALSE, out.width='100%', class = "text-image",fig.align='center', fig.cap = "Example Nutrient Budgeting output of a polygon region."}
+
+knitr::include_graphics("images/cdm/nutrient_budget_1.png")
+
+```
+
+## Model assessment summary
 
 ### Summary of validation data-set
 
 The field observation data available for the model validation and assessment include a diversity of historical data (collected pre 2021), and a large volume of data generated by recent monitoring and WAMSI-Westport research projects. Relevant data for validation include:
 
-- In situ water quality sensors; high frequency measurements at fixed locations.
-- Water quality grab samples
-- Biotic surveys
+- *In situ* water quality sensors; high frequency measurements at fixed locations.
+- Water quality grab samples.
+- Biotic surveys.
 - Strategic experimental data.
 
-All the data relevant to model calibration and validation are included in the _CSIEM Data Catalogue_ and detailed in [Appendix A](Appendix A : Data Catalogue). The data spans a wide range of locations and time-periods; however the primary model assessment will focus the most intense period of monitoring. Long-term assessments are also undertaken for different versions of the model, as outlined next.
+All the data relevant to model calibration and validation are included in the _CSIEM Data Catalogue_ and detailed in [Appendix A](Appendix A : Data Catalogue); see also Chapter 3. The data spans a wide range of locations and time-periods; however the primary model assessment generally focuses on the most intense period of monitoring between 2022 and 2024. Long-term assessments are also undertaken for different versions of the model by comparing against the long-term monitoring data set.
 
 ### Performance assessment metrics
 
@@ -54,7 +102,20 @@ The core statistical metrics considered consist of:
 
 **Advanced measures** : The model results were finally assessed considered that partitioning of nutrients in terms of inorganic vs organic, and other expected measures.
 
-**Confidence** : Based on the above assessment we evaluate confidence in the model by assigning each variable to the following categories:
+
+### Assessment periods
+
+- _Historical period_: 1970-2010: initial assessment prior to availability of WAMSI research project data;
+- _Recent period_: 2011-2020: initial assessment prior to availability of WAMSI research project data;
+- _Focus period_: 2021-2023: initial calibrated against the intensive field sampling and observations obtained from different components of the WAMSI research project;
+- _Long-term performance_: 2013 – 2024: calibrated against the long-term water quality data collected from the routine measurements, as well as from the WAMSI research project. 
+
+<br>
+
+### Model confidence reporting
+
+
+Based on the above assessment we evaluate confidence in the model by assigning each variable to the following categories:
 
 - Good
 - Acceptable, and
@@ -70,15 +131,17 @@ This confidence evaluation, considers:
 
 <br>
 
-## Assessment and validation periods
+## MARVL-VIEWER
 
-- _Historical period_: 1970-2010: initial assessment prior to availability of WAMSI research project data;
-- _Recent period_: 2010-2020: initial assessment prior to availability of WAMSI research project data;
-- _Focus period_: 2021-2022: initial calibrated against the intensive field sampling and observations obtained from different components of the WAMSI research project;
-- _Long-term performance_: 2017 – 2022: calibrated against the long-term water quality data collected from the routine measurements, as well as from the WAMSI research project. These results are summarised below.
+The model assessment considered ~70 assessment polygons, for 6 years for multiple (>20) variables. To assist with reviewing these plots, readers to browse [<span style="color: blue">via the **MARVL-VIEWER** web-app</span>](https://csiem-mv.seaf.org.au).
 
 <br>
 
-## Integrated simulation performance
+## DATABRICKS cloud analytics
 
-This integrated simulation performance will be provided in Appendix B which is pending and to be updated with the CSIEM modelling progress.
+TBC
+
+
+
+
+
