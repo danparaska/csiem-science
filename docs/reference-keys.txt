@@ -88,10 +88,11 @@ wave-climate
 model-inter-comparison
 and-2023-wave-climate-validation
 water-surface-elevation
-currents-and-residual-circulation
-water-velocity-validation
-residual-flow-patterns
 synoptic-scale-validation-of-variation-of-temperature-and-salinity
+currents-and-water-circulation
+water-velocity-validation
+monthly-mean-circulation
+residual-currents
 assessment-of-exchange-through-cockburn-sound
 dadamo-regimes
 river-inflow-events-influencing-cockburn-sound
