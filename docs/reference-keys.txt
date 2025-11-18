@@ -26,11 +26,6 @@ fig:csiem-stackedarea
 fig:csiem-nutrientbudget
 tab:A-datasummary16
 tab:A-datasummary15
-tab:A-testing4
-tab:A-testing3
-tab:A-testing2
-tab:A-testing1
-tab:A-testing5
 introduction
 overview
 what-is-csiem
