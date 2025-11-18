@@ -2,8 +2,11 @@
 
 ## Overview
 
-The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wind regimes, relatively weak tidal forcing, episodic periods of stratification, and the regional drivers of currents along Perth's coast. The system is also influenced by human-induced changes to the physical environment which have occurred over time, including both changes to the Sound's bathymetry, and discharges to the system that impact local water temperature and salinity patterns. This chapter describes the approach to simulation of hydrodynamics within the CSIEM platform, and outlines efforts to validate the model. The changes in weather, wave, and hydrodynamic conditions are highly dynamic and variabe in space snd time (Figure 7.1), and serve as the foundation for ecosystem predictions presented in subsequent chapters.
+The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wind regimes, relatively weak tidal forcing, episodic periods of stratification, and the regional drivers of currents along Perth's coast. The system is also influenced by human-induced changes to the physical environment which have occurred over time, including both changes to the Sound's bathymetry, and discharges to the system that impact local water temperature and salinity patterns. This chapter describes the approach to simulation of hydrodynamics within the CSIEM platform, and outlines efforts to validate the model. The changes in weather, wave, and hydrodynamic conditions are highly dynamic and variabe in space and time (Figure 7.1), and serve as the foundation for ecosystem predictions presented in subsequent chapters.
 
+*This chapter provides a general summary of the model and its performance; please note some results are specific to a particular version of the model at the time of preparation, and the model performance is subject to iterative refinements over time. For performance of a specific model version follow the below links to the MARVL Viewer.*  
+
+<br>
 
 <center>
 <video width="97%" height="97%" controls>
@@ -12,6 +15,8 @@ The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wi
 </center>
 
 **Figure 7.1.** Example hydrodynamic output from CSIEM showing wind, wave, salinity and temperature variation across the Perth coast in July 2013.
+
+<br>
 
 ## Hydrodynamic setting
 
@@ -41,9 +46,9 @@ The model adopts a flexible mesh (users can select one of 4 options are availabl
 
 **Surface thermodynamics**: Surface momentum exchange and heat dynamics are solved in each water column cell of the domain, using standard bulk-transfer approach, with assumed momentum input linked to wind stress, and heat exchange based on humidity and temperature gradients between the water surface and 10m height above the surface. Light penetration is split into 4 representative band-widths, NIR, PAR, UVA and UVB, which are enter the upper cell and are subject to light attenuation using a band-width specific light attenuation coefficient; this is set to default values in TUFLOW-FV, but can be manipulated by the coupled sediment or water quality model libraries as appropriate. Non-penetrative (longwave) radiative fluxes are also included, with the downward longwave set based on outputs from the linked atmospheric model, and the upward component computed dynamically based on the temperature of the uppermost water cell.
 
-**Turbulence**: In the current application, turbulent mixing of momentum and scalars has been calculated using the Smagorinsky scheme in the horizontal plane and through application of the coupled General Ocean Turbulence Model (GOTM) for vertical mixing. The calculation of horizontal turbulent mixing adopts a 1st or 2nd order approximation of the spatial gradients. In the vertical, the XX option within GOTM is adopted by default, however other GOTM options are selectable as desired for more specific applications.
+**Turbulence**: In the current application, turbulent mixing of momentum and scalars has been calculated using the Smagorinsky scheme in the horizontal plane and through application of the coupled General Ocean Turbulence Model (GOTM) for vertical mixing. The calculation of horizontal turbulent mixing adopts a 1st or 2nd order approximation of the spatial gradients. In the vertical, the turbulence option 3 is adopted within GOTM by default (second order with k-epsilon style closure), however other GOTM options are selectable as desired for more specific applications.
 
-**Bottom boundary layer**: The bottom shear stress configuration within CSIEM adopts the roughness--length relationship approach, assuming a rough-turbulent logarithmic velocity proﬁle in the lowest model layer. The roughness length, *z~0~*, settings were based on the area type (e.g., soft substrate, hard substrate, reef, seagrass coverage, etc.) and when coupled with the ecosystem model, the bottom drag is influenced by the biomass of aquatic vegetation within the cell. For this purpose, the bottom was categorized into 20 zones (Figure [4.2]{.mark}) where the benthic characteristics and associated *z~0~* in each zone were speciﬁed (Table X).
+**Bottom boundary layer**: The bottom shear stress configuration within CSIEM adopts the roughness--length relationship approach, assuming a rough-turbulent logarithmic velocity proﬁle in the lowest model layer. The roughness length, *z~0~*, settings were based on the area type (e.g., soft substrate, hard substrate, reef, seagrass coverage, etc.) and when coupled with the ecosystem model, the bottom drag is influenced by the biomass of aquatic vegetation within the cell. For this purpose, the bottom was categorized into 20 zones (Figure [4.2]{.mark}) where the benthic characteristics and associated *z~0~* in each zone were speciﬁed.
 
 ### Boundary specification 
 
@@ -51,8 +56,9 @@ The hydrodynamics within the CSIEM domain are driven by a carefully co-ordinated
 
 A summary of the 7 main types of boundary conditions configured within CSIEM include:
 
-- **Weather conditions**: CSIEM relies on one of two gridded weather data products - either the Bureau of Meterology's 1.5km BARRA-PH re-analysis product, or output from a locally developed WRF model. The main WRF simulation is the 1.75km horizontal-resolution application over the Perth region (WRF-PERTH), that adopts 2 levels of regional down-scaling from the global GFS product, and resolves X atmospheric levels. The model is configured based on a one-way coupling, and thus uses estimates for local water and land temperature as the lower boundary condition. BARRA is a interpolated reanalysis product described in XX. Comparisons between BARRA-PH and WRF-PERTH were undertaken for the year of 2018, and the results were consistent and comparable.  
-- **Wave conditions**: CSIEM relies on one of two gridded wave model outputs -  either the SWAN or WWM models. The wave model output is read in to TUFLOW-FV as a boundary condition, and includes significant wave height, wave direction and wave period as input to each water column cell. In the default CSIEM setup, there is no two-way interaction between the models, though this is possible if required for focused investigations. The main continuous (13 year) wave modelling product is from the WWM model developed as part of the WWMSP program and reported in detail in Pattiaratchi and Janekovic (2024), and the platform additionally includes an option for using SWAN model outputs for select years, which have been developed by BMT during the different phases of CSIEM platform development (Gunaratne et al., 2022). The SWAN model is configured to have three sub-domains of sequentially increasing resolution and reducing domain size, and they can be stacked within TUFLOW-FV, such that the highest resolution porduct available in any hydrodynamic cell will be applied. The WWM model on the other hand is a continuous un-structured model with variable mesh resolution. As this format does not read natively into TUFLOW-FV, a conversion step is undertaken to interpolate WWM raw wave results onto a high-resolution grid comparable to SWAN.
+- **Weather conditions**: CSIEM relies on one of two gridded weather data products - either the Bureau of Meterology's 1.5km BARRA-PH re-analysis product, or output from a locally developed WRF model. The main WRF simulation is the 1.75km horizontal-resolution application over the Perth region (WRF-PERTH), that adopts 2 levels of regional down-scaling from the global GFS product, and resolves X atmospheric levels. The model is configured based on a one-way coupling, and thus uses estimates for local water and land temperature as the lower boundary condition. BARRA is a interpolated reanalysis product described in Su et al. (2019). Comparisons between BARRA-PH and WRF-PERTH were undertaken for the year of 2018, and the results were consistent and comparable.  
+
+- **Wave conditions**: CSIEM relies on one of two gridded wave model outputs -  either the SWAN or WWM models. The wave model output is read in to TUFLOW-FV as a boundary condition, and includes significant wave height, wave direction and wave period as input to each water column cell. In the default CSIEM setup, there is no two-way interaction between the models, though this is possible if required for focused investigations. The main continuous (13 year) wave modelling product is from the WWM model developed as part of the WWMSP program and reported in detail in Pattiaratchi and Janekovic (2024), and the platform additionally includes an option for using SWAN model outputs for select years, which have been developed by BMT during the different phases of CSIEM platform development (Gunaratne et al., 2022). The SWAN model is configured to have three sub-domains of sequentially increasing resolution and reducing domain size, and they can be stacked within TUFLOW-FV, such that the highest resolution product available in any hydrodynamic cell will be applied. The WWM model on the other hand is a continuous un-structured model with variable mesh resolution. As this format does not read natively into TUFLOW-FV, a conversion step is undertaken to interpolate WWM raw wave results onto a high-resolution grid comparable to SWAN.
 
 - **Ocean conditions**: The 2km ROMS raw model output is processed into a intermediate NetCDF file with water levels and depth-resolved profiles of currents, temperature and salinity  specified at each model edge cell, and at an hourly resolution. An assessment of the performance of ROMS in capturing the seasonal and inter-annual variability in regional ocean dynamics, refer to Chapter 4. In the case of salinity, some seasonal bias was assessed, and thus and additional bias-correction step was applied to the raw ROMS model output.  Where needed, the coarser scale HYCOM model can instead be used in place of ROMS, but the performance of this approach is not discussed further here.
 
@@ -66,7 +72,7 @@ A summary of the 7 main types of boundary conditions configured within CSIEM inc
  
 ## Field data and approach to validation
 
-A range of data has been compiled and is used in the below assessment of model performance. These data are from varied sources and available via the CSIEM data catalogue (Figure 3.X) as described in Hipsey et al. (2025). Further data sets are being added and are able to be used in ongoing model assessment and refinement.
+A range of data has been compiled and is used in the below assessment of model performance. These data are from varied sources and available via the CSIEM data catalogue (Figure 7.2) as described in Hipsey et al. (2025). Further data sets are being added and are able to be used in ongoing model assessment and refinement.
 
 The approach to CSIEM hydrodynamic validation includes three elements:
 
@@ -98,9 +104,6 @@ A summary of the locations of "hydrodynamic" and water "physico-chemical" data w
 **Figure 7.2-ii.** Hydrodynamics data-set: Summary of CSIEM data catalogue showing identified temperature and salinity data (bottom). Visit the csiem-data catalogue for further information. Click to enlarge.
 
 
-## Weather dynamics
-
-TBC
 
 
 ## Wave climate
@@ -119,7 +122,7 @@ As the model system developed spans multiple years and has several options for w
 
 **Figure 7.4.** Comparison of (a) significant wave height, (b) wave direction, and (c) wave period comparing models and data in the CSIEM platform (SWAN-B, SWAN-C, WWM, TUFLOW-FV) and AWAC data at site S01 in for a period in 2013.
 
-As the raw wave model data is internally interpolated into the selected hydrodynamic model mesh used by TUFLOW-FV, tests were also undertaken to ensure the raw model boundary conditions values were being applied correctly. This is also shown Figure 5.2, showing the TUFLOW-FV (TFV) wave model predictions at the same location for the "B" grid.
+As the raw wave model data is internally interpolated into the selected hydrodynamic model mesh used by TUFLOW-FV, tests were also undertaken to ensure the raw model boundary conditions values were being applied correctly. This is also shown Figure 7.5, showing the TUFLOW-FV (TFV) wave model predictions at the same location for the "B" grid.
 
 ### 2013 and 2023 wave climate validation
 
@@ -127,7 +130,7 @@ Further comparison of the WWM wave model outputs was undertaken against the avai
 
 #### 2013 {.unnumbered}
 
-Performance against the JPPL S01 & S02 AWAC data suggested the WWM wave model generally over-predicted the significant wave height by a factor of upto 2 (Figure 7.X and 7.X). Within the TUFLOW-FV modelling, a bias-correction option was therefore applied to the significant wave height from WWM, and when doing using a factor of 0.5, the scaled output used within the CSIEM model generally agreed well with the field data, with a regression coefficient \> 0.47 and MAE \< 0.052 m at both sites.
+Performance against the JPPL S01 & S02 AWAC data suggested the WWM wave model generally over-predicted the significant wave height by a factor of upto 2 (Figure 7.5 and 7.6). Within the TUFLOW-FV modelling, a bias-correction option was therefore applied to the significant wave height from WWM, and when doing using a factor of 0.5, the scaled output used within the CSIEM model generally agreed well with the field data, with a regression coefficient \> 0.47 and MAE \< 0.052 m at both sites.
 
 #### {.panelset .unnumbered}
 
