@@ -109,5 +109,12 @@ river-inflow-events-influencing-cockburn-sound
 thermal-stratification
 influence-of-industry-discharges-on-temperature-and-salinity
 summary-1
+groundwater
+overview-6
+data-sources-and-approach
+zone-delineation
+zone-load-calculations
+sgd-tracer-simulation
+references
 synoptic-scale-validation
 context-specific-validation
