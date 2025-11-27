@@ -167,7 +167,7 @@ Given these fundamentals, a few site measurements could broadly predict the quan
 
 - Denitrification reactions remove N from the system as N\(_2\), which is not typically measured with species such as NH\(_4^+\) and NO\(_3^-\). Denitrification requires a complex pattern of O\(_2\) depletion and replenishment.
 
-- Organic matter may be buried faster than it is oxidised, creating an ongoing source of organic matter and a source for anaerobic oxidation deep in the sediment. This is especially the case with less reactive organic matter, such as leaf detritus. The global average burial rate is that about 6% of incoming organic matter escapes oxidation (Jorgensen et al. 2022).
+- Organic matter may be buried faster than it is oxidised, creating an ongoing source of organic matter and a source for anaerobic oxidation deep in the sediment. This is especially the case with less reactive organic matter, such as leaf detritus. The global average burial rate is about 6% of incoming organic matter escapes oxidation (Jorgensen et al. 2022).
 
 - A history of changing organic matter inputs can create a store of organic matter that does not reflect the current inputs.
 
@@ -191,7 +191,7 @@ Since the four dark cores from Eyre et al. (2025) were from around 20 m depth, T
 
 By balancing organic matter influx, oxidation and DIC outflux in the Deep-dark environment, the CANDI-AED project produced a flux of 22 mmol m\(^{-2}\) d\(^{-1}\). Seasonal simulations had a range of ±5 mmol m\(^{-2}\) d\(^{-1}\), with organic matter input higher in summer. The simulation that dropped O\(_2\) for one month decreased O\(_2\) flux by 4 mmol m\(^{-2}\) d\(^{-1}\).
 
-Eyre et al. measured NO\(_3^-\) outfluxes at 0.43 and NH\(_4^+\) at 0.13 mmol m\(^{-2}\) d\(^{-1}\). The NO\(_3^-\) was consistent between the four cores. The NH\(_4^+\) flux was consistent in 3 of the cores, where one core consumed NH\(_4^+\) rather than producing it. The greater flux of NO\(_3^-\) than NH\(_4^+\) helped to confirm that the sediment was still largely aerobic and therefore confirm the O\(_2\) flux values. Greenwood et al. (2016) created a total N budget for Cockburn Sound and used a simplifying assumption in their budget that all of the N fluxing out of the sediment was NO\(_3^-\), rather than NH\(_4^+\), though they acknowledge that it is common in shallow marine systems for both NO\(_3^-\) and NH\(_4^+\) to be present.
+Eyre et al. measured NO\(_3^-\) outfluxes at 0.43 and NH\(_4^+\) at 0.13 mmol m\(^{-2}\) d\(^{-1}\). The NO\(_3^-\) was consistent between the four cores. The NH\(_4^+\) flux was consistent in 3 of the cores, where one core consumed NH\(_4^+\) rather than producing it. The greater flux of NO\(_3^-\) than NH\(_4^+\) helped to confirm that the sediment was still largely aerobic and therefore confirmed the O\(_2\) flux values. Greenwood et al. (2016) created a total N budget for Cockburn Sound and used a simplifying assumption in their budget that all of the N fluxing out of the sediment was NO\(_3^-\), rather than NH\(_4^+\), though they acknowledge that it is common in shallow marine systems for both NO\(_3^-\) and NH\(_4^+\) to be present.
 
 CANDI-AED calculated fluxes of NO\(_x\) (net NO\(_3^-\) + NO\(_2^-\)) and NH\(_4^+\) at 0.47 and 0.31 mmol m\(^{-2}\) d\(^{-1}\). This is a greater total N release from the sediment than measured in the cores. The assumed bottom water concentrations of N were very low and the main source of N to the sediment was organic N. The model set the C:N ratio from the average of measured data from Eyre et al. (106:16). Seasonal fluctuations of both species were around 0.48 mmol m\(^{-2}\) d\(^{-1}\), that is, close to 100% increase or decrease.
 
@@ -272,9 +272,9 @@ The aim of this section is to present a summary of the CSIEM water quality confi
 
 In the CSIEM default configuration, the biogeochemical (water quality) model AED is dynamically linked with TUFLOW-FV ([Chapter 7](hydrodynamics)) to simulate the mass balance and redistribution of carbon, nutrients, sediment and biotic components. This includes partitioning between organic and inorganic nutrient forms and resolution of the relevant interactions between abiotic and biotic components. Outputs additionally include light extinction and turbidity (including from particle resuspension and water column contributors), chlorophyll a (chl-a), and benthic productivity and habitat quality.
 
-In this project, the AED model was tailored to fit the local datasets for Cockburn Sound and include the new science findings from the WAMSI Westport research program (Figure 6.1). 
+In this project, the AED model was tailored to fit the local datasets for Cockburn Sound and include the new scientific findings from the WAMSI Westport research program (Figure 6.1). 
 
-In addition, in CSIEM new modules for simulating the light spectrum, seagrass dynamics, and Habitat Suitability Indices (HSI) were developed, and outlined separately in Chapter 10 and 11.
+In addition, in CSIEM new modules for simulating the light spectrum, seagrass dynamics, and habitat suitability indices (HSI) were developed, and outlined separately in Chapters 10 and 11.
 
 ![](./media/image46.png){width="6.301388888888889in" height="4.393055555555556in"}
 
@@ -282,11 +282,11 @@ In addition, in CSIEM new modules for simulating the light spectrum, seagrass dy
 
 **Figure 6.1.** A conceptual overview of the CSIEM AED configuration (top) and summary of AED sub-repositories and selected modules (bottom). The selected modules in the faint colour are included in CSIEM 2.0 but not active in the v1.7 release.
 
-A summary of simulated model state variables is presented in Table 2.2, and for a detailed scientific documentation of the parameterisations used in the modules, then the reader is referred to the AED Science Manual (Hipsey et al., 2022).
+A summary of simulated model state variables is presented in Table 2.2, and for a detailed scientific documentation of the parameterisations used in the modules, the reader is referred to the AED Science Manual (Hipsey et al., 2022).
 
-The configuration of the model is configured via the aed.nml file, located in the /includes/wq/ folder of the model repository. This records the specific combination of modules included (see Figure 6.1 bottom), and the final set of configured parameters.
+The model is configured via the aed.nml file, located in the /includes/wq/ folder of the model repository. This records the specific combination of modules included (see Figure 6.1 bottom), and the final set of configured parameters.
 
-For summary purposes, a simplified table of key water column biogeochemical parameters are presented in Table 6.1, 
+For summary purposes, a simplified table of key water column biogeochemical parameters is presented in Table 6.1, 
 
 
 
@@ -417,7 +417,7 @@ A simplified table of key sediment biogeochemical parameters are summarised in T
 
 ## Summary
 
-The approach to develop an integrated biogeochemical model configuration for Cockburn Sound has been outlined based on i) adequate resolution of external inputs (Section 9.2), ii) capturing variability in benthic recycling rates (Section 9.3), and iii) appropriate parameterisation of internal biogeochemical cycling processes (Section 9.4). Linking these together, along with hydrodynamics, form the foundation of the CSIEM biogeochemical simulations. Each vary dynamically over a wide range of spatial and temporal scales, and their interplay shapes the complex water quality patterns that we see in Perth coastal waters. The validation of this approach is explored in the subsequent sections.
+The approach to develop an integrated biogeochemical model configuration for Cockburn Sound has been outlined based on i) adequate resolution of external inputs (Section 9.2), ii) capturing variability in benthic recycling rates (Section 9.3), and iii) appropriate parameterisation of internal biogeochemical cycling processes (Section 9.4). Linking these together, along with hydrodynamics, forms the foundation of the CSIEM biogeochemical simulations. Each vary dynamically over a wide range of spatial and temporal scales, and their interplay shapes the complex water quality patterns that we see in Perth coastal waters. The validation of this approach is explored in the subsequent sections.
 
 
 
