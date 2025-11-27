@@ -127,7 +127,7 @@ An summary of nutrient loads is presented in Table 9.2 presenting a structure su
 
 ## Variability in Benthic Recycling
 
-The varied benthic (bottom) substrates across Cockburn Sound, Owen Anchorage and fartehr afield play a critical role in regualting and recycling carbon and nutrients, and therefore controlling water quality. To assess the current state of the Cockburn environment and to simulate future scenarios, the rates of flux across the sediment–water interface for O\(_2\) and nutrients area therefore critical factors to be resolved. In this section, field studies and prior modelling of the sediment were used as data sources for the purposes of defining the necessary parameters needed for setup and configuration of the biogeochemical model. 
+The varied benthic (bottom) substrates across Cockburn Sound, Owen Anchorage and farther afield play a critical role in regualting and recycling carbon and nutrients, and therefore controlling water quality. To assess the current state of the Cockburn environment and to simulate future scenarios, the rates of flux across the sediment–water interface for O\(_2\) and nutrients area therefore critical factors to be resolved. In this section, field studies and prior modelling of the sediment were used as data sources for the purposes of defining the necessary parameters needed for setup and configuration of the biogeochemical model. 
 
 Four major sources of information were used to determine benthic fluxes:
 
