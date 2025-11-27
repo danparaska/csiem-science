@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>9 Biogeochemical modelling approach | The Cockburn Sound Integrated Ecosystem Model</title>
+<meta name="author" content="AED">
+<meta name="description" content="9.1 Overview Cockburn Sound has undergone significant water quality changes over many decades, shaped by both natural processes and intense human activity. Understanding how nutrients and other...">
+<meta name="generator" content="bookdown 0.34 with bs4_book()">
+<meta property="og:title" content="9 Biogeochemical modelling approach | The Cockburn Sound Integrated Ecosystem Model">
+<meta property="og:type" content="book">
+<meta property="og:description" content="9.1 Overview Cockburn Sound has undergone significant water quality changes over many decades, shaped by both natural processes and intense human activity. Understanding how nutrients and other...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="9 Biogeochemical modelling approach | The Cockburn Sound Integrated Ecosystem Model">
+<meta name="twitter:description" content="9.1 Overview Cockburn Sound has undergone significant water quality changes over many decades, shaped by both natural processes and intense human activity. Understanding how nutrients and other...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.0/transition.js"></script><script src="libs/bs3compat-0.5.0/tabs.js"></script><script src="libs/bs3compat-0.5.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet">
+<script src="libs/panelset-0.2.6/panelset.js"></script><script src="libs/kePrint-0.0.1/kePrint.js"></script><link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">The Cockburn Sound Integrated Ecosystem Model</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Welcome</a></li>
+<li><a class="" href="introduction.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li class="book-part">ORGANISATION</li>
+<li><a class="" href="overview.html"><span class="header-section-number">2</span> Overview</a></li>
+<li><a class="" href="csiem-data.html"><span class="header-section-number">3</span> CSIEM : data</a></li>
+<li><a class="" href="csiem-model.html"><span class="header-section-number">4</span> CSIEM : model</a></li>
+<li><a class="" href="csiem-marvl.html"><span class="header-section-number">5</span> CSIEM : marvl</a></li>
+<li class="book-part">SCIENCE APPLICATIONS</li>
+<li><a class="" href="ocean-climatology.html"><span class="header-section-number">6</span> Resolving Perth Waters Ocean Climatology</a></li>
+<li><a class="" href="hydrodynamics.html"><span class="header-section-number">7</span> Hydrodynamics</a></li>
+<li><a class="" href="groundwater.html"><span class="header-section-number">8</span> Submarine Groundwater Discharge</a></li>
+<li><a class="active" href="bgc-model.html"><span class="header-section-number">9</span> Biogeochemical modelling approach</a></li>
+<li><a class="" href="references.html">References</a></li>
+<li class="book-part">APPENDICIES</li>
+<li><a class="" href="a-data-catalogue.html">A : Data Catalogue</a></li>
+<li><a class="" href="b-results-archive.html">B : Results Archive</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="bgc-model" class="section level1" number="9">
+<h1>
+<span class="header-section-number">9</span> Biogeochemical modelling approach<a class="anchor" aria-label="anchor" href="#bgc-model"><i class="fas fa-link"></i></a>
+</h1>
+<div id="overview-7" class="section level2" number="9.1">
+<h2>
+<span class="header-section-number">9.1</span> Overview<a class="anchor" aria-label="anchor" href="#overview-7"><i class="fas fa-link"></i></a>
+</h2>
+<p>Cockburn Sound has undergone significant water quality changes over many decades, shaped by both natural processes and intense human activity. Understanding how nutrients and other pollutants move through the system has proved challenging, in part because the Sound receives inputs from many different sources. These include atmospheric deposition, groundwater inflows, stormwater and urban drainage, industrial and wastewater discharges, as well as nutrients released from within the seabed itself. Although direct river flows to Cockburn Sound are limited, nutrient concentrations commonly rise near the shoreline and at discharge points, and occasional large flow events from the Swan–Canning Estuary can also influence local water quality.</p>
+<p>From the 1950s through to the 1980s, Cockburn Sound experienced severe eutrophication—an excess of nutrients that fuelled high algal productivity and reduced water clarity. During this period, wastewater and industrial effluents increased substantially, and the construction of the Garden Island causeway in the 1970s further reduced flushing of nutrients to the open ocean. The combined effect of these pressures was dramatic: more than 80% of the seagrass meadows were lost, largely due to nutrient enrichment and growth of epiphytes that blocked light from reaching the leaves.</p>
+<p>Significant management efforts have since helped reduce nutrient loads, particularly through improved wastewater treatment and redirecting discharges offshore. However, the legacy of historical inputs remains. Nutrient-rich groundwater continues to enter the Sound, sandy sediments store large historical nutrient loads, and internal recycling of nitrogen and phosphorus still contributes substantially to the nutrients available in the water column. While concentrations of nitrogen and phosphorus have declined in recent decades, improvements in water clarity and phytoplankton biomass have been slower and less consistent. Fish kills, algal blooms, and episodes of low-oxygen bottom waters continue to be reported. In addition, hypersaline brine from the desalination plant has been shown to form dense plumes that may settle near the seabed, reinforcing stratification and making hypoxia more likely under certain conditions.</p>
+<p>Together, these patterns highlight that nutrient dynamics in Cockburn Sound are shaped by a combination of external loads, internal cycling, and physical processes such as mixing, stratification, and ocean exchange. Assessing these interactions requires an integrated approach capable of linking hydrodynamics, nutrient budgets, biological processes, and local management actions. An advanced biogeochemical model provides this capability. It allows us to explore how nutrients move through the system today, identify key environmental risks, and evaluate how future changes—such as dredging, coastal development, or climate-driven shifts in flows and temperatures—may influence water quality.</p>
+<p>Developing such a model relies on a firm understanding of the broader physical environment (discussed in earlier chapters) and the many sources of nutrients entering the system. Previous studies have shown that nitrogen, in particular, plays a central role in controlling productivity in the region. Even small inputs can drive substantial ecological responses in this naturally low-nutrient coastal setting. Although overall nitrogen concentrations have decreased due to improved management, phytoplankton biomass remains elevated at several locations, reinforcing the need to quantify both external inputs and internal nutrient cycling.</p>
+<p>The CSIEM model domain spans the wider Western Australian coastal zone and therefore captures a range of nutrient sources beyond those that enter Cockburn Sound directly—including catchment discharges, groundwater inputs, and wastewater treatment plant outfalls. To build a robust and defensible modelling framework, it is essential to clearly describe these inputs and how they shape nutrient conditions within the Sound.</p>
+<p>This chapter therefore outlines the approach used to specify external nutrient loads and describes how the model represents internal biogeochemical cycling within Cockburn Sound. Together, these components form the foundation for understanding present-day ecosystem conditions and assessing future environmental risks.</p>
+</div>
+<div id="inputs-and-nutrient-loads" class="section level2" number="9.2">
+<h2>
+<span class="header-section-number">9.2</span> Inputs and Nutrient Loads<a class="anchor" aria-label="anchor" href="#inputs-and-nutrient-loads"><i class="fas fa-link"></i></a>
+</h2>
+<div id="catchment-river-estuarine-inputs" class="section level3" number="9.2.1">
+<h3>
+<span class="header-section-number">9.2.1</span> Catchment river / estuarine inputs<a class="anchor" aria-label="anchor" href="#catchment-river-estuarine-inputs"><i class="fas fa-link"></i></a>
+</h3>
+<p>Catchment surface water inputs to the CSIEM modelling region include nutrient loads transported from the Swan-Avon catchment via the Swan-Canning Estuary and from the Peel-Harvey catchment through the Peel-Harvey Estuary. Flow rate and water quality data were sourced from the Water Information Reporting (WIR) portal and interpolated into daily intervals to facilitate continuous model simulations. There are no surface water bodies such as rivers, streams or lakes that drain directly to Cockburn Sound, except Lake Richmond (see section 9.2.2 below).</p>
+<p>In the case of the Swan-Canning system, the CSIEM model domain spans boundaries at the Narrows and Canning Bridges. To establish total flow through these boundaries, flow rates from upstream locations were aggregated. Water quality observations from the Narrows Bridge (site 6160262) and Canning Bridge (site 6167160) were interpolated to set boundary conditions for nutrient inputs to the Swan and Canning Rivers, respectively.</p>
+<p>For the Peel-Harvey system, the flow data used for 1970-2018 was derived from a calibrated catchment model developed in the ARC Linkage project (Hennig et al., 2023). For the period 2019-2024, total flow was estimated by summing flows from gauged rivers within the Peel-Harvey Catchment. Nutrient concentrations at site 6140029, near the Dawesville Cut, were used to define the water quality boundary condition for Peel-Harvey inputs.</p>
+<p>The nutrient load reaching the Swan-Canning River is approximately 370 tonnes TN and 10 Tonnes TP per year (Paraska et al., 2021) and reaching the Peel-Harvey Estuary is approximately 630 tonnes TN and 60 tonnes TP per year (Hennig et al., 2023). Despite these significant contributions, direct impacts on Cockburn Sound’s trophic conditions are mitigated by two primary factors: (1) both the Swan-Canning and Peel-Harvey estuaries act as nutrient filters, where primary production and sedimentation processes assimilate and reduce nutrient loads before they exit to marine environments (Paraska et al., 2021; Huang et al., 2023; Valesini et al., 2023); and (2) as these nutrient-laden flows enter the open marine waters beyond Cockburn Sound, they are rapidly diluted, reducing potential impacts on Cockburn Sound’s ecosystems.</p>
+</div>
+<div id="groundwater-inputs" class="section level3" number="9.2.2">
+<h3>
+<span class="header-section-number">9.2.2</span> Groundwater inputs<a class="anchor" aria-label="anchor" href="#groundwater-inputs"><i class="fas fa-link"></i></a>
+</h3>
+<p>Submarine groundwater discharge (SGD) has emerged as a dominant nitrogen source into Cockburn Sound following redirection of urban and industrial wastewater outflows to the Cape Peron Sepia Depression ocean outfall (Greenwood et al., 2016). The approach to capturing the variability in groundwater flows, and groundwater nutrient speciation is outlined in detail in <a href="groundwater">Chapter 8</a>.</p>
+</div>
+<div id="local-stormwater-inputs" class="section level3" number="9.2.3">
+<h3>
+<span class="header-section-number">9.2.3</span> Local stormwater inputs<a class="anchor" aria-label="anchor" href="#local-stormwater-inputs"><i class="fas fa-link"></i></a>
+</h3>
+<p>The latest estimates from our field survey suggest that maximum contribution of nutrients from stormwater directly to Cockburn Sound could be less than about 0.1 tonnes/year, though there is a high degree of uncertainty due to sparse observations in stormwater fluxes and their nutrient concentrations (Bekele et al., 2023). Due to the low nutrient load brought by stormwater it does not play a major role and was ot included in early versions. From version 1.7.2 estimates of stormwater have been included.</p>
+</div>
+<div id="wastewater-treatment-plants-wwtps-inputs" class="section level3" number="9.2.4">
+<h3>
+<span class="header-section-number">9.2.4</span> Wastewater treatment plants (WWTPs) inputs<a class="anchor" aria-label="anchor" href="#wastewater-treatment-plants-wwtps-inputs"><i class="fas fa-link"></i></a>
+</h3>
+<p>The CSIEM model domain includes multiple WWTP outfalls, such as those from Alkimos, Beenyup, Subiaco, Woodman Point, Point Peron, and East Rockingham. Since 1984, treated wastewater from Woodman Point and Point Peron WWTPs has been redirected offshore through the Sepia Depression Ocean Outlet Landline (SDOOL), located 4.1 kilometers offshore west-southwest of Point Peron. This offshore discharge through a diffuser that aids in enhancing dilution to minimize nearshore nutrient impacts (BMT, 2014).</p>
+<p>Nutrient loads from these WWTPs are recorded in the National Outfall Database (NOD), and were used to set input values in the CSIEM model from 2015 to 2021. Outside this time range, average discharge rates and nutrient concentrations were based on historical data. Summary of average discharge rates, nitrogen loads, and phosphorus loads from each outfall is provided in Table 9.1, which indicate a significant amount of nutrient load to the coastal ecosystem.</p>
+<p><strong>Table 9.1</strong>. Summary of average discharge rate, nitrogen load, and phosphorus load from the WWTPs based on the National Outfall Database.</p>
+<div class="inline-table"><table style="width:98%;" class="table table-sm">
+<colgroup>
+<col width="16%">
+<col width="24%">
+<col width="27%">
+<col width="29%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">Outfall</th>
+<th align="left">Discharge rate (ML/day)</th>
+<th align="left">Nitrogen Load (tonnes/year)</th>
+<th align="left">Phosphorus Load (tonnes/year)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">Alkimos</td>
+<td align="left">11.75</td>
+<td align="left">31.42</td>
+<td align="left">12.04</td>
+</tr>
+<tr class="even">
+<td align="left">Beenyup</td>
+<td align="left">99.62</td>
+<td align="left">597.36</td>
+<td align="left">274.35</td>
+</tr>
+<tr class="odd">
+<td align="left">Subiaco</td>
+<td align="left">57.29</td>
+<td align="left">276.74</td>
+<td align="left">134.72</td>
+</tr>
+<tr class="even">
+<td align="left">Point Peron</td>
+<td align="left">18.33</td>
+<td align="left">433.48</td>
+<td align="left">60.73</td>
+</tr>
+<tr class="odd">
+<td align="left">Woodman Point</td>
+<td align="left">149.19</td>
+<td align="left">1062.61</td>
+<td align="left">269.48</td>
+</tr>
+<tr class="even">
+<td align="left">East Rockingham</td>
+<td align="left">3.05</td>
+<td align="left">4.73</td>
+<td align="left">7.13</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div id="industrial-inputs" class="section level3" number="9.2.5">
+<h3>
+<span class="header-section-number">9.2.5</span> Industrial inputs<a class="anchor" aria-label="anchor" href="#industrial-inputs"><i class="fas fa-link"></i></a>
+</h3>
+<p>Cockburn Sound is impacted by multiple industrial sources, including BP Refinery, Kwinana Power Station, Cockburn Power Station, Tiwest, and the Perth Seawater Desalination Plant. Despite the presence of these industrial facilities, studies have generally indicated that nutrient contributions from these sources are minimal, especially following the relocation of treated wastewater to the Sepia Depression Ocean Outlet Landline (SDOOL) in 2004 (BMT, 2014 &amp; 2018; Bekele et al., 2023). Current nutrient loads from industrial sources are considered negligible compared to those from groundwater and wastewater treatment plants (BMT, 2023).</p>
+<p>For the current study, the CSIEM model configuration mirrors the industrial input settings outlined in BMT (2023), reflecting the limited contribution of these sources in nutrient modeling for Cockburn Sound. Continued monitoring and management are essential to ensure that nutrient inputs from industrial sources remain controlled, supporting the long-term ecological balance in the Sound.</p>
+</div>
+<div id="nutrient-load-trend-and-summary" class="section level3" number="9.2.6">
+<h3>
+<span class="header-section-number">9.2.6</span> Nutrient load trend and summary<a class="anchor" aria-label="anchor" href="#nutrient-load-trend-and-summary"><i class="fas fa-link"></i></a>
+</h3>
+<p>An summary of nutrient loads is presented in Table 9.2 presenting a structure summary of each input and major flux path that has been reported, with literature review of nutrient balance terms.</p>
+<p><strong>Table 9.2</strong>. Summary of nutrient sources estimated from literature review and CSIEM</p>
+<div class="inline-table"><table style="width:99%;" class="table table-sm">
+<colgroup>
+<col width="9%">
+<col width="10%">
+<col width="7%">
+<col width="43%">
+<col width="28%">
+</colgroup>
+<thead><tr class="header">
+<th><strong>Sources</strong></th>
+<th>
+<p><strong>CS Annual Budget (CSIEM v1)</strong></p>
+<p><em>(t N/year)</em></p>
+</th>
+<th>
+<p><strong>Average Areal Flux</strong></p>
+<p>(mmol N/m<sup>2</sup>/day)</p>
+</th>
+<th><strong>Notes</strong></th>
+<th><strong>Literature range</strong></th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><strong>Discharges</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Swan river discharge</strong></td>
+<td>164.89</td>
+<td>-</td>
+<td>Based on modelled discharged through Fremantle channel in 2022</td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td><strong>Non-CS discharge</strong></td>
+<td>
+<p>Beenyup : 597.38</p>
+<p>Subiaco : 276.76</p>
+<p>SDOOL + WWTP : 1501.20</p>
+</td>
+<td>-</td>
+<td>Based on the monthly reports from National Outfall Database ( considering SDOOL inputs from Woodman Point, Point Peron, and East Rockingham)</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<td><strong>Direct CS discharge</strong></td>
+<td>
+<p>BP : 3.40</p>
+<p>KPS : 12.00</p>
+<p>TiWest : 0.08</p>
+<p>Stormwater : 0.1</p>
+</td>
+<td>-</td>
+<td>
+<p>Industry discharges estimated from 2013 data used during PSDP2 assessment</p>
+<p>Stormwater ~0.1 t N/y (Project 3.3)</p>
+</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Groundwater discharge</strong></td>
+<td>652.95</td>
+<td>1.173</td>
+<td>Based on PRAMS 2013 estimate; Likely to overestimate for 2022</td>
+<td>450-920 t N/y (Donn et al., 2015)</td>
+</tr>
+<tr class="even">
+<td><strong>Boundary exchange</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Atmospheric deposition</strong></td>
+<td>12.62</td>
+<td>0.023</td>
+<td>Based on estimates made previously for the WA shelf</td>
+<td>
+<p>~10 t N/y (Greenwood et al., 2016)</p>
+<p>~20 t N/yr (DAL, 2010)</p>
+</td>
+</tr>
+<tr class="even">
+<td><strong>Ocean export</strong></td>
+<td>537.96</td>
+<td>-</td>
+<td>Based on integrated flux through Nth transect and Causeway</td>
+<td>~51 t N/y (Greenwood et al., 2016)</td>
+</tr>
+<tr class="odd">
+<td><strong>Biogeochemical cycling</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Sediment diffusive release</strong></td>
+<td>279.20</td>
+<td>0.501</td>
+<td>Integrated over Cockburn Sound sediment types</td>
+<td>
+<p>0.96-2.4 mmol/m2/d (Rosich et al. 1994; Greenwood, 2009, WA shelf)</p>
+<p>~0.06 - 1.2 mmol/m2/d (Keesing 2011, Cockburn Sound)</p>
+</td>
+</tr>
+<tr class="odd">
+<td><strong>Sedimentation</strong></td>
+<td>59.86</td>
+<td>0.108</td>
+<td>Particulate nitrogen settling</td>
+<td>~10 % of the photosynthetic nitrogen demand in the water column (Feng &amp; Wild-Allen, 2010)</td>
+</tr>
+<tr class="even">
+<td><strong>Phytoplankton demand</strong></td>
+<td>1405.55</td>
+<td>2.522</td>
+<td>Integrated over Cockburn Sound volume</td>
+<td>2937 t N/y (Greenwood et al., 2016)</td>
+</tr>
+<tr class="odd">
+<td><strong>Benthic community demand</strong></td>
+<td>280.28</td>
+<td>0.503</td>
+<td>Based on benthic community coverage and assumed productivity</td>
+<td>97 t N/y for seagrass, 178 t N/y for epibenthic microalgae (Greenwood et al., 2016)</td>
+</tr>
+<tr class="even">
+<td><strong> </strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="variability-in-benthic-recycling" class="section level2" number="9.3">
+<h2>
+<span class="header-section-number">9.3</span> Variability in Benthic Recycling<a class="anchor" aria-label="anchor" href="#variability-in-benthic-recycling"><i class="fas fa-link"></i></a>
+</h2>
+<p>The varied benthic (bottom) substrates across Cockburn Sound, Owen Anchorage and fartehr afield play a critical role in regualting and recycling carbon and nutrients, and therefore controlling water quality. To assess the current state of the Cockburn environment and to simulate future scenarios, the rates of flux across the sediment–water interface for O<span class="math inline">\(_2\)</span> and nutrients area therefore critical factors to be resolved. In this section, field studies and prior modelling of the sediment were used as data sources for the purposes of defining the necessary parameters needed for setup and configuration of the biogeochemical model.</p>
+<p>Four major sources of information were used to determine benthic fluxes:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Eyre et al. (2025)</strong><br>
+Cores were taken from the field to the laboratory and fluxes were measured for one day. This source measured many variables, at 12 locations, but for only one day of a year and at only one temperature.</p></li>
+<li><p><strong>Dalseno et al. (2024)</strong><br>
+O<span class="math inline">\(_2\)</span> concentration was measured as a depth profile for two months, from the surface to the sediment. O<span class="math inline">\(_2\)</span> concentration decrease in bottom waters was observed to coincide with low wind, low mixing and stratification. It also coincided with DIC increase at the same depths. O<span class="math inline">\(_2\)</span> flux was inferred to be caused by organic matter consumption and was assumed to have a flux rate of around 30 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>.</p></li>
+<li><p><strong>Sediment modelling using CANDI-AED</strong><br>
+The CANDI-AED sediment model was aligned with data from the Eyre et al. (2025) study results, using as input results from a larger hydrodynamic and biogeochemical model (CSIEM). CSIEM set the environmental context of the simulations, and other theoretical assumptions were built into the CANDI-AED sediment model in order to produce sediment fluxes for many variables. The greater Cockburn simulation environment was conceptualised as having five main environments: <strong>Offshore</strong>, <strong>Deep-dark</strong>, <strong>Benthic algae</strong> (shelf with benthic algae), <strong>Seagrass</strong> (shelf with benthic algae and seagrass) and <strong>Groundwater</strong> (nearshore with groundwater). The model was run under steady conditions, as well as with seasonal fluctuations and with one-off events.</p></li>
+<li><p><strong>The Southwest Australian Coastal Biogeochemistry survey (Keesing et al. 2011)</strong><br>
+Concentrations and fluxes were measured at 5 sites in Cockburn Sound and 30 other sites in southwest Western Australia. They also measured fluxes in cores taken from sites within Cockburn Sound. Where benthic algae was present, there was a high amount of nutrient uptake from the sediment into the algal biomass.</p></li>
+</ol>
+<p>Broader surveys have also informed the interpretation of these fluxes. Jorgensen et al. (2022) examined O<span class="math inline">\(_2\)</span> and carbon fluxes around the world from thousands of data points. Eyre and Ferguson (2009) examined O<span class="math inline">\(_2\)</span> and carbon fluxes in coastal sites around Australia.</p>
+<div id="overview-of-benthic-flux-assumptions" class="section level3" number="9.3.1">
+<h3>
+<span class="header-section-number">9.3.1</span> Overview of benthic flux assumptions<a class="anchor" aria-label="anchor" href="#overview-of-benthic-flux-assumptions"><i class="fas fa-link"></i></a>
+</h3>
+<p>Most of the benthic flux estimates stem from a few key assumptions. These assumptions provide an initial estimate, but in each case there are caveats that create uncertainty, and thus necessitate the field studies and numerical modelling.</p>
+<ul>
+<li><p>Total O<span class="math inline">\(_2\)</span> consumption parallels the production of total dissolved inorganic carbon (DIC) (Jorgensen et al. 2022). DIC can be understood as organic carbon oxidised to CO<span class="math inline">\(_2\)</span> then reaching equilibrium with carbon acid–base species. To a first approximation, the ratio of organic carbon input to DIC production to O<span class="math inline">\(_2\)</span> consumption is close to 1:1:1.</p></li>
+<li><p>Reactive incoming organic matter, such as algal detritus, contains organic N and P at approximately Redfield ratio, and so the flux of total dissolved inorganic N and P can also be estimated from organic carbon. Given an aerobic sediment, inorganic N should be mostly oxidised species such as NO<span class="math inline">\(_3^-\)</span> and NO<span class="math inline">\(_2^-\)</span> rather than reduced species such as NH<span class="math inline">\(_4^+\)</span>.</p></li>
+</ul>
+<p>Given these fundamentals, a few site measurements could broadly predict the quantities of all the other components. However, the exceptions to each of these assumptions create uncertainty:</p>
+<ul>
+<li><p>A small amount of DIC flux is also produced from the dissolution of CO<span class="math inline">\(_3^{2-}\)</span> minerals in the sediment, and so it is not all from organic C.</p></li>
+<li><p>O<span class="math inline">\(_2\)</span> is also consumed by oxidising some NH<span class="math inline">\(_4^+\)</span> to NO<span class="math inline">\(_x\)</span>, where the NH<span class="math inline">\(_4^+\)</span> is released from the oxidation of organic matter. Hence approximately 15% (16/106) of the O<span class="math inline">\(_2\)</span> oxidising organic matter can also react with NH<span class="math inline">\(_4^+\)</span>.</p></li>
+<li><p>If the upper layers of the sediment are not well mixed then insufficient O<span class="math inline">\(_2\)</span> is available for oxidation, leading to anaerobic oxidation. Hence the DIC flux out of the sediment would be higher than the O<span class="math inline">\(_2\)</span> flux into the sediment.</p></li>
+<li><p>The by-products of anaerobic oxidation, such as Fe<span class="math inline">\(^{2+}\)</span>, H<span class="math inline">\(_2\)</span>S and CH<span class="math inline">\(_4\)</span> can also consume O<span class="math inline">\(_2\)</span>, further complicating the assumption of 1:1 O<span class="math inline">\(_2\)</span>:DIC. This is a non-linear relationship, in that more anaerobic reactions in the deep sediment create more O<span class="math inline">\(_2\)</span> demand from their by-products. The exact distribution between these species cannot be known with a simple calculation, hence the need for sediment models.</p></li>
+<li><p>The global average DIC:O<span class="math inline">\(_2\)</span> flux ratio (referred to as the respiratory quotient) has actually been estimated at 0.9 for water depths 0 to 50 m, i.e. about 11% more O<span class="math inline">\(_2\)</span> is consumed than DIC is produced (Jorgensen et al. 2022). This comes about from O<span class="math inline">\(_2\)</span> oxidation of reduced species.</p></li>
+<li><p>Denitrification reactions remove N from the system as N<span class="math inline">\(_2\)</span>, which is not typically measured with species such as NH<span class="math inline">\(_4^+\)</span> and NO<span class="math inline">\(_3^-\)</span>. Denitrification requires a complex pattern of O<span class="math inline">\(_2\)</span> depletion and replenishment.</p></li>
+<li><p>Organic matter may be buried faster than it is oxidised, creating an ongoing source of organic matter and a source for anaerobic oxidation deep in the sediment. This is especially the case with less reactive organic matter, such as leaf detritus. The global average burial rate is that about 6% of incoming organic matter escapes oxidation (Jorgensen et al. 2022).</p></li>
+<li><p>A history of changing organic matter inputs can create a store of organic matter that does not reflect the current inputs.</p></li>
+<li><p>Benthic algae provide a source of O<span class="math inline">\(_2\)</span> to the upper layers of sediment that is independent of the water column O<span class="math inline">\(_2\)</span>. These algae also consume DIC and nutrients and upon burial in the sediment they cease to provide O<span class="math inline">\(_2\)</span> but instead become a source of organic matter.</p></li>
+<li><p>Similarly, seagrass roots exude O<span class="math inline">\(_2\)</span> into the sediment and consume DIC and nutrients. Seagrass leaf detritus provides a source of organic matter.</p></li>
+</ul>
+<p>As mentioned above, CANDI-AED was set up for three of the major environments defined for Cockburn Sound. The Deep-dark environment had no benthic algae or seagrass and so it had fewer of these exceptions. Further, it was calibrated to match the 1:1:1 organic:DIC:O<span class="math inline">\(_2\)</span> ratio. This base simulation then added benthic algae to the Deep-dark environment, and then seagrass to the benthic algae environment. Fluxes for O<span class="math inline">\(_2\)</span> and key nutrients are described below, then summarised in Table 1.</p>
+</div>
+<div id="fluxes-in-each-sediment-environment" class="section level3" number="9.3.2">
+<h3>
+<span class="header-section-number">9.3.2</span> Fluxes in each sediment environment<a class="anchor" aria-label="anchor" href="#fluxes-in-each-sediment-environment"><i class="fas fa-link"></i></a>
+</h3>
+<div id="deep-dark-sediments" class="section level4" number="9.3.2.1">
+<h4>
+<span class="header-section-number">9.3.2.1</span> Deep-dark sediments<a class="anchor" aria-label="anchor" href="#deep-dark-sediments"><i class="fas fa-link"></i></a>
+</h4>
+<p>The O<span class="math inline">\(_2\)</span> fluxes measured in the four deep cores by Eyre et al. (2025) were all within a narrow range (average 27 ± 2 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>). They were also close to the DIC fluxes in three of the four cores, thus matching the fundamental assumption described above, that reactive organic matter is consumed aerobically. Based on this, the values measured by Eyre et al. can be used with confidence as a basis for other fluxes.</p>
+<p>Dalseno et al. (2024) estimated the O<span class="math inline">\(_2\)</span> flux in Cockburn Sound, during O<span class="math inline">\(_2\)</span> depletion, at 30 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. They compared that to the mean O<span class="math inline">\(_2\)</span> flux in shelf sediments globally with a wide range between 23 and 67 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. This was also compared to one example of a region experiencing seasonal O<span class="math inline">\(_2\)</span> depletion, where O<span class="math inline">\(_2\)</span> demand was 19 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span> i.e. lower O<span class="math inline">\(_2\)</span> demand because of lower O<span class="math inline">\(_2\)</span> availability.</p>
+<p>Jorgensen et al. (2022) summarised thousands of measured O<span class="math inline">\(_2\)</span> fluxes and developed a formula for total O<span class="math inline">\(_2\)</span> consumption (TOU) based on water depth.</p>
+<p>Since the four dark cores from Eyre et al. (2025) were from around 20 m depth, TOU is estimated by this formula at 32 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>.</p>
+<p>By balancing organic matter influx, oxidation and DIC outflux in the Deep-dark environment, the CANDI-AED project produced a flux of 22 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. Seasonal simulations had a range of ±5 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>, with organic matter input higher in summer. The simulation that dropped O<span class="math inline">\(_2\)</span> for one month decreased O<span class="math inline">\(_2\)</span> flux by 4 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>.</p>
+<p>Eyre et al. measured NO<span class="math inline">\(_3^-\)</span> outfluxes at 0.43 and NH<span class="math inline">\(_4^+\)</span> at 0.13 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. The NO<span class="math inline">\(_3^-\)</span> was consistent between the four cores. The NH<span class="math inline">\(_4^+\)</span> flux was consistent in 3 of the cores, where one core consumed NH<span class="math inline">\(_4^+\)</span> rather than producing it. The greater flux of NO<span class="math inline">\(_3^-\)</span> than NH<span class="math inline">\(_4^+\)</span> helped to confirm that the sediment was still largely aerobic and therefore confirm the O<span class="math inline">\(_2\)</span> flux values. Greenwood et al. (2016) created a total N budget for Cockburn Sound and used a simplifying assumption in their budget that all of the N fluxing out of the sediment was NO<span class="math inline">\(_3^-\)</span>, rather than NH<span class="math inline">\(_4^+\)</span>, though they acknowledge that it is common in shallow marine systems for both NO<span class="math inline">\(_3^-\)</span> and NH<span class="math inline">\(_4^+\)</span> to be present.</p>
+<p>CANDI-AED calculated fluxes of NO<span class="math inline">\(_x\)</span> (net NO<span class="math inline">\(_3^-\)</span> + NO<span class="math inline">\(_2^-\)</span>) and NH<span class="math inline">\(_4^+\)</span> at 0.47 and 0.31 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. This is a greater total N release from the sediment than measured in the cores. The assumed bottom water concentrations of N were very low and the main source of N to the sediment was organic N. The model set the C:N ratio from the average of measured data from Eyre et al. (106:16). Seasonal fluctuations of both species were around 0.48 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>, that is, close to 100% increase or decrease.</p>
+<p>Eyre et al. measured DON flux as an uptake of 1.2 ± 0.3 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>, which was consistent in three of four cores. One core had a small DON release. DON was not included as a variable in the CANDI-AED model project.</p>
+<p>Eyre et al. measured PO<span class="math inline">\(_4^{3-}\)</span> effluxes at 0.02 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. This was consistent in three cores; however, one core had an uptake of PO<span class="math inline">\(_4^{3-}\)</span> of around 0.02 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. CANDI-AED calculated a PO<span class="math inline">\(_4^{3-}\)</span> flux of 0.24 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>, which was similar in magnitude to the NO<span class="math inline">\(_x\)</span> and NH<span class="math inline">\(_4^+\)</span> fluxes. The result from CANDI-AED was about 1% of the DIC flux, and simply matched the assumption of C:P ratio around 106:1.</p>
+<p>Together, these can be considered as the base background fluxes where the site is not hypoxic or undergoing an algal bloom.</p>
+<p>Table 9.2. Summary of fluxes in mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span> in the area denoted “deep-dark”. Negative values indicate consumption in the sediment; positive means production in the sediment and flux to the water.</p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="4%">
+<col width="10%">
+<col width="11%">
+<col width="13%">
+<col width="15%">
+<col width="13%">
+<col width="15%">
+<col width="15%">
+</colgroup>
+<thead><tr class="header">
+<th>Species</th>
+<th>Eyre et al. (2025)</th>
+<th>CANDI-AED steady flux</th>
+<th>CANDI-AED seasonal range</th>
+<th>CANDI-AED O<span class="math inline">\(_2\)</span> drop range</th>
+<th>CANDI-AED Organic range</th>
+<th>Summary flux range (Lower)</th>
+<th>Summary flux range (Upper)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>O<span class="math inline">\(_2\)</span>
+</td>
+<td>-27</td>
+<td>-23</td>
+<td>7.5</td>
+<td>+4.1</td>
+<td>+4.7</td>
+<td>+18</td>
+<td>+26</td>
+</tr>
+<tr class="even">
+<td>NO<span class="math inline">\(_x^-\)</span>
+</td>
+<td>+0.43</td>
+<td>+0.54</td>
+<td>0.48</td>
+<td>-0.056</td>
+<td>-0.16</td>
+<td>+0.25</td>
+<td>+0.75</td>
+</tr>
+<tr class="odd">
+<td>NH<span class="math inline">\(_4^+\)</span>
+</td>
+<td>+0.13</td>
+<td>+0.12</td>
+<td>0.96</td>
+<td>+0.42</td>
+<td>+1.5</td>
+<td>-0.52</td>
+<td>+0.45</td>
+</tr>
+<tr class="even">
+<td>PO<span class="math inline">\(_4^{3-}\)</span>
+</td>
+<td>+0.02</td>
+<td>+0.24</td>
+<td>0.088</td>
+<td>+0.017</td>
+<td>+0.19</td>
+<td>+0.18</td>
+<td>+0.27</td>
+</tr>
+<tr class="odd">
+<td>DON</td>
+<td>-1.2</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>-0.79</td>
+<td>-1.6</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div id="benthic-algae-dominated-sediments" class="section level4" number="9.3.2.2">
+<h4>
+<span class="header-section-number">9.3.2.2</span> Benthic-algae dominated sediments<a class="anchor" aria-label="anchor" href="#benthic-algae-dominated-sediments"><i class="fas fa-link"></i></a>
+</h4>
+<p>Eyre et al. measured values from two cores that were taken from shallow areas but did not have seagrass: these were taken as the cores that contained benthic algae. The sum of both light and dark incubations was taken.</p>
+<p>Eyre et al. measured a small outflux of O<span class="math inline">\(_2\)</span> from the sediment to the water, at 0.02 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>, from photosynthesis. The ratio of O<span class="math inline">\(_2\)</span> to DIC flux was around 0.8, which conforms with the ratio of 0.9 mentioned by Dalseno et al. (2024), stated above. We can say with confidence that a sediment with benthic algae will have approximately net zero O<span class="math inline">\(_2\)</span> flux. There is still consumption of O<span class="math inline">\(_2\)</span> in the sediment, however this is in balance with photosynthetic O<span class="math inline">\(_2\)</span> production.</p>
+<p>The CANDI-AED project added benthic algae as a variable, setting its mass based on Chl-a measurements by Eyre et al. in these cores. The model was then calibrated to produce net zero O<span class="math inline">\(_2\)</span> and DIC fluxes. O<span class="math inline">\(_2\)</span> was produced by the benthic algae and DIC was taken up into biomass. As the benthic algae was mixed into the deeper layers of sediment beyond where it could photosynthesise, it became a source of organic matter. The model calculated that O<span class="math inline">\(_2\)</span> efflux was 1.5 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>, fluctuating about 11 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>, seasonally between producing and consuming O<span class="math inline">\(_2\)</span>. Keesing et al. reported O<span class="math inline">\(_2\)</span> fluxes in the order of ±10s of mmol m<span class="math inline">\(^{-2}\)</span> h<span class="math inline">\(^{-1}\)</span>, with the highest being +150 and several around +100. These high values would be around 3000 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>, two orders of magnitude higher than we have seen in other data sources. We assume that the units have been misreported and that the general processes outlined in the study are still relevant.</p>
+<p>Eyre et al. measured NO<span class="math inline">\(_3^-\)</span> flux in two cores, one as efflux and one as uptake; NH<span class="math inline">\(_4^+\)</span> flux had one uptake and one efflux measurement. Therefore we do not have a good general estimate of measured NO<span class="math inline">\(_3^-\)</span> or NH<span class="math inline">\(_4^+\)</span> flux from these cores. Keesing et al. (2011) had similar mixed results of NO<span class="math inline">\(_3^-\)</span> release and consumption. Keesing et al. measured strong NH<span class="math inline">\(_4^+\)</span> production in dark core incubations during summer, with light incubations close to zero. Keesing et al. stated that NH<span class="math inline">\(_4^+\)</span> fluxes were generally an order of magnitude higher than NO<span class="math inline">\(_3^-\)</span> fluxes. CANDI-AED produced an NO<span class="math inline">\(_x\)</span> flux of 0.6, with a seasonal variation of 0.5 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. NH<span class="math inline">\(_4^+\)</span> flux was 1.5 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>, with a seasonal variation of 0.21 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. Note that when calibrated to have an O<span class="math inline">\(_2\)</span> flux of approximately zero, the extra organic N provided by benthic algae led to more NH<span class="math inline">\(_4^+\)</span> than NO<span class="math inline">\(_x\)</span>, the opposite relationship to the Deep-dark environment.</p>
+<p>PO<span class="math inline">\(_4^{3-}\)</span> was also measured as efflux in one core and uptake in the other, and so there is no general estimate of PO<span class="math inline">\(_4^{3-}\)</span> flux from these cores. This was also the case in the core fluxes measured by Keesing et al. (2011). CANDI-AED produced a PO<span class="math inline">\(_4^{3-}\)</span> flux of 0.4 with a 0.086 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span> seasonal variation. Note that, as with the NH<span class="math inline">\(_4^+\)</span>, this is also higher than the Deep-dark environment, because of the extra source of organic P from benthic algae.</p>
+<p>Eyre et al. measured DON at 0.4 and 2.8 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>, consumption in both cores.</p>
+<p>Table 9.3. Summary of fluxes in mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span> in the area denoted “benthic-algae”. Negative values indicate consumption in the sediment; positive means production in the sediment and flux to the water.</p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="4%">
+<col width="10%">
+<col width="11%">
+<col width="13%">
+<col width="15%">
+<col width="13%">
+<col width="15%">
+<col width="15%">
+</colgroup>
+<thead><tr class="header">
+<th>Species</th>
+<th>Eyre et al. (2025)</th>
+<th>CANDI-AED steady flux</th>
+<th>CANDI-AED seasonal range</th>
+<th>CANDI-AED O<span class="math inline">\(_2\)</span> drop range</th>
+<th>CANDI-AED Organic range</th>
+<th>Summary flux range (Lower)</th>
+<th>Summary flux range (Upper)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>O<span class="math inline">\(_2\)</span>
+</td>
+<td>+0.02</td>
+<td>+1.5</td>
+<td>+11</td>
+<td>+4.7</td>
+<td>+6.1</td>
+<td>-5.0</td>
+<td>+5.0</td>
+</tr>
+<tr class="even">
+<td>NO<span class="math inline">\(_x^-\)</span>
+</td>
+<td>–</td>
+<td>+0.6</td>
+<td>+0.50</td>
+<td>-0.029</td>
+<td>-0.12</td>
+<td>+0.1</td>
+<td>+1.1</td>
+</tr>
+<tr class="odd">
+<td>NH<span class="math inline">\(_4^+\)</span>
+</td>
+<td>–</td>
+<td>+1.5</td>
+<td>+0.21</td>
+<td>+0.89</td>
+<td>+1.5</td>
+<td>+0.61</td>
+<td>+2.4</td>
+</tr>
+<tr class="even">
+<td>PO<span class="math inline">\(_4^{3-}\)</span>
+</td>
+<td>–</td>
+<td>+0.35</td>
+<td>+0.086</td>
+<td>+0.017</td>
+<td>+0.15</td>
+<td>+0.32</td>
+<td>+0.41</td>
+</tr>
+<tr class="odd">
+<td>DON</td>
+<td>-1.6</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>-1.5</td>
+<td>-1.7</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div id="vegetated-sediments" class="section level4" number="9.3.2.3">
+<h4>
+<span class="header-section-number">9.3.2.3</span> Vegetated sediments<a class="anchor" aria-label="anchor" href="#vegetated-sediments"><i class="fas fa-link"></i></a>
+</h4>
+<p>The Eyre et al. six “seagrass cores” had a small net production of O<span class="math inline">\(_2\)</span> from the sediment, at around 0.0325 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. There was a corresponding small DIC flux, with the ratio of around 0.8 (except for one core with a ratio of 2).</p>
+<p>CANDI-AED simulated the same base amount of aerobic oxidation of organic matter, plus benthic algae metabolism as well as seagrass root O<span class="math inline">\(_2\)</span> production and root DIC uptake, calibrated towards a rate of aerobic oxidation and DIC production in the sediment. The reaction rate was calibrated well; however, the flux was likely an over-prediction of O<span class="math inline">\(_2\)</span> (27 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>) and DIC flux from the sediment. The seasonal variation in O<span class="math inline">\(_2\)</span> flux was ±5 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>.</p>
+<p>As with the shallow cores without seagrass, the NO<span class="math inline">\(_3^-\)</span> flux was a mix of efflux and uptake and we cannot derive a general conclusion from the cores. CANDI-AED had a net NO<span class="math inline">\(_x\)</span> efflux of 3.8 with a seasonal variation of 0.84 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. This flux is higher than the Deep-dark sediment because of the extra organic N from leaf detritus and O<span class="math inline">\(_2\)</span> injected into the upper sediment by the roots.</p>
+<p>NH<span class="math inline">\(_4^+\)</span> was measured at 0.31 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span> and was consistently taken up by the sediment in all cores with seagrass. CANDI-AED produced an NH<span class="math inline">\(_4^+\)</span> release from the sediment of 1.8, with a seasonal variation of around 0.91 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>. Here the cores and the model produced a conflicting result. CANDI-AED produced more NO<span class="math inline">\(_x\)</span> than NH<span class="math inline">\(_4^+\)</span>, reflecting the extra seagrass root O<span class="math inline">\(_2\)</span> oxidising the NH<span class="math inline">\(_4^+\)</span>.</p>
+<p>PO<span class="math inline">\(_4^{3-}\)</span> flux from the six cores also had a mix of uptake and efflux, so as with NO<span class="math inline">\(_3^-\)</span>, no general conclusion can be drawn. CANDI-AED produced a PO<span class="math inline">\(_4^{3-}\)</span> flux of 0.3 with a seasonal variation of 0.05 mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span>.</p>
+<p>Table 9.4. Summary of fluxes in mmol m<span class="math inline">\(^{-2}\)</span> d<span class="math inline">\(^{-1}\)</span> in the area denoted “seagrass”. Negative values indicate consumption in the sediment; positive means production in the sediment and flux to the water.</p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="4%">
+<col width="10%">
+<col width="11%">
+<col width="13%">
+<col width="15%">
+<col width="13%">
+<col width="15%">
+<col width="15%">
+</colgroup>
+<thead><tr class="header">
+<th>Species</th>
+<th>Eyre et al. (2025)</th>
+<th>CANDI-AED steady flux</th>
+<th>CANDI-AED seasonal range</th>
+<th>CANDI-AED O<span class="math inline">\(_2\)</span> drop range</th>
+<th>CANDI-AED Organic range</th>
+<th>Summary flux range (Lower)</th>
+<th>Summary flux range (Upper)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>O<span class="math inline">\(_2\)</span>
+</td>
+<td>+0.0325</td>
+<td>+27</td>
+<td>+11</td>
+<td>+5.7</td>
+<td>+9.7</td>
+<td>-5.0</td>
+<td>+5.0</td>
+</tr>
+<tr class="even">
+<td>NO<span class="math inline">\(_x^-\)</span>
+</td>
+<td>-3 × 10<span class="math inline">\(^{-5}\)</span>
+</td>
+<td>+3.8</td>
+<td>+0.84</td>
+<td>-0.010</td>
+<td>-0.79</td>
+<td>+3.0</td>
+<td>+4.6</td>
+</tr>
+<tr class="odd">
+<td>NH<span class="math inline">\(_4^+\)</span>
+</td>
+<td>-0.31</td>
+<td>+1.8</td>
+<td>+0.91</td>
+<td>+0.51</td>
+<td>+0.27</td>
+<td>+1.1</td>
+<td>+2.0</td>
+</tr>
+<tr class="even">
+<td>PO<span class="math inline">\(_4^{3-}\)</span>
+</td>
+<td>+0.01</td>
+<td>+0.26</td>
+<td>+0.044</td>
+<td>+0.068</td>
+<td>+0.072</td>
+<td>+0.23</td>
+<td>+0.28</td>
+</tr>
+<tr class="odd">
+<td>DON</td>
+<td>-425</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>-230</td>
+<td>-620</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div id="biogeochemical-cycling" class="section level2" number="9.4">
+<h2>
+<span class="header-section-number">9.4</span> Biogeochemical cycling<a class="anchor" aria-label="anchor" href="#biogeochemical-cycling"><i class="fas fa-link"></i></a>
+</h2>
+<p>The aim of this section is to present a summary of the CSIEM water quality configuration to resolve the fate and transport of nutrients and associated water quality constituents, in response to the various inputs and external loads described in Section 9.1, and the benthic (sediment-water) interactions summarised in Section 9.2.</p>
+<div id="biogeochemical-model-description" class="section level3" number="9.4.1">
+<h3>
+<span class="header-section-number">9.4.1</span> Biogeochemical model description<a class="anchor" aria-label="anchor" href="#biogeochemical-model-description"><i class="fas fa-link"></i></a>
+</h3>
+<p>In the CSIEM default configuration, the biogeochemical (water quality) model AED is dynamically linked with TUFLOW-FV (<a href="hydrodynamics">Chapter 7</a>) to simulate the mass balance and redistribution of carbon, nutrients, sediment and biotic components. This includes partitioning between organic and inorganic nutrient forms and resolution of the relevant interactions between abiotic and biotic components. Outputs additionally include light extinction and turbidity (including from particle resuspension and water column contributors), chlorophyll a (chl-a), and benthic productivity and habitat quality.</p>
+<p>In this project, the AED model was tailored to fit the local datasets for Cockburn Sound and include the new science findings from the WAMSI Westport research program (Figure 6.1).</p>
+<p>In addition, in CSIEM new modules for simulating the light spectrum, seagrass dynamics, and Habitat Suitability Indices (HSI) were developed, and outlined separately in Chapter 10 and 11.</p>
+<div class="inline-figure"><img src="media/image46.png" style="width:6.30139in;height:4.39306in"></div>
+<div class="inline-figure"><img src="media/image47.png" style="width:5.45263in;height:3.07965in"></div>
+<p><strong>Figure 6.1.</strong> A conceptual overview of the CSIEM AED configuration (top) and summary of AED sub-repositories and selected modules (bottom). The selected modules in the faint colour are included in CSIEM 2.0 but not active in the v1.7 release.</p>
+<p>A summary of simulated model state variables is presented in Table 2.2, and for a detailed scientific documentation of the parameterisations used in the modules, then the reader is referred to the AED Science Manual (Hipsey et al., 2022).</p>
+<p>The configuration of the model is configured via the aed.nml file, located in the /includes/wq/ folder of the model repository. This records the specific combination of modules included (see Figure 6.1 bottom), and the final set of configured parameters.</p>
+<p>For summary purposes, a simplified table of key water column biogeochemical parameters are presented in Table 6.1,</p>
+<p><strong>Table 6.1</strong>. Summary of water column biogeochemical parameter descriptions, units and typical values.</p>
+<div class="inline-table"><table style="width:98%;" class="table table-sm">
+<colgroup>
+<col width="28%">
+<col width="18%">
+<col width="18%">
+<col width="6%">
+<col width="6%">
+<col width="6%">
+<col width="11%">
+</colgroup>
+<thead><tr class="header">
+<th align="center"><span class="math display">\[Symbol\]</span></th>
+<th align="center">Description</th>
+<th colspan="2" align="center">Units</th>
+<th colspan="2" align="center">Value</th>
+<th align="center"><em>Comment</em></th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td colspan="7" align="center"><em>Atmospheric exchange</em></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[k_{atm}^{O_{2}}\]</span></td>
+<td colspan="2" align="center">oxygen transfer coefficient</td>
+<td colspan="2" align="center">m/s</td>
+<td align="center">calculated</td>
+<td align="center"><em>Wanninkhof (1992)</em></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[k_{atm}^{DIN}\]</span></td>
+<td colspan="2" align="center">dissolved inorganic nitrogen deposition rate</td>
+<td colspan="2" align="center">mmol/m<sup>2</sup>/s</td>
+<td align="center">calculated</td>
+<td align="center"></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[k_{atm}^{DIP}\]</span></td>
+<td colspan="2" align="center">phosphate deposition rate</td>
+<td colspan="2" align="center">mmol/m<sup>2</sup>/s</td>
+<td align="center">calculated</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td colspan="7" align="center"><em>Chemical oxidation</em></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[\chi_{N:O_{2}}^{nitrif}\]</span></td>
+<td colspan="2" align="center">stoichiometry of O<sub>2</sub> consumed during nitrification</td>
+<td colspan="2" align="center">g N/ g O<sub>2</sub>
+</td>
+<td align="center"></td>
+<td align="center"><em>14/32</em></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[R_{nitrif}^{}\]</span></td>
+<td colspan="2" align="center">maximum rate of nitrification</td>
+<td colspan="2" align="center">/d</td>
+<td align="center">0.1</td>
+<td align="center">
+<p>0.5 <sup>B</sup></p>
+<p>0.0-0.2 <sup>E</sup></p>
+</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[K_{nitrif}^{}\]</span></td>
+<td colspan="2" align="center">half saturation constant for oxygen dependence of nitrification rate</td>
+<td colspan="2" align="center">mmol O<sub>2</sub>/m<sup>3</sup>
+</td>
+<td align="center">78.1</td>
+<td align="center">78.1 <sup>B</sup>
+</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[\theta_{nitrif}^{}\]</span></td>
+<td colspan="2" align="center">temperature multiplier for nitrification</td>
+<td colspan="2" align="center">-</td>
+<td align="center">1.08</td>
+<td align="center">1.04 1.08 <sup>B</sup>
+</td>
+</tr>
+<tr class="even">
+<td colspan="7" align="center"><em>Dissolved organic matter transformations</em></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[\chi_{C:O_{2}}^{miner},\chi_{C:O_{2}}^{PHY}\]</span></td>
+<td colspan="2" align="center">stoichiometry of O<sub>2</sub> consumed during aerobic mineralization and photosynthesis</td>
+<td colspan="2" align="center">g C/ g O<sub>2</sub>
+</td>
+<td align="center"></td>
+<td align="center"><em>12/32</em></td>
+</tr>
+<tr class="even">
+<td align="center">
+<span class="math inline">\(R_{miner}^{DOC}\)</span>, <span class="math inline">\(R_{miner}^{DON}\)</span>,<span class="math inline">\(\ R_{miner}^{DOP}\)</span>
+</td>
+<td colspan="2" align="center">maximum rate of aerobic mineralisation of labile dissolved organic matter @ 20C</td>
+<td colspan="2" align="center">/d</td>
+<td align="center">0.008</td>
+<td align="center">
+<p>0.001 – 0.05 <sup>A</sup></p>
+<p>0.001 – 0.028 <sup>D</sup></p>
+</td>
+</tr>
+<tr class="odd">
+<td align="center">
+<span class="math inline">\(K_{miner}^{DOC}\)</span>,<span class="math inline">\(\ K_{miner}^{PON}\)</span>,<span class="math inline">\(\ K_{miner}^{DOP}\)</span>
+</td>
+<td colspan="2" align="center">half saturation constant for oxygen dependence on aerobic mineralisation rate</td>
+<td colspan="2" align="center">mmol O<sub>2</sub>/m<sup>3</sup>
+</td>
+<td align="center">31.25</td>
+<td align="center">47 – 78 <sup>A</sup>
+</td>
+</tr>
+<tr class="even">
+<td align="center">
+<span class="math inline">\(\theta_{miner}^{DOC}\)</span>,<span class="math inline">\(\ \theta_{miner}^{DON}\)</span>,<span class="math inline">\(\ \theta_{miner}^{DOP}\)</span>
+</td>
+<td colspan="2" align="center">temperature multiplier for aerobic mineralisation</td>
+<td colspan="2" align="center"></td>
+<td align="center">1.02</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[R_{denit}^{}\]</span></td>
+<td colspan="2" align="center">maximum rate of denitrification</td>
+<td colspan="2" align="center">/d</td>
+<td align="center">0.26</td>
+<td align="center">0.5 <sup>B</sup>
+</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math display">\[K_{denit}^{}\]</span></td>
+<td colspan="2" align="center">half saturation constant for oxygen dependence of denitrification</td>
+<td colspan="2" align="center">mmol O<sub>2</sub>/m<sup>3</sup>
+</td>
+<td align="center">2.0</td>
+<td align="center">21.8 <sup>B</sup>
+</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math display">\[\theta_{denit}^{}\]</span></td>
+<td colspan="2" align="center">temperature multiplier for temperature dependence of denitrification</td>
+<td colspan="2" align="center">-</td>
+<td align="center">1.08</td>
+<td align="center">1.08 <sup>B</sup>
+</td>
+</tr>
+<tr class="even">
+<td colspan="7" align="center"><em>Particulate organic matter transformations</em></td>
+</tr>
+<tr class="odd">
+<td align="center">
+<span class="math inline">\(R_{decom}^{POC}\)</span>,<span class="math inline">\(\ R_{decom}^{PON}\)</span>, <span class="math inline">\(R_{decom}^{POP}\)</span>
+</td>
+<td colspan="2" align="center">maximum rate of decomposition of particulate organic material @ 20C</td>
+<td colspan="2" align="center">/d</td>
+<td align="center">0.005</td>
+<td align="center">0.01 – 0.07 <sup>A</sup>; 0.008 <sup>C</sup>
+</td>
+</tr>
+<tr class="even">
+<td align="center">
+<span class="math inline">\(K_{decom}^{DOC}\)</span>,<span class="math inline">\(\ K_{decom}^{PON}\)</span>,<span class="math inline">\(\ K_{decom}^{DOP}\)</span>
+</td>
+<td colspan="2" align="center">half saturation constant for oxygen dependence on particulate decomposition (hydrolysis) rate</td>
+<td colspan="2" align="center">mmol O<sub>2</sub>/m<sup>3</sup>
+</td>
+<td align="center">31.25</td>
+<td align="center">47 – 78 <sup>A</sup>
+</td>
+</tr>
+<tr class="odd">
+<td align="center">
+<span class="math inline">\(\theta_{decom}^{POC}\)</span>, <span class="math inline">\(\theta_{decom}^{PON}\)</span>, <span class="math inline">\(\theta_{decom}^{POP}\)</span>
+</td>
+<td colspan="2" align="center">temperature multiplier for temperature dependence of mineralisation rate</td>
+<td colspan="2" align="center">-</td>
+<td align="center">1.02</td>
+<td align="center">1.08 <sup>B</sup>
+</td>
+</tr>
+<tr class="even">
+<td align="center">
+<span class="math inline">\(\chi_{C:N}^{CPOM}\)</span>, <span class="math inline">\(\chi_{C:P}^{CPOM}\)</span>
+</td>
+<td colspan="2" align="center">C:N and C:P stoichiometry of CPOM</td>
+<td colspan="2" align="center">mol:mol</td>
+<td align="center">106:16:1</td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="center">
+<span class="math inline">\(\omega_{POC}\)</span>, <span class="math inline">\(\omega_{PON}\)</span>, <span class="math inline">\(\omega_{POP}\)</span>
+</td>
+<td colspan="2" align="center">settling rate of particulate organic material</td>
+<td colspan="2" align="center">m/day</td>
+<td align="center">0.06</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+<p><sup>B</sup> Based on Bruce et al. (<em>2011</em>) FABM-AED application on the Yarra Estuary (Victoria); estimated from data from Roberts <em>et al</em>. (2012).</p>
+<p><sup>C</sup> Based on Hamilton and Schladow (1997) for Prospect Reservoir</p>
+<p><sup>D</sup> Based on incubations by Petrone <em>et al</em>. (2009) for Swan Estuary (Western Australia)</p>
+<p><sup>E</sup> Based on Xia et al. (2004) for Yellow River</p>
+</div>
+<div id="benthic-zone-summary" class="section level3" number="9.4.2">
+<h3>
+<span class="header-section-number">9.4.2</span> Benthic zone summary<a class="anchor" aria-label="anchor" href="#benthic-zone-summary"><i class="fas fa-link"></i></a>
+</h3>
+<p>A simplified table of key sediment biogeochemical parameters are summarised in Table 6.2.</p>
+<div class="inline-table"><table style="width:97%;" class="table table-sm">
+<caption>Table 6.2. Summary of benthic material zones and associated sediment functional zones, roughness, and sediment fluxes. Refer to Figure 2.3 and 2.4 for maps of material zone locations.</caption>
+<colgroup>
+<col width="5%">
+<col width="12%">
+<col width="38%">
+<col width="8%">
+<col width="5%">
+<col width="3%">
+<col width="3%">
+<col width="3%">
+<col width="3%">
+<col width="3%">
+<col width="3%">
+<col width="3%">
+</colgroup>
+<thead><tr class="header">
+<th align="center">Material zone ID</th>
+<th align="center">Name</th>
+<th align="center">Note</th>
+<th align="center">Sediment Functional Zone <sup>(1)</sup>
+</th>
+<th align="center">Roughness (m) <sup>(2)</sup>
+</th>
+<th colspan="7" align="center">Sediment-Water flux (mmol/m<sup>2</sup>/day) <sup>(3)</sup>
+</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="center"></td>
+<td align="center"><strong> </strong></td>
+<td align="center"><strong> </strong></td>
+<td align="center"><strong> </strong></td>
+<td align="center"><strong> </strong></td>
+<td align="center"><strong>Oxygen</strong></td>
+<td align="center"><strong>PO4</strong></td>
+<td align="center"><strong>NH4</strong></td>
+<td align="center"><strong>NO3</strong></td>
+<td align="center"><strong>DOC</strong></td>
+<td align="center"><strong>DON</strong></td>
+<td align="center"><strong>DOP</strong></td>
+</tr>
+<tr class="even">
+<td align="center">1</td>
+<td align="center">Default model domain background</td>
+<td align="center">Not used, just captures any unallocated cells if shapefiles are do not fully overlap</td>
+<td align="center"></td>
+<td align="center">0.02</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">16</td>
+<td align="center">Swan River</td>
+<td align="center">non-vegetated lower Swan estuary sediment</td>
+<td align="center">Type 2: deep basin</td>
+<td align="center">0.004</td>
+<td align="center">-40</td>
+<td align="center">0.08</td>
+<td align="center">0.4</td>
+<td align="center">1.3</td>
+<td align="center">-52</td>
+<td align="center">-5.2</td>
+<td align="center">-0.4</td>
+</tr>
+<tr class="even">
+<td align="center">21</td>
+<td align="center">Cockburn (23-31)</td>
+<td align="center">sediment grain size (uM), from Skene et al (2005)</td>
+<td align="center">Type 2: deep basin</td>
+<td align="center">0.001</td>
+<td align="center">-45</td>
+<td align="center">0.09</td>
+<td align="center">0.45</td>
+<td align="center">1.5</td>
+<td align="center">-60</td>
+<td align="center">-6</td>
+<td align="center">-0.44</td>
+</tr>
+<tr class="odd">
+<td align="center">22</td>
+<td align="center">Cockburn (31-63.5)</td>
+<td align="center">sediment grain size (uM), from Skene et al (2005)</td>
+<td align="center">Type 2: deep basin</td>
+<td align="center">0.002</td>
+<td align="center">-40</td>
+<td align="center">0.08</td>
+<td align="center">0.4</td>
+<td align="center">1.3</td>
+<td align="center">-52</td>
+<td align="center">-5.2</td>
+<td align="center">-0.4</td>
+</tr>
+<tr class="even">
+<td align="center">23</td>
+<td align="center">Cockburn (63.6-125)</td>
+<td align="center">sediment grain size (uM), from Skene et al (2005)</td>
+<td align="center">Type 2: deep basin</td>
+<td align="center">0.004</td>
+<td align="center">-40</td>
+<td align="center">0.08</td>
+<td align="center">0.4</td>
+<td align="center">1.3</td>
+<td align="center">-52</td>
+<td align="center">-5.2</td>
+<td align="center">-0.4</td>
+</tr>
+<tr class="odd">
+<td align="center">24</td>
+<td align="center">Cockburn (125-250)</td>
+<td align="center">sediment grain size (uM), from Skene et al (2005)</td>
+<td align="center">Type 3: shelf + MPB</td>
+<td align="center">0.008</td>
+<td align="center">-40</td>
+<td align="center">0.08</td>
+<td align="center">0.4</td>
+<td align="center">1.3</td>
+<td align="center">-52</td>
+<td align="center">-5.2</td>
+<td align="center">-0.4</td>
+</tr>
+<tr class="even">
+<td align="center">25</td>
+<td align="center">Cockburn (250-350)</td>
+<td align="center">sediment grain size (uM), from Skene et al (2005)</td>
+<td align="center">Type 3: shelf + MPB</td>
+<td align="center">0.01</td>
+<td align="center">-35</td>
+<td align="center">0.07</td>
+<td align="center">0.35</td>
+<td align="center">1.12</td>
+<td align="center">-44.8</td>
+<td align="center">-4.48</td>
+<td align="center">-0.36</td>
+</tr>
+<tr class="odd">
+<td align="center">26</td>
+<td align="center">Cockburn (350-500)</td>
+<td align="center">sediment grain size (uM), from Skene et al (2005)</td>
+<td align="center">Type 3: shelf + MPB</td>
+<td align="center">0.015</td>
+<td align="center">-30</td>
+<td align="center">0.06</td>
+<td align="center">0.3</td>
+<td align="center">1</td>
+<td align="center">-40</td>
+<td align="center">-4</td>
+<td align="center">-0.32</td>
+</tr>
+<tr class="even">
+<td align="center">27</td>
+<td align="center">Cockburn (500-1000)</td>
+<td align="center">sediment grain size (uM), from Skene et al (2005)</td>
+<td align="center">Type 3: shelf + MPB</td>
+<td align="center">0.02</td>
+<td align="center">-25</td>
+<td align="center">0.05</td>
+<td align="center">0.25</td>
+<td align="center">0.8</td>
+<td align="center">-32</td>
+<td align="center">-3.2</td>
+<td align="center">-0.24</td>
+</tr>
+<tr class="odd">
+<td align="center">59</td>
+<td align="center">Artificial structure</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">0.2</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">60</td>
+<td align="center">Seagrass (Swan River)</td>
+<td align="center">
+<em>Halophila</em> dominant community</td>
+<td align="center">Type 4: shelf + seagrass</td>
+<td align="center">0.1</td>
+<td align="center">-5</td>
+<td align="center">-0.012</td>
+<td align="center">-0.06</td>
+<td align="center">-0.18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">61</td>
+<td align="center">Soft substrate (Sand)</td>
+<td align="center"></td>
+<td align="center">Type 1: offshore</td>
+<td align="center">0.008</td>
+<td align="center">-15</td>
+<td align="center">0.03</td>
+<td align="center">0.15</td>
+<td align="center">0.5</td>
+<td align="center">-20</td>
+<td align="center">-2</td>
+<td align="center">-0.16</td>
+</tr>
+<tr class="even">
+<td align="center">68</td>
+<td align="center">Hard substrate (Reef with macroalgae)</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">0.1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">70</td>
+<td align="center">Mixed substrate</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">0.05</td>
+<td align="center">-10</td>
+<td align="center">-0.02</td>
+<td align="center">-0.01</td>
+<td align="center">-0.03</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">90</td>
+<td align="center">Seagrass (<em>Amphibolis</em>)</td>
+<td align="center"></td>
+<td align="center">Type 4: shelf + seagrass</td>
+<td align="center">0.1</td>
+<td align="center">-5</td>
+<td align="center">-0.012</td>
+<td align="center">-0.06</td>
+<td align="center">-0.18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">91</td>
+<td align="center">Seagrass (<em>P australis</em> dominant community)</td>
+<td align="center">merged from categories "P. australis", "P. australis Amphibolis", "P. australis P. sinuosa", "P. australis P. sinuosa Amphibolis"</td>
+<td align="center">Type 4: shelf + seagrass</td>
+<td align="center">0.1</td>
+<td align="center">-5</td>
+<td align="center">-0.012</td>
+<td align="center">-0.06</td>
+<td align="center">-0.18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">92</td>
+<td align="center">Seagrass (<em>P coriacea</em> dominant community)</td>
+<td align="center">merged from categories "P. coriacea", "P. coriacea Amphibolis", "P. coriacea Amphibolis with Halophila"</td>
+<td align="center">Type 4: shelf + seagrass</td>
+<td align="center">0.1</td>
+<td align="center">-5</td>
+<td align="center">-0.012</td>
+<td align="center">-0.06</td>
+<td align="center">-0.18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">93</td>
+<td align="center">Seagrass (<em>P sinuosa</em> dominant community)</td>
+<td align="center">merged from categories "P. sinuosa", "P. sinuosa Amphibolis", "P. sinuosa P. coriacea Amphibolis"</td>
+<td align="center">Type 4: shelf + seagrass</td>
+<td align="center">0.1</td>
+<td align="center">-5</td>
+<td align="center">-0.012</td>
+<td align="center">-0.06</td>
+<td align="center">-0.18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="center">94</td>
+<td align="center"><em>Lyngbya</em></td>
+<td align="center">this may be updated at a later stage by Theme2.1 as it could be interspesed with ephemeral seagrass</td>
+<td align="center">Type 4: shelf + seagrass</td>
+<td align="center">0.1</td>
+<td align="center">-5</td>
+<td align="center">-0.012</td>
+<td align="center">-0.06</td>
+<td align="center">-0.18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="center">95</td>
+<td align="center">Cobble</td>
+<td align="center"></td>
+<td align="center">Type 3: shelf + MPB</td>
+<td align="center">0.1</td>
+<td align="center">-5</td>
+<td align="center">-0.012</td>
+<td align="center">-0.06</td>
+<td align="center">-0.18</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table></div>
+<p><span class="math inline">\(1\)</span> the sediment functional zone is associated with the types specified in the sediment biogeochemistry model;</p>
+<p><span class="math inline">\(2\)</span> For roughness, CSIEM used the 'ks' bottom drag model, in which the values are 'equivalent Nikuradse roughness (m)';</p>
+<p><span class="math inline">\(3\)</span> The Sediment-Water flux settings are assumed maximum fluxes in each zone combining sediment survey data (Eyre et al., 2025) and relevant environmental factors. The final modelled fluxes are also subject to oxygen concentration (redox potential) and temperature within the bottom water.</p>
+</div>
+</div>
+<div id="summary-2" class="section level2" number="9.5">
+<h2>
+<span class="header-section-number">9.5</span> Summary<a class="anchor" aria-label="anchor" href="#summary-2"><i class="fas fa-link"></i></a>
+</h2>
+<p>The approach to develop an integrated biogeochemical model configuration for Cockburn Sound has been outlined based on i) adequate resolution of external inputs (Section 9.2), ii) capturing variability in benthic recycling rates (Section 9.3), and iii) appropriate parameterisation of internal biogeochemical cycling processes (Section 9.4). Linking these together, along with hydrodynamics, form the foundation of the CSIEM biogeochemical simulations. Each vary dynamically over a wide range of spatial and temporal scales, and their interplay shapes the complex water quality patterns that we see in Perth coastal waters. The validation of this approach is explored in the subsequent sections.</p>
+
+</div>
+</div>
+<script>
+var img = document.body.getElementsByTagName("img");
+var i = 0;
+while (i < img.length) {
+    img[i].setAttribute("data-action", "zoom");
+    i++;
+}
+</script><script src="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js"></script><link href="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css" rel="stylesheet">
+<div class="chapter-nav">
+<div class="prev"><a href="groundwater.html"><span class="header-section-number">8</span> Submarine Groundwater Discharge</a></div>
+<div class="next"><a href="references.html">References</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#bgc-model"><span class="header-section-number">9</span> Biogeochemical modelling approach</a></li>
+<li><a class="nav-link" href="#overview-7"><span class="header-section-number">9.1</span> Overview</a></li>
+<li>
+<a class="nav-link" href="#inputs-and-nutrient-loads"><span class="header-section-number">9.2</span> Inputs and Nutrient Loads</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#catchment-river-estuarine-inputs"><span class="header-section-number">9.2.1</span> Catchment river / estuarine inputs</a></li>
+<li><a class="nav-link" href="#groundwater-inputs"><span class="header-section-number">9.2.2</span> Groundwater inputs</a></li>
+<li><a class="nav-link" href="#local-stormwater-inputs"><span class="header-section-number">9.2.3</span> Local stormwater inputs</a></li>
+<li><a class="nav-link" href="#wastewater-treatment-plants-wwtps-inputs"><span class="header-section-number">9.2.4</span> Wastewater treatment plants (WWTPs) inputs</a></li>
+<li><a class="nav-link" href="#industrial-inputs"><span class="header-section-number">9.2.5</span> Industrial inputs</a></li>
+<li><a class="nav-link" href="#nutrient-load-trend-and-summary"><span class="header-section-number">9.2.6</span> Nutrient load trend and summary</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#variability-in-benthic-recycling"><span class="header-section-number">9.3</span> Variability in Benthic Recycling</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#overview-of-benthic-flux-assumptions"><span class="header-section-number">9.3.1</span> Overview of benthic flux assumptions</a></li>
+<li><a class="nav-link" href="#fluxes-in-each-sediment-environment"><span class="header-section-number">9.3.2</span> Fluxes in each sediment environment</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#biogeochemical-cycling"><span class="header-section-number">9.4</span> Biogeochemical cycling</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#biogeochemical-model-description"><span class="header-section-number">9.4.1</span> Biogeochemical model description</a></li>
+<li><a class="nav-link" href="#benthic-zone-summary"><span class="header-section-number">9.4.2</span> Benthic zone summary</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#summary-2"><span class="header-section-number">9.5</span> Summary</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>The Cockburn Sound Integrated Ecosystem Model</strong>" was written by AED. It was last built on 27-November-2025.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

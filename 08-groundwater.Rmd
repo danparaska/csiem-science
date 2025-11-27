@@ -97,24 +97,14 @@ After processing the results of the MODFLOW groundwater model, the results were 
 
 ## SGD Tracer Simulation 
 
-As a final step in the process of integrating groundwater inputs into the CSIEM model, a passive tracer (TR2) was incorporated into the simulation to explicitly represent the spatial and temporal distribution of groundwater within the water column. Figure 7 illustrates the surface concentration of this tracer, which reflects the zones of greatest influence of coastal groundwater flow within the study area. This representation enables us to visually assess the extent of simulated groundwater discharges, support the validation of boundary conditions derived from the MODFLOW model, and explore their potential influence on the biogeochemical dynamics of Cockburn Sound.
+As a final step in the process of integrating groundwater inputs into the CSIEM model, a passive tracer (TR2) was incorporated into the simulation to explicitly represent the spatial and temporal distribution of groundwater within the water column. Figure 8.7 illustrates the surface concentration of this tracer, which reflects the zones of greatest influence of coastal groundwater flow within the study area. This representation enables us to visually assess the extent of simulated groundwater discharges, support the validation of boundary conditions derived from the MODFLOW model, and explore their potential influence on the biogeochemical dynamics of Cockburn Sound.
 
 
 
-![](./media/gw/gw_10.png){width="95%"}
+![](./media/gw/gw_10.png){width="50%"}
 
-**Figure 8.6.** Surface concentration of groundwater tracer (TR2) in Cockburn Sound, expressed as a percentage of the water column volume.
+**Figure 8.7.** Surface concentration of groundwater tracer (TR2) in Cockburn Sound, expressed as a percentage of the water column volume.
 
 
-
-## References
-
-Donn, M., Bekele, E., Wu, H., Prommer, H., Furness, A., Woodbury, R., Rayner, J., & Davis, G. (2025). Baseline assessment of groundwater/surface water nitrogen flux into Cockburn Sound – Final Report. WAMSI Westport Marine Science Program, Project 3.3.4b.
-
-Greenwood, J., Keesing, J.K., Donn, M.J., & McFarlane, D.J. (2016). Nitrogen Budget for Cockburn Sound, Western Australia. Report to the Cockburn Sound Management Council and the Western Australian Department of Water. CSIRO, Australia.
-
-Loveless, A., & Oldham, C. (2010). Natural attenuation of nitrogen in groundwater discharging through a sandy beach. Biogeochemistry, 98, 75–87. https://doi.org/10.1007/S10533-009-9377-X
-
-Loveless, A., Oldham, C., & Hancock, G. (2008). Radium isotopes reveal seasonal groundwater inputs to Cockburn Sound, a marine embayment in Western Australia. Journal of Hydrology, 351, 203–217. https://doi.org/10.1016/J.JHYDROL.2007.12.010
 
 
