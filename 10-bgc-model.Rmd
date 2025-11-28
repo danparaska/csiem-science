@@ -1,4 +1,4 @@
-# Biogeochemical modelling approach {#bgc-model}
+# Biogeochemical Modelling Approach {#bgc-model}
 
 ## Overview
 
