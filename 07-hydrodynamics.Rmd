@@ -4,8 +4,6 @@
 
 The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wind regimes, relatively weak tidal forcing, episodic periods of stratification, and the regional drivers of currents along Perth's coast. The system is also influenced by human-induced changes to the physical environment which have occurred over time, including both changes to the Sound's bathymetry, and discharges to the system that impact local water temperature and salinity patterns. This chapter describes the approach to simulation of hydrodynamics within the CSIEM platform, and outlines efforts to validate the model. The changes in weather, wave, and hydrodynamic conditions are highly dynamic and variabe in space and time (Figure 7.1), and serve as the foundation for ecosystem predictions presented in subsequent chapters.
 
-*This chapter provides a general summary of the model and its performance; please note some results are specific to a particular version of the model at the time of preparation, and the model performance is subject to iterative refinements over time. For performance of a specific model version follow the below links to the MARVL Viewer.*  
-
 <br>
 
 <center>
@@ -17,6 +15,12 @@ The hydrodynamics of Cockburn Sound are governed by the interplay of seasonal wi
 **Figure 7.1.** Example hydrodynamic output from CSIEM showing wind, wave, salinity and temperature variation across the Perth coast in July 2013.
 
 <br>
+
+
+```{block2, hintM2-1, type='rmdnote2'}
+*This chapter provides a general summary of the model and its performance; please note some results are specific to a particular version of the model at the time of preparation, and the model performance is subject to iterative refinements over time. For performance of a specific model version follow the below links to the MARVL Viewer.*
+```
+
 
 ## Hydrodynamic setting
 

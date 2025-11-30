@@ -1,6 +1,6 @@
 # (PART)  SCIENCE APPLICATIONS {-} 
 
-# Resolving Perth Waters Ocean Climatology {#ocean-climatology}
+# Perth Waters Ocean Climatology {#ocean-climatology}
 
 ## Overview
 
@@ -208,6 +208,7 @@ Zooplankton biomass tends to follow the patterns observed with phytoplankton abu
 ![](./media/image19.png){width="6.301388888888889in" height="3.102777777777778in"}
 
 **Figure 6.14.** Final zooplankton biomass estimated in each boundary polygon of the CSIEM domain.
+
 
 ## Summary
 

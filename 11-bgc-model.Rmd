@@ -1,4 +1,4 @@
-# Biogeochemical Modelling Approach {#bgc-model}
+# Integrated Ecosystem Model Assembly {#bgc-model}
 
 ## Overview
 

@@ -9,3 +9,19 @@ body {
 caption {
   caption-side: top;
 }
+
+.rmdnote2 {
+  border: 1px solid #002B4D;
+  border-left-width: 5px;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 0;
+}
+div.rmdnote2::before {
+  display: block;
+  content: "Note: ";
+  color: #002B4D;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}

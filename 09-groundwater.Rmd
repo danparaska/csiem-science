@@ -2,23 +2,25 @@
 
 ## Overview
 
-Submarine Groundwater Discharge (SGD) measurements in Cockburn Sound highlight significant spatial and seasonal variability, as influenced by factors such as rainfall and recharge dynamics within the nearby aquifer system (Loveless et al., 2008). Studies utilizing radium isotopes as tracers have shown that SGD rates vary seasonally, with greater discharge occurring following winter precipitation events. This discharge contributes nitrogen to coastal waters, which may exacerbate eutrophic conditions, particualrly in the southern areas of Cockburn Sound such as Mangles Bay (Loveless & Oldham, 2010).
+Submarine Groundwater Discharge (SGD) measurements in Cockburn Sound have highlighted spatial and seasonal variability, as influenced by factors such as heterogeneity within the local aquifer system, the extent of water extraction and reinjection by industry, and changes in recharge patterns (Loveless et al., 2008; Donn et al., 2025). For example, studies utilising radium isotopes as tracers identified that SGD rates vary seasonally, with greater discharge occurring following periods of winter rainfall. This discharge contributes nitrogen to coastal waters, which may exacerbate eutrophic conditions, particularly in the southern areas of Cockburn Sound such as Mangles Bay (Loveless & Oldham, 2010). 
 
 Groundwater has emerged as one of the predominant nitrogen source for the Sound following the redirection of urban and industrial wastewater outflows to the Cape Peron Sepia Depression ocean outfall (Greenwood et al., 2016). The total SGD nitrogen supply had previously been estimated to be between 450 and 920 tonnes of Total Nitrogen (TN) per year, depending on annual rainfall, though these estimations were thought to potentially have been overestimated and could have dropped in recent years (Donn et al., 2015). 
 
-More recent modelling within the WAMSI-Westport Marine Science Program, has allowed a more contemporary estimate of flows and N loads, based on a combination of MODFLOW groundwater modelling and porewater nutrient sampling, as reported in Donn et al. (2025). These loads are considerably lower than prior estimates. Nonetheless, the loads can make a significant contribution to the nutrient budget in the Sound, and are integrated within the CSIEM workflows.  
+Modelling undertaken as part of the WAMSI-Westport Marine Science Program, has allowed a more contemporary estimate of flows and N loads, based on a combination of MODFLOW groundwater modelling and porewater nutrient sampling, as reported in Donn et al. (2025). The updated estimates of SGD nutrient loads are lower than prior estimates, however, they can make a significant contribution to the nutrient budget in the Sound, and are an important component within the CSIEM simulations.  
 
 This Chapter presents the process of quantifying and spatially representing groundwater-derived nutrient loads in Cockburn Sound, for the purposes of incorporating them into the CSIEM platform. It describes the data sources, zone delineation, calculation methodology, and resulting estimates of water and nutrient fluxes.
 
+<br>
 
-*This chapter provides a general summary of the model; please note some aspects are specific to a particular version of the model as new updates are included. The descriptions presented in this Chapter are specific to V1.6+.*  
+```{block2, hintM2-9 , type='rmdnote2'}
+<small>*This chapter provides a general summary of the link between the CSIRO groundwater model for Cockburn Sound and the hydrodynamic-biogeochemical model. Please note that some aspects are specific to a particular version of the model as new updates are included. The descriptions presented in this Chapter are specific to V1.6+.*</small>
+```
 
 <br>
 
 ## Data Sources and Approach
 
 The groundwater boundary conditions for the Cockburn Sound area were developed using results from the MODFLOW groundwater model, which were provided by CSIRO (Donn et al., 2025). The data were delivered in XLXS format and contained monthly groundwater flux and nitrogen load values for each grid cell, covering the period from 2021 to 2022. 
-
 
 Post-processing involved grouping the water fluxes and loads by "zones" and aligning them spatially and temporally with the TUFLOW FV surface grid, which forms the hydrodynamic component of the CSIEM platform (Figure 8.1).
 
@@ -104,8 +106,16 @@ As a final step in the process of integrating groundwater inputs into the CSIEM 
 
 ![](./media/gw/gw_10.png){width="50%"}
 
-**Figure 8.7.** Surface concentration of groundwater tracer (TR2) in Cockburn Sound, expressed as a percentage of the water column volume.
+**Figure 8.7.** Surface concentration of groundwater tracer (TRC_tr2) in Cockburn Sound, expressed as a percentage of the water column volume.
 
+
+## Summary
+
+The spatial and seasonal variability in groundwater discharge into the eastern coast of Cockburn Sound has been included in the CSIEM platform. The discharge amounts are based on the CSIRO groundwater simulations using the MODFLOW model, which was used to refine local discharge estimates by linking to the larger Perth Regional Aquifer System model. The discharge results from the MODFLOW simulation were linked to the hydrodynamic model TUFLOW-FV and aggregated into 19 zones.
+
+The nutrient load entering from the groundwater was estimated by assigning the modelled flows into the 19 Cockburn Sound zones with nutrient concentrations based on the data-set from pore-water sampling. The flow and concentration data allowed an estimate of the total load entering into the Sound over the annual cycle.
+
+To assist in understanding the fate of the groundwater inputs, a tracer is used to demonstarte areas of groundwater build-up and rates of flushing.
 
 
 
