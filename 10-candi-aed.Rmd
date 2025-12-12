@@ -571,7 +571,7 @@ These pathways promoted denitrification ($N_2$ production) from $N_2O$ oxidation
 
 **Figure 10.26.** N redox pathways for each of the environments. Pathways of organic matter oxidation by N are shown in brown dashed lines and N oxidation by $O_2$ are shown in red solid lines.
 
-![](media/candi/image36.png){width="33%"}
+![](media/candi/image36.png){width="94%"}
 
 **Figure 10.27.**  N redox pathway map, copied from Figure 10.8. The pathways that had the highest rates are emphasised here with thick lines: organic matter oxidation by $NO_2^-$ and $NH_4^+$ oxidation by $O_2$.
 
@@ -585,7 +585,7 @@ Table 12 N budget fluxes in t y^-1^ from each sediment environment and the total
 
 XXXX Table missing XXXX
 
-![](media/candi/image37.png){width="33%"}
+![](media/candi/image37.png){width="94%"}
 
 **Figure 10.28.**  Schematic of the N flux budget in t N y^-1^, approximated to the nearest 1000.
 
@@ -603,41 +603,41 @@ C and $O_2$ balance
 
 $DIC$ flux was approximately the same as in the steady simulation, but varied around 2000 mmol m\(^{-2}\) y\(^{-1}\), or 20 to 30% seasonally. The Seagrass environment retained the large uptake into the sediment from the steady calibration. $DIC$ concentration was close to the boundary concentration of around 2 mmol L^-1^  In the seagrass environment, above 5 cm $DIC$ concentration was closer to 1 mmol L^-1^ . From 5 to 10 cm there was the biggest range of concentration (Figure 10.29).
 
-![](media/candi/image38.png){width="33%"}
+![](media/candi/image38.png){width="94%"}
 
-![](media/candi/image39.png){width="33%"}
+![](media/candi/image39.png){width="94%"}
 
 **Figure 10.29.**  Summary figure of two years of $DIC$ under seasonally fluctuating conditions. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time. Middle – concentration over depth plotted at four times in the year. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
 $O_2$ flux varied around 2000 mmol m\(^{-2}\) y\(^{-1}\), or 20% seasonally. The simulation matched the few measured data points in the Deep-dark and Benthic algae environments, but not the seagrass environment. The Benthic algae environment was fluctuating around net production to net consumption of $O_2$, as the $POML$ boundary flux increased (Figure 10.30).
 
-![](media/candi/image40.png){width="33%"}
+![](media/candi/image40.png){width="94%"}
 
-![](media/candi/image41.png){width="33%"}
+![](media/candi/image41.png){width="94%"}
 
-![](media/candi/image42.png){width="33%"}
+![](media/candi/image42.png){width="94%"}
 
 **Figure 10.30.**  Summary figure of two years of $O_2$ under seasonally fluctuating conditions. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Middle – concentration over depth plotted at four times in the year. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
 **N and denitrification**: All environments had a net release of DIN (NH4+, $NO_3^-$, NO2-, $N_2O$ and $N_2$). The three environments had a range of DIN flux of around 250, 1500 and 150 mmol m\(^{-2}\) y\(^{-1}\), and 30, 350 and 5%. Most of the DIN concentration was $N_2$, and the second-most was $NH_4^+$ (Figure 10.31).
 
-![](media/candi/image43.png){width="33%"}
+![](media/candi/image43.png){width="94%"}
 
-![](media/candi/image44.png){width="33%"}
+![](media/candi/image44.png){width="94%"}
 
 **Figure 10.31.**  Summary figure of two years of DIN under seasonally fluctuating conditions. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
 Seagrass had the highest total $N_2$ flux, which was also the least sensitive to seasonal fluctuations, since the model had a steady supply of seagrass detritus that was not subject to boundary fluctuations (Figure 10.32).
 
-![](media/candi/image45.png){width="33%"}
+![](media/candi/image45.png){width="94%"}
 
-![](media/candi/image46.png){width="33%"}
+![](media/candi/image46.png){width="94%"}
 
 **Figure 10.32.**  Summary figure of two years of DIN under seasonally fluctuating conditions. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface. $NH_4^+$ flux in the Deep-dark environment fluctuated between flux into and out of the sediment seasonally (Figure 10.33).
 
-![](media/candi/image47.png){width="33%"}
+![](media/candi/image47.png){width="94%"}
 
-![](media/candi/image48.png){width="33%"}
+![](media/candi/image48.png){width="94%"}
 
 **Figure 10.33.**  Summary figure of two years of DIN under seasonally fluctuating conditions. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
@@ -655,11 +655,11 @@ In the Deep-dark environment, during the low $O_2$ event, $O_2$ flux into the se
 
 Sediment $O_2$ concentration recovered very quickly after the boundary $O_2$ concentration returned. This is a result of the high mixing rate that was calibrated in the initial steady Deep-dark setup. If the boundary $O_2$ drop was the result of less mixing with the atmosphere, the mixing through the water column and at the sediment-water interface may have also been less, and the recovery might have been slower. This would be another experiment that a coupled sediment-water column model could investigate.
 
-![](media/candi/image49.png){width="33%"}
+![](media/candi/image49.png){width="94%"}
 
-![](media/candi/image50.png){width="33%"}
+![](media/candi/image50.png){width="94%"}
 
-![](media/candi/image51.png){width="33%"}
+![](media/candi/image51.png){width="94%"}
 
 **Figure 10.34.**  Summary figure of $O_2$ flux and concentration in the $O_2$ drop simulation. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Middle – concentration over depth plotted at four times in the year. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
@@ -669,27 +669,27 @@ During the drop in $O_2$, the Benthic algal environment had the most prominent i
 
 This shows a mechanism for how a disturbance to the baseline condition led to more $NH_4^+$ at the expense of NOx, which is a pattern seen in other scenarios described below. This also shows the temporary increase in denitrification caused by low $O_2$, but also how denitrification ceases after the oxidised N species such as $NO_2^-$ are exhausted. Eyre *et al.* (2025) mentioned the necessity of short periods of low $O_2$ for coupled nitrification-denitrification.
 
-![](media/candi/image52.png){width="33%"}
+![](media/candi/image52.png){width="94%"}
 
-![](media/candi/image53.png){width="33%"}
+![](media/candi/image53.png){width="94%"}
 
 **Figure 10.35.**  Summary figure for DIN under the $O_2$ drop. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
-![](media/candi/image54.png){width="33%"}
+![](media/candi/image54.png){width="94%"}
 
-![](media/candi/image55.png){width="33%"}
+![](media/candi/image55.png){width="94%"}
 
 **Figure 10.36.**  Summary figure for $NH_4^+$ under the $O_2$ drop. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
-![](media/candi/image56.png){width="33%"}
+![](media/candi/image56.png){width="94%"}
 
-![](media/candi/image57.png){width="33%"}
+![](media/candi/image57.png){width="94%"}
 
 **Figure 10.37.**  Summary figure for $NO_2^-$ under the $O_2$ drop. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
-![](media/candi/image58.png){width="33%"}
+![](media/candi/image58.png){width="94%"}
 
-![](media/candi/image59.png){width="33%"}
+![](media/candi/image59.png){width="94%"}
 
 **Figure 10.38.** Summary figure for $N_2$ under the $O_2$ drop. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
@@ -699,19 +699,19 @@ C and $O_2$ balance
 
 The organic matter pulse created an extra $DIC$ flux of around 50% more than the seasonal variation. The flux returned to its previous state within around 1 month (Figure 10.39). The effect of the extra organic matter was most clearly seen in the Deep-dark environment, where natural organic matter influx was low and there was no $O_2$ from photosynthesis.
 
-![](media/candi/image60.png){width="33%"}
+![](media/candi/image60.png){width="94%"}
 
-![](media/candi/image61.png){width="33%"}
+![](media/candi/image61.png){width="94%"}
 
 **Figure 10.39.**  Summary figure of $DIC$ under the increase in organic matter. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
 The one-off increase in organic matter concentration created a bigger flux of $O_2$ into the sediment in the case of the Deep-dark and Benthic algae environments, and a smaller flux to the bottom water in the case of the Seagrass environment (Figure 39). The recovery after the event was slower than in the $O_2$ drop simulation, because the extra organic matter was buried as a solid, rather than diffused as a solute.
 
-![](media/candi/image62.png){width="33%"}
+![](media/candi/image62.png){width="94%"}
 
-![](media/candi/image63.png){width="33%"}
+![](media/candi/image63.png){width="94%"}
 
-![](media/candi/image64.png){width="33%"}
+![](media/candi/image64.png){width="94%"}
 
 **Figure 10.40.**  Summary figure of $O_2$ under organic matter increase. Left to right – Deep-dark, Benthic algae and Seagrass environments. Top – flux over time, including measured data. Middle – concentration over depth plotted at four times in the year. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
@@ -719,27 +719,27 @@ N and denitrification
 
 The organic matter pulse caused an increased efflux of DIN, most of which was $NH_4^+$ and $N_2$ (Figure 10.41). Since the organic matter persisted in the sediment for around three months, the legacy of higher $NH_4^+$ and $N_2$ also persisted for three months (Figure 10.41, Figure 10.42). The Seagrass environment did not have a noticeable change in efflux of total DIN or $NH_4^+$, however, there was a greater efflux of $N_2$ (Figure 10.43). This indicated that denitrification could increase, assisted by the $O_2$ supplied to the sediment by the roots.
 
-![](media/candi/image65.png){width="33%"}
+![](media/candi/image65.png){width="94%"}
 
-![](media/candi/image66.png){width="33%"}
+![](media/candi/image66.png){width="94%"}
 
 **Figure 10.41.**  Summary figure of DIN under organic matter increase. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
-![](media/candi/image67.png){width="33%"}
+![](media/candi/image67.png){width="94%"}
 
-![](media/candi/image68.png){width="33%"}
+![](media/candi/image68.png){width="94%"}
 
 **Figure 10.42.**  Summary figure of $NH_4^+$ under organic matter increase. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
-![](media/candi/image69.png){width="33%"}
+![](media/candi/image69.png){width="69%"}
 
-![](media/candi/image70.png){width="33%"}
+![](media/candi/image70.png){width="70%"}
 
 **Figure 10.43.**  Summary figure of $NO_2^-$ under organic matter increase. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
-![](media/candi/image71.png){width="33%"}
+![](media/candi/image71.png){width="94%"}
 
-![](media/candi/image72.png){width="33%"}
+![](media/candi/image72.png){width="94%"}
 
 **Figure 10.44.**  Summary figure of $N_2$ under organic matter increase. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
