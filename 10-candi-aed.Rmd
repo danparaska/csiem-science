@@ -188,7 +188,7 @@ Concentrations for $O_2$, $NH_4^+$, $NO_3^-$, $PO_4^{3-}$, salinity and $SO_4^{2
 
 Other boundary values were set using standard values from the literature. This included MnO2A and Fe(OH)3A fluxes, and bottom water DIC, $N_2$ and $N_2O$ concentrations (Table 3).
 
-A 30 cm sediment was simulated with 400 equally-sized vertical layers (0.75 mm each). (Results plots below zoom in to the top 20 or 15 cm of these 30 cm.) According to Zhou *et al.*(2024) 30 cm depth corresponded to a date of around 1992. The model was run with time steps of one day. Bioturbation was set to 50 cm2 y-1 at the sediment-water interface, decaying exponentially to 0 with depth at 8 cm deep. A spin-up period of 5 years was used, with constant boundary fluxes and concentrations, to allow the system to reach equilibrium before using a dynamic boundary. The dynamic boundary was the output from the initial water column model simulations, written to a file then was loaded in as the upper boundary of the sediment model, rather than a dynamic boundary (Figure 10).
+A 30 cm sediment was simulated with 400 equally-sized vertical layers (0.75 mm each). (Results plots below zoom in to the top 20 or 15 cm of these 30 cm.) According to Zhou *et al.*(2024) 30 cm depth corresponded to a date of around 1992. The model was run with time steps of one day. Bioturbation was set to 50 cm2 y^-1^ at the sediment-water interface, decaying exponentially to 0 with depth at 8 cm deep. A spin-up period of 5 years was used, with constant boundary fluxes and concentrations, to allow the system to reach equilibrium before using a dynamic boundary. The dynamic boundary was the output from the initial water column model simulations, written to a file then was loaded in as the upper boundary of the sediment model, rather than a dynamic boundary (Figure 10).
 
 Table 8 Summary of key variables and their boundary conditions
 
@@ -204,7 +204,7 @@ CANDI-AED has options for a simple or complex set of organic matter species and 
 
 POMR was calibrated to reach an equilibrium so that sediment TOC% in the top 10 cm was around 5000 mmol L^-1^  solids.
 
-Calibrating organic carbon involved the result of balancing three key components of organic matter: influx, initial concentration profile and reaction rate (Figure 14). The target was a steady concentration profile and a DIC efflux of around 8500 mmol m\(^{-2}\) y\(^{-1}\). The organic matter reaction rate constant was set to 2 y-1. Greenwood *et al.*(2016) had estimated a rate of 0.73 y-1, which they compared to the range of estimated degradation rates 0.365 to 3.65 y-1 from Wijsman *et al.*(2002) and Greenwood (2010). Middelburg *et al.*(2019) estimated a general rate of degradation based on organic matter age, which gave around 2.4 for organic matter one month old, and 0.2 for one year old.
+Calibrating organic carbon involved the result of balancing three key components of organic matter: influx, initial concentration profile and reaction rate (Figure 14). The target was a steady concentration profile and a DIC efflux of around 8500 mmol m\(^{-2}\) y\(^{-1}\). The organic matter reaction rate constant was set to 2 y^-1^. Greenwood *et al.*(2016) had estimated a rate of 0.73 y^-1^, which they compared to the range of estimated degradation rates 0.365 to 3.65 y^-1^ from Wijsman *et al.*(2002) and Greenwood (2010). Middelburg *et al.*(2019) estimated a general rate of degradation based on organic matter age, which gave around 2.4 for organic matter one month old, and 0.2 for one year old.
 
 ![](media/candi/image7.png){width="33%"}
 
@@ -222,13 +222,13 @@ The traditional sediment models that CANDI-AED was based on have an N redox mode
 
 **Figure 10.6.** Nitrogen redox model used in most sediment models.
 
-CANDI-AED has a complex nitrogen redox model (Figure 14). This model adds the species NO2- and $N_2O$ and allows two different denitrification pathways: reduction of $N_2O$ with organic matter (denitrousation); and reduction of NO2- with $NH_4^+$ (deammonification, sometimes known as anammox).
+CANDI-AED has a complex nitrogen redox model (Figure 14). This model adds the species $NO_2^-$ and $N_2O$ and allows two different denitrification pathways: reduction of $N_2O$ with organic matter (denitrousation); and reduction of $NO_2^-$ with $NH_4^+$ (deammonification, sometimes known as anammox).
 
 ![](media/candi/image9.png){width="95%"}
 
 **Figure 10.7.** The N redox model used in CANDI-AED. Red pathways indicate oxidation by $O_2$, brown pathways oxidation of organic matter by an N species and the blue pathway is $NH_4^+$ oxidation by NO2-. Dashed brown lines indicate the release of NH4 from organic matter upon oxidation.
 
-The rate constants and partitioning constants are presented in Figure 15. Organic matter reactions were 2 y-1 for the reaction of POML, for all N redox pathways. The reaction equation is then the product of concentration and the rate constant, hence the final rate is in mmol L^-1^  y-1. $NH_4^+$ was released with each POML oxidised, given by the C:N ratio. The rate of $NH_4^+$ oxidation by $O_2$ wa given by kNH4O2, and then the partitioning of reaction products into NO2- and $N_2O$ was set by another constant and the $O_2$ concentration. Similarly, the rate of NO2- oxidation of organic matter was 2 y-1, and the partitioning of reaction products was set by another constant and the NO2- concentration.
+The rate constants and partitioning constants are presented in Figure 15. Organic matter reactions were 2 y^-1^ for the reaction of POML, for all N redox pathways. The reaction equation is then the product of concentration and the rate constant, hence the final rate is in mmol L^-1^ y^-1^. $NH_4^+$ was released with each POML oxidised, given by the C:N ratio. The rate of $NH_4^+$ oxidation by $O_2$ wa given by kNH4O2, and then the partitioning of reaction products into $NO_2^-$ and $N_2O$ was set by another constant and the $O_2$ concentration. Similarly, the rate of $NO_2^-$ oxidation of organic matter was 2 y^-1^, and the partitioning of reaction products was set by another constant and the $NO_2^-$ concentration.
 
 ![](media/candi/image10.png){width="95%"}
 
@@ -334,7 +334,7 @@ Total respiration = 17 000 mmol m\(^{-2}\) y\(^{-1}\)
 
 NPP/R ratio was approximately 0.74 (from the measured data of sites 7 and 8)
 
-NPP was 17 000 × 0.75 = 13 000 mmol $O_2$ m-2 y-1
+NPP was 17 000 × 0.75 = 13 000 mmol $O_2$ m-2 y^-1^
 
 But $O_2$ flux across the sediment-water interface was close to zero, so the  $O_2$ produced by the MPB was used to oxidise organic matter
 
@@ -382,9 +382,9 @@ Physical sediment mixing rates were the same despite the roots possibly binding 
 
 Seagrass deposited leaf detritus at the sediment-water interface
 
-Seagrass detritus reaction rate constant was 1 y-1 (POML was 2 y-1)
+Seagrass detritus reaction rate constant was 1 y^-1^ (POML was 2 y^-1^)
 
-Seagrass detritus influx at the sediment-water interface was calibrated to the respiration rate (starting around 10 000 mmol m\(^{-2}\) y\(^{-1}\) (120 g m-2 y-1))
+Seagrass detritus influx at the sediment-water interface was calibrated to the respiration rate (starting around 10 000 mmol m\(^{-2}\) y\(^{-1}\) (120 g m-2 y^-1^))
 
 ![](media/candi/image16.png){width="33%"}
 
@@ -446,15 +446,15 @@ To replicate the effect of a one-off pollution or algal bloom event, a higher or
 
 #### Groundwater observations
 
-The equilibrium simulation was extended with groundwater inflow into the deepest layer of sediment. Part of the motivation behind including this environment was the recommendations of Greenwood *et al.*(2016), who estimated two N flux budgets for Cockburn Sound, with the lower (450 t y-1) and upper (920 t y-1) amount of groundwater setting the difference. Greenwood *et al.*(2016) set the range based on rainfall variability, following Donn *et al.*(2015). Greenwood *et al.*(2016) compared these values to previous estimates of 2100 (for 1978, from CSMC 2001) and 300 t N y-1 (for 2000, from CSMC 2001), which combined groundwater influx with atmospheric and catchment inputs. Greenwood *et al.*(2016) also mentioned the possible addition of a further 185 t N y-1 from managed aquifer recharge in the future.
+The equilibrium simulation was extended with groundwater inflow into the deepest layer of sediment. Part of the motivation behind including this environment was the recommendations of Greenwood *et al.*(2016), who estimated two N flux budgets for Cockburn Sound, with the lower (450 t y^-1^) and upper (920 t y^-1^) amount of groundwater setting the difference. Greenwood *et al.*(2016) set the range based on rainfall variability, following Donn *et al.*(2015). Greenwood *et al.*(2016) compared these values to previous estimates of 2100 (for 1978, from CSMC 2001) and 300 t N y^-1^ (for 2000, from CSMC 2001), which combined groundwater influx with atmospheric and catchment inputs. Greenwood *et al.*(2016) also mentioned the possible addition of a further 185 t N y^-1^ from managed aquifer recharge in the future.
 
-As outlined in Table 1, thousands of t y-1 are thought to be recycled in Cockburn Sound, and groundwater represents only hundreds of t y-1. However, groundwater would be the major external flux of TN in this system, given that the atmosphere was around 10 t y-1 and the northern sea boundary was around 51 t y-1. Combined burial and denitrification were proposed to be in balance with the groundwater input, however, there is uncertainty about these amounts. The simulation in CANDI-AED can help to estimate groundwater input, and separately estimate burial and denitrification.
+As outlined in Table 1, thousands of t y^-1^ are thought to be recycled in Cockburn Sound, and groundwater represents only hundreds of t y^-1^. However, groundwater would be the major external flux of TN in this system, given that the atmosphere was around 10 t y^-1^ and the northern sea boundary was around 51 t y^-1^. Combined burial and denitrification were proposed to be in balance with the groundwater input, however, there is uncertainty about these amounts. The simulation in CANDI-AED can help to estimate groundwater input, and separately estimate burial and denitrification.
 
 Further, the Greenwood *et al.*(2016) flux budget assumed that TN would be released from the sediment as $NO_3^-$ rather than $NH_4^+$ or other DIN species. Therefore, another motivation for the CANDI-AED project is to estimate the speciation of DIN from the sediment.
 
 In recent work, Donn *et al.*(2025) with CSIRO collected groundwater samples and conducted numerical modelling of groundwater, to estimate the groundwater flow and TN species concentration in Cockburn Sound. They conducted several sampling campaigns, along the beach and offshore from a boat. A summary of the concentrations of some of the key variables from each sampling campaign is given in Table 9. A schematic cross-section of the underwater environment with the flow path and sampling locations is given in Figure 18.
 
-Donn *et al.*(2025) also used a 2D groundwater model to estimate flow velocities, and, combined with the measured concentrations, estimated the loads of key species into Cockburn. Escudero *et al.*(2026) then used these flows and loads to apply average loads to the CSIEM hydrodynamic model, as well as inputs to CANDI-AED. The model from Donn *et al.*(2025) predicted very little flow, and therefore load, to most areas of Cockburn Sound. For the years 2021 and 2022, using this method predicted around 60 t y-1, which was much lower than the hundreds of t y-1 estimated by Greenwood *et al.*(2016).
+Donn *et al.*(2025) also used a 2D groundwater model to estimate flow velocities, and, combined with the measured concentrations, estimated the loads of key species into Cockburn. Escudero *et al.*(2026) then used these flows and loads to apply average loads to the CSIEM hydrodynamic model, as well as inputs to CANDI-AED. The model from Donn *et al.*(2025) predicted very little flow, and therefore load, to most areas of Cockburn Sound. For the years 2021 and 2022, using this method predicted around 60 t y^-1^, which was much lower than the hundreds of t y^-1^ estimated by Greenwood *et al.*(2016).
 
 Table 9 Summary of groundwater sample concentrations (mmol L-1)
 
@@ -476,11 +476,11 @@ Table 11 Average concentrations for key variables used for the bottom boundary o
 
 XXXX Figure missing XXXX
 
-**Figure 10.18.**  Groundwater flow velocity as applied to the bottom boundary of the sediment domain with daily timesteps (cm y-1).
+**Figure 10.18.**  Groundwater flow velocity as applied to the bottom boundary of the sediment domain with daily timesteps (cm y^-1^).
 
 XXXX Figure missing XXXX
 
-**Figure 10.19.**  Ammonium concentration as applied to the bottom boundary of the sediment domain with daily timesteps (cm y-1).
+**Figure 10.19.**  Ammonium concentration as applied to the bottom boundary of the sediment domain with daily timesteps (cm y^-1^).
 
 
 ## Model calibration and assessment
@@ -491,7 +491,7 @@ XXXX Figure missing XXXX
 
 **C and $O_2$ balance: ** The DIC and $O_2$ fluxes were calibrated to be in balance. The resulting DIC efflux was around 9000 mmol m\(^{-2}\) y\(^{-1}\) (out of the sediment) and $O_2$ uptake was around 8000 mmol m\(^{-2}\) y\(^{-1}\) (into the sediment).
 
-To achieve this balance, the main parameter calibration step was using higher irrigation than the model default option. The initial irrigation parameter (α0) taken from the sediment model of Van Cappellen and Wang (1996) was 200 y-1 and this was increased to 3300 y-1. The purpose of this was to allow mixing of $O_2$ deeper into the sediment. When using the original, lower mixing rate, the sediment and bottom waters were not aerobic and most organic matter was consumed by sulfate reduction. In that case, the $O_2$ flux did not reach a value close to 8500 mmol m\(^{-2}\) y\(^{-1}\): once the concentration of $O_2$ in the top 1 mm of sediment was 0 mmol L^-1^ , $O_2$ could not diffuse into the sediment faster than it could react with the organic matter. There was clearly a high sediment $O_2$ demand, but not a high flux of O2. Increasing the irrigation parameter allowed both demand and flux.
+To achieve this balance, the main parameter calibration step was using higher irrigation than the model default option. The initial irrigation parameter (α0) taken from the sediment model of Van Cappellen and Wang (1996) was 200 y^-1^ and this was increased to 3300 y^-1^. The purpose of this was to allow mixing of $O_2$ deeper into the sediment. When using the original, lower mixing rate, the sediment and bottom waters were not aerobic and most organic matter was consumed by sulfate reduction. In that case, the $O_2$ flux did not reach a value close to 8500 mmol m\(^{-2}\) y\(^{-1}\): once the concentration of $O_2$ in the top 1 mm of sediment was 0 mmol L^-1^ , $O_2$ could not diffuse into the sediment faster than it could react with the organic matter. There was clearly a high sediment $O_2$ demand, but not a high flux of O2. Increasing the irrigation parameter allowed both demand and flux.
 
 With this irrigation setup and flux result, aerobic oxidation of organic matter and $O_2$ presence were simulated to around 8 cm, which followed the bioturbation settings of exponential decay from the surface to 8 cm. At 2cm, which was the depth mentioned above where we were confident that some $O_2$ should be present, it was around 25% of the concentration at the sediment-water interface.
 
@@ -502,7 +502,7 @@ With this irrigation setup and flux result, aerobic oxidation of organic matter 
 
 **Figure 10.20.**  – Left: redox reaction rates for the Deep-dark simulation, primarily aerobic (yellow). Right: favourability of each redox pathway, scaling between 0 and 1, the product of limitation and inhibition.
 
-The organic matter reaction rate was around 500 mmol L^-1^  y-1 at the sediment-water interface and decreased to zero around 15 cm deep. To check this fundamental step, this rate and depth were compared with similar observations from other key sediment models. Van Cappellen and Wang (1996) had a reaction rate of around 140 mmol L^-1^  y-1 at the sediment-water interface, decaying to around zero at around 10 cm. The measured data used for this paper were from Canfield *et al.*(1993) from a site (S4) 190 m deep (Eyre *et al.*2025 took cores from 20 m deep). Canfield *et al.*(1993) measured $O_2$ uptake and total C oxidation at 16.06 and 15.76 mmol m-2 d-1. $O_2$ was measured at 0 below 7 mm. Boudreau (1996) had a reaction rate of around 6 mmol L^-1^  y-1 at the sediment-water interface. The coastal-estuarine sediment simulated by Wang and Van Cappellen (1995) had an organic matter oxidation rate of 9800 mmol L^-1^  y-1 (27 mmol m-2 d-1), which was about 70 at the sediment water interface and around 50 mmol L^-1^  y-1 at 6 cm deep. This comparison showed that the Cockburn simulation included much more organic matter oxidation than similar studies, in order to reach the benchmark 8500 mmol m\(^{-2}\) y\(^{-1}\) DIC flux reported by Eyre *et al.*Although these studies had a lower total organic matter oxidation rate, these studies also had aerobic oxidation exhausted within the top 1 cm. In these studies, sulfate reduction was the main redox pathway from 2 cm down. One explanation for this difference may be that the hydrodynamic environment was much more energetic in Cockburn.
+The organic matter reaction rate was around 500 mmol L^-1^  y^-1^ at the sediment-water interface and decreased to zero around 15 cm deep. To check this fundamental step, this rate and depth were compared with similar observations from other key sediment models. Van Cappellen and Wang (1996) had a reaction rate of around 140 mmol L^-1^  y^-1^ at the sediment-water interface, decaying to around zero at around 10 cm. The measured data used for this paper were from Canfield *et al.*(1993) from a site (S4) 190 m deep (Eyre *et al.*2025 took cores from 20 m deep). Canfield *et al.*(1993) measured $O_2$ uptake and total C oxidation at 16.06 and 15.76 mmol m-2 d-1. $O_2$ was measured at 0 below 7 mm. Boudreau (1996) had a reaction rate of around 6 mmol L^-1^  y^-1^ at the sediment-water interface. The coastal-estuarine sediment simulated by Wang and Van Cappellen (1995) had an organic matter oxidation rate of 9800 mmol L^-1^  y^-1^ (27 mmol m-2 d-1), which was about 70 at the sediment water interface and around 50 mmol L^-1^  y^-1^ at 6 cm deep. This comparison showed that the Cockburn simulation included much more organic matter oxidation than similar studies, in order to reach the benchmark 8500 mmol m\(^{-2}\) y\(^{-1}\) DIC flux reported by Eyre *et al.*Although these studies had a lower total organic matter oxidation rate, these studies also had aerobic oxidation exhausted within the top 1 cm. In these studies, sulfate reduction was the main redox pathway from 2 cm down. One explanation for this difference may be that the hydrodynamic environment was much more energetic in Cockburn.
 
 ![](media/candi/image22.png){width="33%"}
 
@@ -514,7 +514,7 @@ The organic matter reaction rate was around 500 mmol L^-1^  y-1 at the sediment-
 
 C and $O_2$ balance
 
-The DIC and $O_2$ were again calibrated to be in balance. Respiration (production of DIC) was 17 000 mmol m\(^{-2}\) y\(^{-1}\) and NPP (net production of O2) was 13 000 mmol m\(^{-2}\) y\(^{-1}\) : this meant that most of the organic matter was consumed aerobically. This was achieved by tuning the rate that MPB produced $O_2$ and consumed DIC (312 y-1). This parameter was very sensitive and this system could easily have an imbalance between respiration and NPP in another simulation with different organic matter amounts. $O_2$ flux across the sediment-water interface was measured at very low rates, and the simulation produced a very low $O_2$ flux of 150 mmol m\(^{-2}\) y\(^{-1}\), which captured the measured data well. The DIC flux was measured at around 4000 and simulated at 6000 mmol m\(^{-2}\) y\(^{-1}\).
+The DIC and $O_2$ were again calibrated to be in balance. Respiration (production of DIC) was 17 000 mmol m\(^{-2}\) y\(^{-1}\) and NPP (net production of O2) was 13 000 mmol m\(^{-2}\) y\(^{-1}\) : this meant that most of the organic matter was consumed aerobically. This was achieved by tuning the rate that MPB produced $O_2$ and consumed DIC (312 y^-1^). This parameter was very sensitive and this system could easily have an imbalance between respiration and NPP in another simulation with different organic matter amounts. $O_2$ flux across the sediment-water interface was measured at very low rates, and the simulation produced a very low $O_2$ flux of 150 mmol m\(^{-2}\) y\(^{-1}\), which captured the measured data well. The DIC flux was measured at around 4000 and simulated at 6000 mmol m\(^{-2}\) y\(^{-1}\).
 
 Redox pathways
 
@@ -533,7 +533,7 @@ The Benthic algae environments produced a sediment-water $N_2$ flux of around 75
 
 C and $O_2$ balance
 
-The DIC and $O_2$ production and consumption were again calibrated to be in balance. Respiration was 35 000 mmol m\(^{-2}\) y\(^{-1}\) and NPP (net production of O2) was 41 000 mmol m\(^{-2}\) y\(^{-1}\), where their targets were 35 000 and 42 000 mmol m\(^{-2}\) y\(^{-1}\), respectively. This was achieved by tuning the rate that seagrass roots produced $O_2$ and consumed DIC (1100 mmol L^-1^  y-1) and tuning the flux of POMSpecial deposition, as seagrass detritus (17 000 mmol m\(^{-2}\) y\(^{-1}\), reaction rate constant 1 y-1). $O_2$ flux across the sediment-water interface was measured at very low values, and the simulation produced a high $O_2$ efflux of 12 000 mmol m\(^{-2}\) y\(^{-1}\). The DIC flux was measured at close to zero but simulated at 6000 mmol m\(^{-2}\) y\(^{-1}\) into the sediment. Therefore, although the DIC and $O_2$ production and consumption matched the assumptions that went into the design of the simulation, the final simulated flux across the sediment-water interface was larger than the measured values. The DIC efflux of around 6000 mmol m\(^{-2}\) y\(^{-1}\) is still considered an oligotrophic environment, according to the classification from Eyre and Ferguson (2009).
+The DIC and $O_2$ production and consumption were again calibrated to be in balance. Respiration was 35 000 mmol m\(^{-2}\) y\(^{-1}\) and NPP (net production of O2) was 41 000 mmol m\(^{-2}\) y\(^{-1}\), where their targets were 35 000 and 42 000 mmol m\(^{-2}\) y\(^{-1}\), respectively. This was achieved by tuning the rate that seagrass roots produced $O_2$ and consumed DIC (1100 mmol L^-1^  y^-1^) and tuning the flux of POMSpecial deposition, as seagrass detritus (17 000 mmol m\(^{-2}\) y\(^{-1}\), reaction rate constant 1 y^-1^). $O_2$ flux across the sediment-water interface was measured at very low values, and the simulation produced a high $O_2$ efflux of 12 000 mmol m\(^{-2}\) y\(^{-1}\). The DIC flux was measured at close to zero but simulated at 6000 mmol m\(^{-2}\) y\(^{-1}\) into the sediment. Therefore, although the DIC and $O_2$ production and consumption matched the assumptions that went into the design of the simulation, the final simulated flux across the sediment-water interface was larger than the measured values. The DIC efflux of around 6000 mmol m\(^{-2}\) y\(^{-1}\) is still considered an oligotrophic environment, according to the classification from Eyre and Ferguson (2009).
 
 Redox pathways
 
@@ -563,9 +563,9 @@ Overall, these environments had a lot of aerobic oxidation of the incoming organ
 
 The main processes of N redox cycling were:
 
-oxidation of $NH_4^+$ to NO2- and
+oxidation of $NH_4^+$ to $NO_2^-$ and
 
-oxidation of organic matter by NO2- and $N_2O$.
+oxidation of organic matter by $NO_2^-$ and $N_2O$.
 
 These pathways promoted denitrification (N2 production) from $N_2O$ oxidation of organic matter. These were the largest rate processes seen in the sediment (Figure 26, see also Figure 27 for the map of N redox cycling in CANDI-AED, where these red and brown profiles correspond with the red and brown pathway arrows). The seagrass environment had the largest peak of summed N redox rates at just below 5 cm and they continued to around 10 cm. However, the other two environments allowed these processes to occur from 0 to 10 cm, around twice the depth.
 
@@ -577,21 +577,21 @@ These pathways promoted denitrification (N2 production) from $N_2O$ oxidation of
 
 ![](media/candi/image36.png){width="33%"}
 
-**Figure 10.26.**  N redox pathway map, copied from Figure 16. The pathways that had the highest rates are emphasised here with thick lines: organic matter oxidation by NO2- and $NH_4^+$ oxidation by O2.
+**Figure 10.26.**  N redox pathway map, copied from Figure 16. The pathways that had the highest rates are emphasised here with thick lines: organic matter oxidation by $NO_2^-$ and $NH_4^+$ oxidation by O2.
 
 Flux and mass N budgets
 
-The influx of N from algal detritus and seagrass combined for all of Cockburn Sound was 3087 t y-1 (Table 12). For comparison with other budgets, the benthic algal biomass and seagrass can be considered part of the sediment internal cycling, and the POML detritus from the Deep-dark component (2174 t y-1) reflects the load from phytoplankton detritus. Similarly, the organic N input is in line with Greenwood’s estimate of around 2000 t y-1.
+The influx of N from algal detritus and seagrass combined for all of Cockburn Sound was 3087 t y^-1^ (Table 12). For comparison with other budgets, the benthic algal biomass and seagrass can be considered part of the sediment internal cycling, and the POML detritus from the Deep-dark component (2174 t y^-1^) reflects the load from phytoplankton detritus. Similarly, the organic N input is in line with Greenwood’s estimate of around 2000 t y^-1^.
 
-The simulated net DIN flux across the sediment-water interface for the whole of Cockburn Sound was 1034 t y-1 from the sediment to the water. The N outflux of 1034 t y-1 is broadly in line with the estimate from Greenwood (2016), who calculated an N flux of around 1500 t y-1. The biggest difference between these results and the result of the Greenwood model is Greenwood’s assumption of a net outflux of $NO_3^-$, whereas, according to these results, most of the flux is $NH_4^+$ and $N_2$ (430 and 2012 t y-1).
+The simulated net DIN flux across the sediment-water interface for the whole of Cockburn Sound was 1034 t y^-1^ from the sediment to the water. The N outflux of 1034 t y^-1^ is broadly in line with the estimate from Greenwood (2016), who calculated an N flux of around 1500 t y^-1^. The biggest difference between these results and the result of the Greenwood model is Greenwood’s assumption of a net outflux of $NO_3^-$, whereas, according to these results, most of the flux is $NH_4^+$ and $N_2$ (430 and 2012 t y^-1^).
 
 The $N_2$ flux of 2012 is an indication of denitrification. The total of organic N entering the sediment is roughly in balance with the DIN being recycled to the water column and the $N_2$ lost to denitrification (Figure 28). If this were the case, the sediment would be removing total N from the Cockburn system each year, especially since the assumed inputs of N are assumed to be much lower. It is more likely an overestimation of the amount of organic N entering the sediment, calibrated to satisfy the reported amounts of DIC efflux. Although the seagrass was simulated to take up DIN from the sediment pore water, its simulated growth was not limited by low N concentration. This should be included in future simulations of the seagrass sediment environment. Future simulations should more generally examine the settings for organic matter inputs from benthic algae and seagrass leaf detritus. A future coupled simulation could also utilise the water column TN concentrations and benthic algae and seagrass modules, to close the total N loop. Despite these limitations, these results give a useful approximation of general N fluxes and the individual N speciation.
 
-Table 12 N budget fluxes in t y-1 from each sediment environment and the total. In this table, negative indicates flux from the sediment to the water.
+Table 12 N budget fluxes in t y^-1^ from each sediment environment and the total. In this table, negative indicates flux from the sediment to the water.
 
 ![](media/candi/image37.png){width="33%"}
 
-**Figure 10.27.**  Schematic of the N flux budget in t N y-1, approximated to the nearest 1000.
+**Figure 10.27.**  Schematic of the N flux budget in t N y^-1^, approximated to the nearest 1000.
 
 The stores of N were calculated as the sum of all N species then multiplied by their weighted areas, in the top 2 cm of sediment, resulting in 3417 t (Table 13). Greenwood had estimated around half of this amount at 1505 t. All of the uncertainties described above relating to the amount of benthic algae biomass and seagrass detritus apply for this calculation. Another major uncertainty is the amount of refractory organic N in the sediment. Future work can run longer simulations of the 20th century, depositing refractory organic N in the polluted decades and capture the measured amount of deep N, while still maintaining the surface fluxes from recent organic N deposition.
 
@@ -649,7 +649,7 @@ Flux and mass budgets
 
 The total mass of N material in the seasonally fluctuating simulations was similar to that of the steady simulation, since the steady simulation was based on an average of seasonal fluctuations (Table 13).
 
-Table 14 N budget fluxes in t y-1 from each sediment environment and the total, during the seasonally fluctuating simulation. In this table, negative indicates flux from the sediment to the water.
+Table 14 N budget fluxes in t y^-1^ from each sediment environment and the total, during the seasonally fluctuating simulation. In this table, negative indicates flux from the sediment to the water.
 
 #### Low $O_2$ period results
 
@@ -671,9 +671,9 @@ Sediment $O_2$ concentration recovered very quickly after the boundary $O_2$ con
 
 N and denitrification
 
-During the drop in $O_2$, the Benthic algal environment had the most prominent increase in DIN flux to the water column, around 300 mmol m-2 y1, or 40% (Figure 34). In the other two environments there was only a small increase compared to the normal seasonal variation. All environments had an increase in $NH_4^+$ flux and a decrease in NO2- flux and concentration. The NO2- concentration went close to 0 mmol L^-1^  in the sediment (Figure 35, Figure 36 and Figure 37). Thus in a situation with no sediment $O_2$, any NO2- present was reacted to $N_2$ and the NO2- was not replaced. With less $O_2$, the $NH_4^+$ was not oxidised to NO2- and so $NH_4^+$ concentration increased, and hence $NH_4^+$ efflux increased.
+During the drop in $O_2$, the Benthic algal environment had the most prominent increase in DIN flux to the water column, around 300 mmol m-2 y1, or 40% (Figure 34). In the other two environments there was only a small increase compared to the normal seasonal variation. All environments had an increase in $NH_4^+$ flux and a decrease in $NO_2^-$ flux and concentration. The $NO_2^-$ concentration went close to 0 mmol L^-1^  in the sediment (Figure 35, Figure 36 and Figure 37). Thus in a situation with no sediment $O_2$, any $NO_2^-$ present was reacted to $N_2$ and the $NO_2^-$ was not replaced. With less $O_2$, the $NH_4^+$ was not oxidised to $NO_2^-$ and so $NH_4^+$ concentration increased, and hence $NH_4^+$ efflux increased.
 
-This shows a mechanism for how a disturbance to the baseline condition led to more $NH_4^+$ at the expense of NOx, which is a pattern seen in other scenarios described below. This also shows the temporary increase in denitrification caused by low $O_2$, but also how denitrification ceases after the oxidised N species such as NO2- are exhausted. Eyre *et al.*(2025) mentioned the necessity of short periods of low $O_2$ for coupled nitrification-denitrification.
+This shows a mechanism for how a disturbance to the baseline condition led to more $NH_4^+$ at the expense of NOx, which is a pattern seen in other scenarios described below. This also shows the temporary increase in denitrification caused by low $O_2$, but also how denitrification ceases after the oxidised N species such as $NO_2^-$ are exhausted. Eyre *et al.*(2025) mentioned the necessity of short periods of low $O_2$ for coupled nitrification-denitrification.
 
 ![](media/candi/image52.png){width="33%"}
 
@@ -691,7 +691,7 @@ This shows a mechanism for how a disturbance to the baseline condition led to mo
 
 ![](media/candi/image57.png){width="33%"}
 
-**Figure 10.36.**  Summary figure for NO2- under the $O_2$ drop. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
+**Figure 10.36.**  Summary figure for $NO_2^-$ under the $O_2$ drop. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
 ![](media/candi/image58.png){width="33%"}
 
@@ -741,7 +741,7 @@ The organic matter pulse caused an increased efflux of DIN, most of which was $N
 
 ![](media/candi/image70.png){width="33%"}
 
-**Figure 10.42.**  Summary figure of NO2- under organic matter increase. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
+**Figure 10.42.**  Summary figure of $NO_2^-$ under organic matter increase. Left to right – Deep-dark, Benthic algae communities and Seagrass environments. Top – flux over time, including measured data. Bottom – plot of concentration, depth and time, with the bottom water shown above the sediment-water interface.
 
 ![](media/candi/image71.png){width="33%"}
 
@@ -751,11 +751,11 @@ The organic matter pulse caused an increased efflux of DIN, most of which was $N
 
 ### Sensitivity of sediment processes to groundwater N inputs
 
-Across the four groundwater environments, in most cases the sediment-water interface fluxes were close to the same as in the baseline Deep-dark environment (Figure 39). One major difference to the baseline was a shift in the N redox chemistry from producing $NO_3^-$ to more $NH_4^+$. As with the low $O_2$ and high organic matter simulations, any disturbance to the baseline shifts this system towards $NH_4^+$. As noted in the introduction to this report, Greenwood *et al.*(2016) had assumed that the sediment supplied $NO_3^-$ only, however, this simulation produced fluxes of $NH_4^+$ at around the same level as NO2- (Table 14). The Deep-dark $NO_3^-$ flux was into the sediment, and in the Beach high simulation, it oscillated from influx to efflux with the seasonal rainfall on the mainland (Figure 40).
+Across the four groundwater environments, in most cases the sediment-water interface fluxes were close to the same as in the baseline Deep-dark environment (Figure 39). One major difference to the baseline was a shift in the N redox chemistry from producing $NO_3^-$ to more $NH_4^+$. As with the low $O_2$ and high organic matter simulations, any disturbance to the baseline shifts this system towards $NH_4^+$. As noted in the introduction to this report, Greenwood *et al.*(2016) had assumed that the sediment supplied $NO_3^-$ only, however, this simulation produced fluxes of $NH_4^+$ at around the same level as $NO_2^-$ (Table 14). The Deep-dark $NO_3^-$ flux was into the sediment, and in the Beach high simulation, it oscillated from influx to efflux with the seasonal rainfall on the mainland (Figure 40).
 
 Another difference from the baseline was the increased flux of $N_2$ in the beach environments. $N_2$ flux was nine and six times higher in the beach environments than in the Deep-dark simulation. The well oxygenated water column may have been capable of fuelling nitrification-denitrification reactions, and so extra DIN added to the sediment from the groundwater was removed from the system.
 
-Whereas in the Deep-dark environment, key N variables were concentrated in the top 5 cm of the sediment, the Beach high simulation had these variables concentrated below 15 cm (Figure 41). $NH_4^+$ and $NO_3^-$ accumulated with depth and NO2- had a peak around 12 cm. The N redox reactions continued at the surface but a small peak of extra redox reactions could be seen at around 12 cm (Figure 42).
+Whereas in the Deep-dark environment, key N variables were concentrated in the top 5 cm of the sediment, the Beach high simulation had these variables concentrated below 15 cm (Figure 41). $NH_4^+$ and $NO_3^-$ accumulated with depth and $NO_2^-$ had a peak around 12 cm. The N redox reactions continued at the surface but a small peak of extra redox reactions could be seen at around 12 cm (Figure 42).
 
 **Figure 10.44.**  Sediment-water interface fluxes for each of the four groundwater environments compared to the baseline Deep-dark environment, which had no groundwater.
 
@@ -771,24 +771,18 @@ Table 15 Average fluxes (mmol N m¯² y¯¹) for key variables for the four grou
 
 ## Summary
 
-The first major result of this study was the synthesis of Cockburn Sound measured data. This allowed the categorisation of the broader study site into four major types of sediment environment, with the aim of simplifying the system yet retaining the right amount of complexity. This study captured the major processes in three of these four environments.
+This study synthesised biogeochemistry data from Cockburn Sound and integrated it into the CANDI-AED model. Four major types of sediment environment were defined to cover the range of conditions experienced along the Perth coast, and the model was calibrated to each type, to quantify indicative sediment carbon and nutrient stocks, and sediment-water flux rates.
 
-The question of the legacy organic matter is yet to be answered. The report from Eyre *et al.*suggested that the DIC flux was mostly from freshly deposited phytodetritus. The results of this model matched this assumption, however, this study did not show how organic matter could accumulate at around 2% TOC in the top 10 cm of sediment and not be buried in the deep sediment.
+The largest sediment area, the Deep-dark environment, was able to process algal detritus with mostly aerobic oxidation. $O_2$ flux was around 8000 mmol m^-2^ y^-1^ and the reaction rate was around 500 mmol L-1 y-1 at the sediment-water interface. The implication of having O2 in the top mm of sediment is that the deeper sediment does not become a source of legacy PO43- or experience a heavy build-up of H2S and sulfidic minerals. Sediment O2 is able to maintain $NO_x$ and promote nitrification-denitrification and so remove some of the external N load from the system. These areas were effective at denitrification, with a denitrification efficiency of 44%, that is, the remaining 56% of DIN was returned to the water column as $NO_x$ and $NH_4^+$ .  
 
-Development of CANDI-AED through this study led to advances. No other model can simulate benthic algae and seagrass as part of the sediment biogeochemistry. After building the model code to match the conceptual model, CANDI-AED was able to capture the key characteristics of the environment by fine tuning just a few key parameters, for irrigation and $O_2$ production/DIC assimilation in benthic algae and seagrass.
+The shallow sediments in the photic zone (Benthic algae and Seagrass environments) also had O2 in the uppermost sediment layers. The benthic algae itself and the seagrass leaf detritus were extra sources of organic C and N, which caused more O2 demand, but the benthic algae and seagrass roots produced a layer of O2 that maintained aerobic oxidation and nitrification-denitrification below the O2 depth. These photosynthetic environments were only around one third of the Cockburn area, but produced almost half of the denitrification. There were uncertainties with how the model configured the amount of organic N entering the sediment, however, the general conclusion is drawn that any extra O2 in these environments allowed for greater denitrification.
 
-Setting up this model required checking both previous modelling studies and the measured data in Cockburn Sound. As mentioned in the results of the Deep-dark sediment, some assumptions from this study were different to those in previous sediment modelling studies. The irrigation rate parameter was much higher than in similar modelling studies. The total organic matter reaction rate was much higher, as was the amount of aerobic respiration over the anaerobic pathways, compared to similar studies. Unfortunately, the other studies did not report everything that we were able to report here, such as denitrification rates or sediment-water fluxes, and so since the sediment-water fluxes broadly matched the measured data, we assess that the model results were acceptable. We conclude that this environment had a high turnover of material, through both physical mixing of sediment and processing of organic matter.
+For the whole of the simulated Cockburn Sound, the model calculated an influx of approximately 3000 t y-1 organic N entering the sediment. There was a mass of approximately 3000 t stored in the sediment as organic N, inorganic N and benthic algae biomass. The model fluxed both $NO_x$ and $NH_4^+$ from the sediment to the water column in roughly equal proportions, at around 1000 t y^-1^. Denitrification was calculated at around 2000 t y-1. One implication of this is that even though the sediment is aerobic, the model predicts that the sediment still supplies $NH_4^+$  to the water column, rather than just $NO_3^-$ , as was assumed by Greenwood et al. (2016). The second implication is that the sediment is removing twice as much N as it is returning to the water column. If this were the case, this would not correspond with the conceptual model from several studies, in which most of the N is constantly recycled between the sediment, water column and biomass.
 
-While the apparent production of DIC (respiration) in the sediment was captured successfully, the flux of $O_2$ and DIC across the sediment-water interface in the Seagrass environment was much too high. This can be improved with recalibration of parameters and amounts of incoming seagrass detritus in future work. The rate of mixing and irrigation in seagrass sediments could also be investigated. At this stage, benthic algae and seagrass were set up to establish the DIC-O2 balance, which indirectly affects denitrification processes through $O_2$ inhibition and coupled nitrification-denitrification. The next step for model development will be to include assimilation of $NH_4^+$ and $NO_3^-$ into biomass, which will likely change the balance of N redox processes and reduce GPP once all the available N is consumed.
+The seasonal and one-off simulations showed that the sediment is responsive to deoxygenation and that it also recovers quickly. The N redox simulation showed that the drop in O2 led to a greater N2 efflux (indicating denitrification), primarily through less O2 inhibition. There was also a greater efflux of $NH_4^+$ and it appeared that any stress to the environment shifted the N redox system to releasing more $NH_4^+$ . 
 
-The seasonal and one-off simulations showed that the sediment is responsive to deoxygenation and that it also recovers quickly. The N redox simulation in CANDI-AED showed that the drop in $O_2$ led to a greater $N_2$ efflux (indicating denitrification), primarily through less $O_2$ inhibition. There was also a greater efflux of $NH_4^+$ and it appeared that any stress to the environment shifted the N redox system to releasing more $NH_4^+$. These were results that can be explained by examining the explicit reaction pathways available in CANDI-AED. However, future work would require checking these results against empirical observations.
+The simulations with groundwater brought more DIN and led to greater $NH_4^+$  flux, rather than $NO_3^-$ . Much of the DIN was denitrified to N2 but there were still greater overall DIN fluxes to the water column from those areas with groundwater intrusion.
 
-These seasonal and one-off results can also be investigated with further, similar simulations. By running a range of water column $O_2$ concentrations and durations, and a range of organic matter fluxes and durations, the resulting $NH_4^+$ and $N_2$ can be investigated. There may be a simple rule of thumb that can be developed between key variables.
+For capturing dynamic interactions between the sediment and water, CANDI-AED can be coupled to a water column model. The current version of the water column model has fluxes at the sediment-water interface that are constant in time and for each material zone. Coupling to CANDI-AED will provide a dynamic relationship at the sediment water boundary, along with the benthic microalgae and seagrass modules. It will also provide richer results for the sediment model, which currently has either a constant boundary or one that is hard-coded, and thus unresponsive to sediment flux. For example, if CANDI-AED is currently fluxing $NH_4^+$  to the water column, the boundary concentration of $NH_4^+$  remains the same. 
 
-The simulations with groundwater brought more DIN and led to greater $NH_4^+$ fluxes. Much of the DIN was denitrified to $N_2$ but there were still greater overall DIN fluxes to the water column from those areas with groundwater intrusion.
-
-The final step in the future work for this project will be dynamic coupling to the water column model. The current version of the water column model has fluxes at the sediment-water interface that are constant in time and for each material zone. Coupling to CANDI-AED will provide a dynamic relationship at the sediment water boundary. It will also provide richer results for the sediment model, which currently has either a constant boundary or one that is hard-coded, and thus unresponsive to sediment flux. For example, if CANDI-AED is currently fluxing $NH_4^+$ to the water column, the boundary concentration of $NH_4^+$ remains the same. In the future coupled model, there will be a dynamic feedback of concentrations between the water column and the sediment. Coupling with the AED benthic algae and seagrass models will also be a good opportunity.
-
-
-
-
+Uncertainty remains over the contribution from legacy organic matter on benthic fluxes. The report from Eyre et al. (2025) suggested that the DIC flux was mostly from freshly deposited phyto-detritus, however the cores from Zhou et al. (2024) identified a pool of organic matter remaining from 20th century eutrophication. The results of this model matched the assumption that the organic matter profile was in balance with the incoming phytodetritus, and did not show a tendency for organic matter accumulation to the values seen in the Zhou cores (~2% TOC in the top 10 cm of sediment), however, there may be a less reactive fraction present that is yet to be resolved in the model.
