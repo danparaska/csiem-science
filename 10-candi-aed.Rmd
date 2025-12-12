@@ -159,6 +159,8 @@ To provide context for the relative amounts of each environment in Cockburn Soun
 
 Table 6 Areas of three of the sediment environments in Cockburn Sound
 
+XXXX Table missing XXXX
+
 ![](media/candi/image4.jpeg){width="95%"}
 
 **Figure 10.2.** Left – Cockburn Sound with aerial photograph. Shallower areas are visible as paler blue. Core sites are red and yellow circles; Right – cores and major sediment environments.
@@ -167,6 +169,7 @@ This approach allowed an update of the sediment storage budget (Table 7). The ar
 
 Table 7 Estimate of mass storages in the top 2 cm of Cockburn Sound in t.
 
+XXXX Table missing XXXX
 
 ### Sediment biogeochemistry model (CANDI-AED) {#candi-aed}
 
@@ -453,6 +456,8 @@ Donn *et al.* (2025) also used a 2D groundwater model to estimate flow velocitie
 
 Table 9 Summary of groundwater sample concentrations (mmol L-1)
 
+XXXX Table missing XXXX
+
 ![](media/candi/image19.png){width="94%"}
 
 **Figure 10.18.**  Groundwater-sediment conceptual model
@@ -467,7 +472,11 @@ Porewater flow was advected upwards at the 30 cm deep bottom boundary, using the
 
 Table 10 Summary of area, porewater velocity and average groundwater flux and load of TN. Flux was calculated as the product of pf and TN concentration. Load was calculated as the product of TN mass per volume, porewater flux and area.
 
+XXXX Table missing XXXX
+
 Table 11 Average concentrations for key variables used for the bottom boundary of the four groundwater locations (mmol L-1)
+
+XXXX Table missing XXXX
 
 XXXX Figure missing XXXX
 
@@ -574,6 +583,8 @@ The $N_2$ flux of 2012 is an indication of denitrification. The total of organic
 
 Table 12 N budget fluxes in t y^-1^ from each sediment environment and the total. In this table, negative indicates flux from the sediment to the water.
 
+XXXX Table missing XXXX
+
 ![](media/candi/image37.png){width="33%"}
 
 **Figure 10.28.**  Schematic of the N flux budget in t N y^-1^, approximated to the nearest 1000.
@@ -581,6 +592,8 @@ Table 12 N budget fluxes in t y^-1^ from each sediment environment and the total
 The stores of N were calculated as the sum of all N species then multiplied by their weighted areas, in the top 2 cm of sediment, resulting in 3417 t (Table 13). Greenwood had estimated around half of this amount at 1505 t. All of the uncertainties described above relating to the amount of benthic algae biomass and seagrass detritus apply for this calculation. Another major uncertainty is the amount of refractory organic N in the sediment. Future work can run longer simulations of the 20th century, depositing refractory organic N in the polluted decades and capture the measured amount of deep N, while still maintaining the surface fluxes from recent organic N deposition.
 
 Table 13 Stores of N in the top 2 cm of sediment, in t, as simulated with CANDI-AED.
+
+XXXX Table missing XXXX
 
 ### Sensitivity of sediment processes to water quality events
 
@@ -631,6 +644,8 @@ Seagrass had the highest total $N_2$ flux, which was also the least sensitive to
 **Flux and mass budgets**: The total mass of N material in the seasonally fluctuating simulations was similar to that of the steady simulation, since the steady simulation was based on an average of seasonal fluctuations (Table 13).
 
 Table 14 N budget fluxes in t y^-1^ from each sediment environment and the total, during the seasonally fluctuating simulation. In this table, negative indicates flux from the sediment to the water.
+
+XXXX Table missing XXXX
 
 #### Low $O_2$ period results
 
@@ -739,6 +754,8 @@ Whereas in the Deep-dark environment, key N variables were concentrated in the t
 **Figure 10.45.**  Sediment-water interface fluxes for each of the four groundwater environments compared to the baseline Deep-dark environment, which had no groundwater.
 
 Table 15 Average fluxes (mmol N m¯² y¯¹) for key variables for the four groundwater environments compared to the baseline Deep-dark flux.
+
+XXXX Table missing XXXX
 
 **Figure 10.46.**  Sediment-water interface fluxes of key N variables for the Deep-dark environment (left) and the Beach high environment (right). (Y axis limits are not the same on the left and right.)
 
