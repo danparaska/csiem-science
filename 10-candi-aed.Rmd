@@ -1,70 +1,38 @@
 # Sediment Biogeochemistry {#candi-aed}
 
-## Overview {#sediment-overview}
+## Summary  {#sediment-overview}
 
-The store of carbon and nitrogen in marine sediments can be a major factor
-controlling coastal water quality. A significant fraction of organic material
-that deposits into sediments is recycled and re-released back to the
-water column as inorganic, bioavailable nutrients, which can subsequently fuel
-primary productivity. The remainder can be assimilated via processes such as
-denitrification, or buried into deeper sediments. This cycling and movement of materials in surficial sediments, termed *early diagenesis*, is highly dynamic and regulated by temperature, $O_2$ availability
-and physical processes acting at the sediment–water interface. In many coastal
-ecosystems, early diagenesis is further complicated by macroinvertebrate
-bioturbation and the presence of aquatic vegetation. 
+Cycling of N and C in coastal waters and sediments is important for the health of the ecosystem. Cockburn Sound had a history of pollution through the 20th century, including excess organic matter and N, and despite cleaning up inputs to the Sound in recent decades, the sediment retains organic matter in the upper layers of sediment. Budgets had been created from box models and three-dimensional numerical models, to develop an understanding of the C and nutrient cycling. One of the major unknowns in these budgets and models is the role of sediment storage and flux across the sediment-water interface. Field studies have recently been carried out by Eyre *et al.* (2025), collecting cores in Cockburn Sound, from which sediment-water fluxes were measured, as well as concentrations in the top cm and general observations of the state of benthic algae and seagrass in the cores. 
 
-In coastal zones, high inputs of organic carbon and nutrients to the sediment
-may arise from autochthonous sources (e.g. phytoplankton, benthic algae,
-seagrass) and allochthonous sources (e.g. catchment-derived material).
-In highly polluted systems, long-term deposition can build a legacy pool of
-carbon and nutrients and establish biogeochemical conditions that promote
-$O_2$ consumption and, in extreme cases, $H_2S$ production.
+In this report, the complexity of the Cockburn Sound environment was simplified to four major environments, of which three were studied in detail. The Deep-dark environment was the largest area (67%) in Cockburn Sound and it had a low input of organic matter and generally aerobic state. The Benthic algae environment made up around 25% of the area and had photosynthetic algae in the top 2 mm of the sediment, adding $O_2$ and absorbing $DIC$. The Seagrass environment made up around 9% of the area and it had deposition of seagrass detritus, as well as roots that exuded $O_2$. 
 
-Specifically within Cockburn Sound, the legacy loading of wastewater and industrial
-effluents from the 1950s to the 1980s led to excessive primary production and
-nutrient enrichment of naturally sandy sediments. Construction of the Garden
-Island causeway in the 1970s reduced the rate at which nutrients were flushed out
-of Cockburn Sound, allowing the build up (Zhou *et al.*, 2024). Water quality has been monitored for decades and has improved following reductions in point-source nutrient inputs, such as wastewater treatment
-plants. However, the sediments within and surrounding Cockburn Sound
-retain some legacy stores of nutrients that supply bioavailable N and P
-to the water column, though the relative importance of these sources has remained uncertain. 
+These environments were simulated using CANDI-AED, a sediment early diagenesis model that simulates chemical reactions and physical transport in 1D with depth, to produce concentrations and fluxes of around a dozen variables. CANDI-AED was capable of resolving most of the characteristics observed in the sediment core measurements made by Eyre *et al.* (2025). 
 
-Sediment cores analysed by Zhou *et al.* (2024) revealed a nutrient
-accumulation history spanning roughly the last 100 years. Lead isotopes 
-used to date the upper ~70 cm of sediment suggested an average sedimentation rate
-of ~0.5 cm y^-1^. The upper 6 to 10 cm were characterised as a mixed layer with no
-clear isotopic signature, consistent with physical mixing and/or bioturbation.
-Below this layer, clear step changes in nutrient concentrations were observed:
-low values prior to the 1950s, an increase in the 1950s (linked to water-column
-pollution), and a further increase in the 1980s (associated with the causeway).
-Despite reductions in nutrient inputs since the 1980s, nutrient concentrations
-in the surface mixed layer remain highest, suggesting a shift to a higher
-nutrient state that may have yet to fully reverse. 
+Deep-dark sediments were largely aerobic, provided there was a large amount of mixing the upper sediment layers and the $O2_$ and $DIC$ fluxes were successfully simulated (around 23 mmol m-2 d-1).  Benthic algae and Seagrass sediment environments added O2 and organic N into the sediment, allowing coupled nitrification-denitrification. Absolute denitrification rates were high, as measured by $N_2$ efflux, though denitrification efficiency was moderate, relative to the extra organic N fluxing in. 
 
-Sediment N and C stocks have been estimated previously, however, these estimates have rmeained uncertain. The sharp redox gradient that typifies coastal sediments causes a complex
-series of chemical reactions, mediated by diverse microbial communities, and
-occurring over timescales from days to decades. This complexity has made it
-difficult to quantify the nature of $DIN$ fluxes to the water column, and rates of denitrification vs long-term burial. Furthermore, areas of N-rich groundwater along the eastern coast have also been identified as a contributor to sediment N, with NH\_4^+, NO\_3^- and dissolved organic nitrogen ($DON$) able to build up in the pore waters of shallow beach sediments and along Kwinana Shelf.
+A sediment stock of around 3000 t was estimated to be held in detritus, inorganic N and biomass. Around 3000 t N y^-1^ was supplied to the sediment and 1000 t N y^-1^ were returned to the water column, around half of which was $NH_4^+$ and half was $NO_x$. Around 2000 t N y^-1^ was removed from the system as $N_2$ through denitrification. 
 
-The respiration of organic matter in the sediment can also maintain a sediment oxygen demand ($SOD$) that can impair water column $O_2$ conditions. $O_2$ profile measurements in the water generally show that Cockburn Sound is well mixed and oxygenated from the surface to bottom, but can experience low oxygen in the deep basin during periods of high temperature and low wind, when stratification occurs and reaeration from the atmosphere is reduced. Dalseno *et al.* (2024) recorded bottom-water $O_2$
-as low as 0.08 mmol L^-1^ , while shallower waters remained around 0.22 mmol
-L^-1. They concluded that sediment respiration was driving these
-episodes, and the Cockburn Sound basin is vulnerable to hypoxia when experiencing vertical stratification and warm temperatures.
+Fluxes varied with a seasonally-oscillating boundary at the sediment-water interface and resulting fluxes varied in response. Some variables swung from influx to outflux, including $O_2$ in the Benthic algae environment and $NH_4^+$ in the Deep-dark environment. 
 
-This chapter describes the development and assessment of the sediment biogeochemistry model used within the CSIEM platform to understand the mass fluxes across the sediment–water interface, and rates of processing of oxygen, carbon and nutrients within the different sediment types of Cockburn Sound. CANDI-AED is the sediment early diagenesis model used for this purpose and is calibrated based on recent data-set collected within the WAMSI-Westport Marine Science Program (Eyre *et al.*, 2025). The model results are analysed to resolve variability in sediment–water $O_2$, carbon and nutrient fluxes among the different sediment types,a and the results are used to complete a sediment biogeochemical budget for carbon, nutrients and related compounds under present-day conditions. This information provides the foundation for the water column biogeochemical model described in Chapter 11.
+Two one-off events were also simulated: a drop in water column $O_2$ concentration for a month from 7 to 1 mg L^-1^, and an increase in organic matter concentration for a month, from 1×104 to 1×105 mmol m-2 y-1. Solutes such as O2 and NH4+ recovered quickly because of the high rate of mixing in the simulation. N2 efflux, indicating denitrification, increased for both events in the Deep-dark and Benthic algae environments, as there was less $O_2$ to inhibit denitrification. $N_2$ flux decreased in the seagrass environment because of the high organic matter loading and overall shift to $NH_4^+$ in the N redox cycle. 
 
+Groundwater inputs from recent groundwater sampling and modelling were entered into four different deep simulations. Most of the extra groundwater $DIN$ was denitrified and removed as $N_2$, along with an increase in $NH_4^+$ flux to the water column.
 
 ## Model Description and Approach {#model-description}
 
 ### Overview {#overview-approach}
 
-The Cockburn Sound sediment modelling is based around a synthesis of available sediment grab and flux data. Review of this data was used to develop a conceptual model for different sediment "functional types", and these conceptualisations were used as the basis to configure and calibrate the numerical model CANDI-AED.
+The Cockburn Sound sediment modelling is based around a synthesis of available sediment grab and flux data. A review of this data was used to develop a conceptual model for different sediment functional types, and these conceptualisations were used as the basis to configure and calibrate the numerical model CANDI-AED.
 
 At the time of development, sediment diagnesis models in the literature have tended to focus on offshore sediments or coastal unvegetated sediments, and therefore were not adequate to represent some key features of Cockburn Sound, such as extensive areas of shallow sediments with an active microphytobenthos layer or areas supporting seagrass habitats. In this model, we therefore developed customisations to simulate these environments, and applied unique model configurations to each sediment type as guided by the available sediment core incubation data.
 
 ### Categorisation of sediment types {#sediment-types}
 
-The sediments within Cockburn Sound have been mapped by Skene *et al.* (2002) and vary between sandy and muddy -sand. Areas within Cockburn Sound ans Owen Anchorage can be broadly categorised as i) **deep** sediments in depsotional zones that do not receive light for photosynthesis and tend to have finer grain sizes, and ii) more sandy **shallow** sites, that support benthic microalgae or seagrass meadows. Although shallow sites were more numerous, the deep areas occupy a larger fraction of Cockburn Sound’s 
-area, making them particularly important for system-scale budgets. At the same 
+The sediments within Cockburn Sound have been mapped by Skene *et al.* (2002) and vary between sandy and muddy sand. Areas within Cockburn Sound and Owen Anchorage can be broadly categorised as 
+ i) deep sediments in depsotional zones that do not receive light for photosynthesis and tend to have finer grain sizes, and 
+ ii) more sandy shallow sites, that support benthic microalgae or seagrass meadows. 
+
+Although shallow sites were more numerous, the deep areas occupy a larger fraction of Cockburn Sound area, making them particularly important for system-scale budgets. At the same 
 time, seagrass and benthic algae habitats are critical from an ecological
 perspective and for understanding coupled nitrification–denitrification.
 
@@ -173,10 +141,10 @@ XXXX Table missing XXXX
 
 ### Sediment biogeochemistry model (CANDI-AED) {#candi-aed}
 
-For each fo the three main sediment environment CANDI-AED was used to resolve the vertical profiles of sediment solutes and solids by solving advection–diffusion–reaction equations with depth. The main chemical reactions are driven by microbial degradation of organic matter, coupled to a series of redox processes, and mediated by bio-physical effects associated with bioturbation and bioirrigation.
+For each of the three main sediment environment CANDI-AED was used to resolve the vertical profiles of sediment solutes and solids by solving advection–diffusion–reaction equations with depth. The main chemical reactions are driven by microbial degradation of organic matter, coupled to a series of redox processes, and mediated by bio-physical effects associated with bioturbation and bioirrigation.
 
 The model domain extends from the sediment–water interface to a specified depth, and is forced at the upper boundary by bottom-water concentrations
-and particualte mater fluxes, and at the lower boundary by burial and porewater advection. A full description of the core CANDI-AED equations and parameterisation is given in the [AED manual (Chapter 14)](https://aquaticecodynamics.github.io/aed-science/sediment-biogeochemistry.html). In this implementation, a range of extensions were added to capture the effects of microphytobenthos and seagrass metabolism on sediment biogeochemistry.
+and particulate matter fluxes, and at the lower boundary by burial and porewater advection. A full description of the core CANDI-AED equations and parameterisation is given in the [AED manual (Chapter 14)](https://aquaticecodynamics.github.io/aed-science/sediment-biogeochemistry.html). In this implementation, a range of extensions were added to capture the effects of microphytobenthos and seagrass metabolism on sediment biogeochemistry.
 
 ### Sediment model simulation setup
 
@@ -356,13 +324,11 @@ The concentration of $MPB$ was calculated as follows:
 
 #### Seagrass sediment environment
 
-**Seagrass observations**: Some areas had seagrass and therefore seagrass detritus as a source of refractory organic matter. The cores from Eyre *et al.*were cores 5, 6, 9, 10, 11 and 12. Cores 5 and 6 were from a seagrass restoration area whereas the others were naturally surviving seagrass areas.
+**Seagrass observations**:Around 9% of the Cockburn area had seagrass growing on the seabed, and therefore it had seagrass detritus as a source of refractory organic matter. The cores 5 and 6 from Eyre *et al.* (2025) were from a seagrass restoration area the cores from 9, 10, 11 and 12 were naturally surviving seagrass areas.
 
-The seagrass roots injected some $O_2$ into the upper layers of the sediment. The seagrass detritus also consumed the $O_2$ as it was buried in the deep sediments. Since the organic matter was buried deeper than the aerobic zone, sulfate reduction took place.
+The seagrass roots injected $O_2$ into the upper layers of the sediment. The seagrass detritus also consumed the $O_2$ as it was buried in the deep sediments. Any seagrass detritus buried deeper than the aerobic zone was subject to sulfate reduction. 
 
-There was limited denitrification because it was inhibited by $O_2$ in the root area and inhibited by $H_2S$ in the sulfate reduction area. There was still a net efflux of $O_2$ out of the sediment and net consumption of $NH_4^+$. The cores that fit this environment did not show either a definite uptake or efflux of $NO_3^-$ at the sediment-water interface. This environment had high organic matter input and consumption while still having high denitrification (Figure 10.14), because of the root-injected $O_2$ promoting coupled nitrification-denitrification, as well as the high organic matter load.
-
-$N_2$ flux across the sediment-water interface could be from 100 to 600 mmol m\(^{-2}\) y\(^{-1}\) based on the data from cores 10, 11 and 12.
+There was limited depth area for denitrification because this redox pathway was inhibited by $O_2$ in the root area and inhibited by H2S in the sulfate reduction area. There was still a net efflux of $O_2$ out of the sediment and net consumption of NH4+. The cores that fit this environment did not show either a definite uptake or efflux of NO3- at the sediment-water interface. This environment had high organic matter input and consumption while still having high denitrification (Figure 10.14), because of the root-injected $O_2$ promoting coupled nitrification-denitrification, as well as the high organic matter load.
 
 ![](media/candi/image15.jpeg){width="33%"}
 
